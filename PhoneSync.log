@@ -1,0 +1,1281 @@
+[2025-08-30 22:58:32] [INFO] === PhoneSync Started ===
+[2025-08-30 22:58:32] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-30 22:58:32] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-30 22:58:32] [INFO] Processing directory: G:\PhotoSync_Test\Source
+[2025-08-30 22:58:32] [ERROR] Source directory does not exist: G:\PhotoSync_Test\Source
+[2025-08-30 22:58:32] [INFO] === PhoneSync Completed ===
+[2025-08-30 22:59:40] [INFO] === PhoneSync Started ===
+[2025-08-30 22:59:40] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-30 22:59:40] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-30 22:59:40] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-30 22:59:41] [INFO] Found 60 files to process
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_11_27
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072325.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072325.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 1.7% (1/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072406.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072406.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 3.3% (2/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080259.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080259.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 5% (3/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080352.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080352.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 6.7% (4/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_03
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_070547.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_070547.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 8.3% (5/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_092512.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_092512.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 10% (6/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04\20241204_195042_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 11.7% (7/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_06
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_070804.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_070804.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 13.3% (8/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_072817.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_072817.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 15% (9/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_080503.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_080503.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 16.7% (10/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_07
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241207_201035.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_07\20241207_201035.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 18.3% (11/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_08
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_094652_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 20% (12/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_094944_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 21.7% (13/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_101819_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_101819_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 23.3% (14/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_114720_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_114720_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 25% (15/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_10
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071522.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071522.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 26.7% (16/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071558.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071558.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 28.3% (17/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_10
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_090140_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_10\20241210_090140_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 30% (18/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_091107.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_091107.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 31.7% (19/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_11
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_094651_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_094651_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 33.3% (20/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_105207_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_105207_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 35% (21/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_12
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_081716_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_081716_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 36.7% (22/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_083659_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_083659_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 38.3% (23/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_15
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_105459_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_105459_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 40% (24/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_110934_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_110934_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 41.7% (25/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_111821_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_111821_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 43.3% (26/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_18
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_071235.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_071235.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 45% (27/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_072520.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_072520.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 46.7% (28/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2024_12_18
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_075459_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_18\20241218_075459_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 48.3% (29/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_18
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_081644_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_081644_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 50% (30/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_04_06
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092556_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_092556_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 51.7% (31/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092818_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_092818_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 53.3% (32/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_101857_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_101857_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 55% (33/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_110016_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_110016_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 56.7% (34/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_04_12
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250410_192507_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_12\20250410_192507_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 58.3% (35/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_05_04
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_101933_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_101933_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 60% (36/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_110956_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_110956_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 61.7% (37/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_113836_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_113836_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 63.3% (38/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_06_01
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_112703_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_01\20250601_112703_1.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 65% (39/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_115907.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_01\20250601_115907.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 66.7% (40/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_06_08
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250608_092506.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_08\20250608_092506.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 68.3% (41/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_06_13
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_075513.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_075513.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 70% (42/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_080128.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_080128.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 71.7% (43/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_06_15
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_094804.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_094804.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 73.3% (44/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100341.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_100341.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 75% (45/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100407.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_100407.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 76.7% (46/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_102535 (1).mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_102535 (1).mp4
+[2025-08-30 22:59:41] [INFO] Progress: 78.3% (47/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_104338.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_104338.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 80% (48/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_06_22
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_093448.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_093448.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 81.7% (49/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2025_06_22
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_094545.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_22\20250622_094545.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 83.3% (50/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_100122.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_100122.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 85% (51/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_105414.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 86.7% (52/60)
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_112054.mp4
+[2025-08-30 22:59:41] [INFO] Progress: 88.3% (53/60)
+[2025-08-30 22:59:41] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2025_06_25
+[2025-08-30 22:59:41] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250625_192654.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_25\20250625_192654.jpg
+[2025-08-30 22:59:41] [INFO] Progress: 90% (54/60)
+[2025-08-30 22:59:42] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_07_20
+[2025-08-30 22:59:42] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\2025_07_20\20250720_105916.mp4
+[2025-08-30 22:59:42] [INFO] Progress: 91.7% (55/60)
+[2025-08-30 22:59:42] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2025_08_25
+[2025-08-30 22:59:42] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250825_194314.jpg -> Z:\PhotoSync_Test\My Pictures\2025_08_25\20250825_194314.jpg
+[2025-08-30 22:59:42] [INFO] Progress: 93.3% (56/60)
+[2025-08-30 22:59:42] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_08_30
+[2025-08-30 22:59:42] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\2025_08_30\20250830_090725.mp4
+[2025-08-30 22:59:42] [INFO] Progress: 95% (57/60)
+[2025-08-30 22:59:42] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2021_11_14
+[2025-08-30 22:59:42] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\mmexport1636907148566.jpg -> Z:\PhotoSync_Test\My Pictures\2021_11_14\mmexport1636907148566.jpg
+[2025-08-30 22:59:42] [INFO] Progress: 96.7% (58/60)
+[2025-08-30 22:59:42] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2023_03_04
+[2025-08-30 22:59:42] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\RebelUnicornTaiChiClub3.jpg -> Z:\PhotoSync_Test\My Pictures\2023_03_04\RebelUnicornTaiChiClub3.jpg
+[2025-08-30 22:59:42] [INFO] Progress: 98.3% (59/60)
+[2025-08-30 22:59:42] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_10_27
+[2025-08-30 22:59:42] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\VideoCapture_20241027-110745.jpg -> Z:\PhotoSync_Test\My Pictures\2024_10_27\VideoCapture_20241027-110745.jpg
+[2025-08-30 22:59:42] [INFO] Progress: 100% (60/60)
+[2025-08-30 22:59:42] [INFO] Directory processing complete. Processed: 60, Errors: 0
+[2025-08-30 22:59:42] [INFO] === PhoneSync Completed ===
+[2025-08-30 22:59:55] [INFO] === PhoneSync Started ===
+[2025-08-30 22:59:55] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-30 22:59:55] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-30 22:59:55] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-30 22:59:55] [INFO] Found 60 files to process
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072325.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072325.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 1.7% (1/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072406.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072406.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 3.3% (2/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080259.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080259.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 5% (3/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080352.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080352.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 6.7% (4/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_070547.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_070547.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 8.3% (5/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_092512.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_092512.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 10% (6/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04\20241204_195042_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 11.7% (7/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_070804.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_070804.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 13.3% (8/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_072817.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_072817.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 15% (9/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_080503.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_080503.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 16.7% (10/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241207_201035.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_07\20241207_201035.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 18.3% (11/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_094652_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 20% (12/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_094944_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 21.7% (13/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_101819_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_101819_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 23.3% (14/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_114720_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_114720_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 25% (15/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071522.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071522.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 26.7% (16/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071558.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071558.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 28.3% (17/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_090140_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_10\20241210_090140_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 30% (18/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_091107.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_091107.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 31.7% (19/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_094651_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_094651_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 33.3% (20/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_105207_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_105207_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 35% (21/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_081716_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_081716_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 36.7% (22/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_083659_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_083659_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 38.3% (23/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_105459_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_105459_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 40% (24/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_110934_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_110934_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 41.7% (25/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_111821_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_111821_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 43.3% (26/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_071235.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_071235.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 45% (27/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_072520.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_072520.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 46.7% (28/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_075459_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_18\20241218_075459_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 48.3% (29/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_081644_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_081644_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 50% (30/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092556_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_092556_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 51.7% (31/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092818_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_092818_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 53.3% (32/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_101857_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_101857_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 55% (33/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_110016_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_110016_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 56.7% (34/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250410_192507_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_12\20250410_192507_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 58.3% (35/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_101933_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_101933_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 60% (36/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_110956_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_110956_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 61.7% (37/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_113836_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_113836_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 63.3% (38/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_112703_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_01\20250601_112703_1.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 65% (39/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_115907.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_01\20250601_115907.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 66.7% (40/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250608_092506.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_08\20250608_092506.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 68.3% (41/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_075513.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_075513.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 70% (42/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_080128.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_080128.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 71.7% (43/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_094804.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_094804.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 73.3% (44/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100341.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_100341.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 75% (45/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100407.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_100407.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 76.7% (46/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_102535 (1).mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_102535 (1).mp4
+[2025-08-30 22:59:56] [INFO] Progress: 78.3% (47/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_104338.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_104338.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 80% (48/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_093448.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_093448.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 81.7% (49/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_094545.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_22\20250622_094545.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 83.3% (50/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_100122.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_100122.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 85% (51/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_105414.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 86.7% (52/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_112054.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 88.3% (53/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250625_192654.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_25\20250625_192654.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 90% (54/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\2025_07_20\20250720_105916.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 91.7% (55/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250825_194314.jpg -> Z:\PhotoSync_Test\My Pictures\2025_08_25\20250825_194314.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 93.3% (56/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\2025_08_30\20250830_090725.mp4
+[2025-08-30 22:59:56] [INFO] Progress: 95% (57/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\mmexport1636907148566.jpg -> Z:\PhotoSync_Test\My Pictures\2021_11_14\mmexport1636907148566.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 96.7% (58/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\RebelUnicornTaiChiClub3.jpg -> Z:\PhotoSync_Test\My Pictures\2023_03_04\RebelUnicornTaiChiClub3.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 98.3% (59/60)
+[2025-08-30 22:59:56] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\VideoCapture_20241027-110745.jpg -> Z:\PhotoSync_Test\My Pictures\2024_10_27\VideoCapture_20241027-110745.jpg
+[2025-08-30 22:59:56] [INFO] Progress: 100% (60/60)
+[2025-08-30 22:59:56] [INFO] Directory processing complete. Processed: 60, Errors: 0
+[2025-08-30 22:59:56] [INFO] === PhoneSync Completed ===
+[2025-08-30 23:00:51] [INFO] === PhoneSync Started ===
+[2025-08-30 23:00:51] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-30 23:00:51] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-30 23:00:51] [INFO] Found 60 files to process
+[2025-08-30 23:00:52] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_072325.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072325.jpg
+[2025-08-30 23:00:52] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_072406.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072406.jpg
+[2025-08-30 23:00:52] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_080259.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080259.jpg
+[2025-08-30 23:00:53] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_080352.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080352.jpg
+[2025-08-30 23:00:53] [INFO] Copied: Z:\PhotoSync_Test\Source\20241203_070547.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_070547.jpg
+[2025-08-30 23:00:53] [INFO] Copied: Z:\PhotoSync_Test\Source\20241203_092512.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_092512.jpg
+[2025-08-30 23:00:56] [INFO] Copied: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04\20241204_195042_1.mp4
+[2025-08-30 23:00:56] [INFO] Copied: Z:\PhotoSync_Test\Source\20241206_070804.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_070804.jpg
+[2025-08-30 23:00:56] [INFO] Copied: Z:\PhotoSync_Test\Source\20241206_072817.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_072817.jpg
+[2025-08-30 23:00:57] [INFO] Copied: Z:\PhotoSync_Test\Source\20241206_080503.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_080503.jpg
+[2025-08-30 23:00:57] [INFO] Copied: Z:\PhotoSync_Test\Source\20241207_201035.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_07\20241207_201035.jpg
+[2025-08-30 23:00:59] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_094652_1.mp4
+[2025-08-30 23:01:00] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_094944_1.mp4
+[2025-08-30 23:01:02] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_101819_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_101819_1.mp4
+[2025-08-30 23:01:07] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_114720_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_08\20241208_114720_1.mp4
+[2025-08-30 23:01:07] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_071522.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071522.jpg
+[2025-08-30 23:01:07] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_071558.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071558.jpg
+[2025-08-30 23:01:10] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_090140_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_10\20241210_090140_1.mp4
+[2025-08-30 23:01:10] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_091107.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_091107.jpg
+[2025-08-30 23:01:13] [INFO] Copied: Z:\PhotoSync_Test\Source\20241211_094651_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_094651_1.mp4
+[2025-08-30 23:01:15] [INFO] Copied: Z:\PhotoSync_Test\Source\20241211_105207_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_105207_1.mp4
+[2025-08-30 23:01:20] [INFO] Copied: Z:\PhotoSync_Test\Source\20241212_081716_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_081716_1.mp4
+[2025-08-30 23:01:25] [INFO] Copied: Z:\PhotoSync_Test\Source\20241212_083659_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_083659_1.mp4
+[2025-08-30 23:01:29] [INFO] Copied: Z:\PhotoSync_Test\Source\20241215_105459_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_105459_1.mp4
+[2025-08-30 23:01:30] [INFO] Copied: Z:\PhotoSync_Test\Source\20241215_110934_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_110934_1.mp4
+[2025-08-30 23:01:35] [INFO] Copied: Z:\PhotoSync_Test\Source\20241215_111821_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_15\20241215_111821_1.mp4
+[2025-08-30 23:01:35] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_071235.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_071235.jpg
+[2025-08-30 23:01:35] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_072520.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_072520.jpg
+[2025-08-30 23:01:40] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_075459_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_18\20241218_075459_1.mp4
+[2025-08-30 23:01:45] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_081644_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_081644_1.mp4
+[2025-08-30 23:01:47] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_092556_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_092556_1.mp4
+[2025-08-30 23:01:49] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_092818_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_092818_1.mp4
+[2025-08-30 23:01:58] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_101857_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_101857_1.mp4
+[2025-08-30 23:02:06] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_110016_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_06\20250406_110016_1.mp4
+[2025-08-30 23:02:07] [INFO] Copied: Z:\PhotoSync_Test\Source\20250410_192507_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_04_12\20250410_192507_1.mp4
+[2025-08-30 23:02:11] [INFO] Copied: Z:\PhotoSync_Test\Source\20250504_101933_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_101933_1.mp4
+[2025-08-30 23:02:12] [INFO] Copied: Z:\PhotoSync_Test\Source\20250504_110956_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_110956_1.mp4
+[2025-08-30 23:02:14] [INFO] Copied: Z:\PhotoSync_Test\Source\20250504_113836_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_05_04\20250504_113836_1.mp4
+[2025-08-30 23:02:21] [INFO] Copied: Z:\PhotoSync_Test\Source\20250601_112703_1.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_01\20250601_112703_1.mp4
+[2025-08-30 23:02:30] [INFO] Copied: Z:\PhotoSync_Test\Source\20250601_115907.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_01\20250601_115907.mp4
+[2025-08-30 23:02:31] [INFO] Copied: Z:\PhotoSync_Test\Source\20250608_092506.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_08\20250608_092506.mp4
+[2025-08-30 23:02:34] [INFO] Copied: Z:\PhotoSync_Test\Source\20250613_075513.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_075513.mp4
+[2025-08-30 23:02:39] [INFO] Copied: Z:\PhotoSync_Test\Source\20250613_080128.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_080128.mp4
+[2025-08-30 23:02:40] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_094804.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_094804.mp4
+[2025-08-30 23:02:41] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_100341.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_100341.mp4
+[2025-08-30 23:02:42] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_100407.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_100407.mp4
+[2025-08-30 23:02:44] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_102535 (1).mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_102535 (1).mp4
+[2025-08-30 23:02:47] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_104338.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_15\20250615_104338.mp4
+[2025-08-30 23:02:48] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_093448.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_093448.mp4
+[2025-08-30 23:02:48] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_094545.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_22\20250622_094545.jpg
+[2025-08-30 23:02:51] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_100122.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_100122.mp4
+[2025-08-30 23:02:52] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_105414.mp4
+[2025-08-30 23:02:57] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_22\20250622_112054.mp4
+[2025-08-30 23:02:57] [INFO] Copied: Z:\PhotoSync_Test\Source\20250625_192654.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_25\20250625_192654.jpg
+[2025-08-30 23:03:01] [INFO] Copied: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\2025_07_20\20250720_105916.mp4
+[2025-08-30 23:03:01] [INFO] Copied: Z:\PhotoSync_Test\Source\20250825_194314.jpg -> Z:\PhotoSync_Test\My Pictures\2025_08_25\20250825_194314.jpg
+[2025-08-30 23:03:06] [INFO] Copied: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\2025_08_30\20250830_090725.mp4
+[2025-08-30 23:03:06] [INFO] Copied: Z:\PhotoSync_Test\Source\mmexport1636907148566.jpg -> Z:\PhotoSync_Test\My Pictures\2021_11_14\mmexport1636907148566.jpg
+[2025-08-30 23:03:07] [INFO] Copied: Z:\PhotoSync_Test\Source\RebelUnicornTaiChiClub3.jpg -> Z:\PhotoSync_Test\My Pictures\2023_03_04\RebelUnicornTaiChiClub3.jpg
+[2025-08-30 23:03:07] [INFO] Copied: Z:\PhotoSync_Test\Source\VideoCapture_20241027-110745.jpg -> Z:\PhotoSync_Test\My Pictures\2024_10_27\VideoCapture_20241027-110745.jpg
+[2025-08-30 23:03:07] [INFO] Directory processing complete. Processed: 60, Errors: 0
+[2025-08-30 23:03:07] [INFO] === PhoneSync Completed ===
+[2025-08-30 23:11:20] [INFO] === PhoneSync Started ===
+[2025-08-30 23:11:20] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-30 23:11:20] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-30 23:11:20] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-30 23:11:20] [INFO] Found 60 files to process
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_11_27
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072325.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072325.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 1.7% (1/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072406.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072406.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 3.3% (2/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080259.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080259.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 5% (3/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080352.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080352.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 6.7% (4/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_03
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_070547.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_070547.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 8.3% (5/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_092512.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_092512.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 10% (6/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04\20241204_195042_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 11.7% (7/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_06
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_070804.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_070804.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 13.3% (8/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_072817.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_072817.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 15% (9/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_080503.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_080503.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 16.7% (10/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_07
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241207_201035.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_07\20241207_201035.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 18.3% (11/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_094652_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 20% (12/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_094944_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 21.7% (13/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_101819_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_101819_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 23.3% (14/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_114720_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_114720_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 25% (15/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_10
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071522.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071522.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 26.7% (16/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071558.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071558.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 28.3% (17/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_10
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_090140_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_10\20241210_090140_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 30% (18/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_091107.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_091107.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 31.7% (19/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_11
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_094651_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_094651_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 33.3% (20/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_105207_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_105207_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 35% (21/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_12
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_081716_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_081716_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 36.7% (22/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_083659_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_083659_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 38.3% (23/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_105459_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_105459_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 40% (24/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_110934_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_110934_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 41.7% (25/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_111821_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_111821_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 43.3% (26/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_12_18
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_071235.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_071235.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 45% (27/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_072520.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_072520.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 46.7% (28/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2024_12_18
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_075459_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_075459_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 48.3% (29/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_081644_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_081644_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 50% (30/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092556_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_092556_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 51.7% (31/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092818_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_092818_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 53.3% (32/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_101857_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_101857_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 55% (33/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_110016_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_110016_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 56.7% (34/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_04_12
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250410_192507_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_12\20250410_192507_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 58.3% (35/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_101933_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_101933_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 60% (36/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_110956_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_110956_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 61.7% (37/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_113836_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_113836_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 63.3% (38/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_112703_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01\20250601_112703_1.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 65% (39/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_115907.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01\20250601_115907.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 66.7% (40/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_06_08
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250608_092506.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_08\20250608_092506.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 68.3% (41/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\2025_06_13
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_075513.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_075513.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 70% (42/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_080128.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_080128.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 71.7% (43/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_094804.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_094804.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 73.3% (44/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100341.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_100341.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 75% (45/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100407.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_100407.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 76.7% (46/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_102535 (1).mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_102535 (1).mp4
+[2025-08-30 23:11:20] [INFO] Progress: 78.3% (47/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_104338.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_104338.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 80% (48/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_093448.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_093448.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 81.7% (49/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2025_06_22
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_094545.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_22\20250622_094545.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 83.3% (50/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_100122.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_100122.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 85% (51/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_105414.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 86.7% (52/60)
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_112054.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 88.3% (53/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2025_06_25
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250625_192654.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_25\20250625_192654.jpg
+[2025-08-30 23:11:20] [INFO] Progress: 90% (54/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_07_20
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_07_20\20250720_105916.mp4
+[2025-08-30 23:11:20] [INFO] Progress: 91.7% (55/60)
+[2025-08-30 23:11:20] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2025_08_25
+[2025-08-30 23:11:20] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250825_194314.jpg -> Z:\PhotoSync_Test\My Pictures\2025_08_25\20250825_194314.jpg
+[2025-08-30 23:11:21] [INFO] Progress: 93.3% (56/60)
+[2025-08-30 23:11:21] [INFO] Created directory: Z:\PhotoSync_Test\My Videos\Wudan\2025_08_30
+[2025-08-30 23:11:21] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_08_30\20250830_090725.mp4
+[2025-08-30 23:11:21] [INFO] Progress: 95% (57/60)
+[2025-08-30 23:11:21] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2021_11_14
+[2025-08-30 23:11:21] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\mmexport1636907148566.jpg -> Z:\PhotoSync_Test\My Pictures\2021_11_14\mmexport1636907148566.jpg
+[2025-08-30 23:11:21] [INFO] Progress: 96.7% (58/60)
+[2025-08-30 23:11:21] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2023_03_04
+[2025-08-30 23:11:21] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\RebelUnicornTaiChiClub3.jpg -> Z:\PhotoSync_Test\My Pictures\2023_03_04\RebelUnicornTaiChiClub3.jpg
+[2025-08-30 23:11:21] [INFO] Progress: 98.3% (59/60)
+[2025-08-30 23:11:21] [INFO] Created directory: Z:\PhotoSync_Test\My Pictures\2024_10_27
+[2025-08-30 23:11:21] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\VideoCapture_20241027-110745.jpg -> Z:\PhotoSync_Test\My Pictures\2024_10_27\VideoCapture_20241027-110745.jpg
+[2025-08-30 23:11:21] [INFO] Progress: 100% (60/60)
+[2025-08-30 23:11:21] [INFO] Directory processing complete. Processed: 60, Errors: 0
+[2025-08-30 23:11:21] [INFO] === PhoneSync Completed ===
+[2025-08-31 18:54:11] [INFO] === PhoneSync Started ===
+[2025-08-31 18:54:11] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-31 18:54:11] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-31 18:54:11] [INFO] Building cache of existing files in target directories...
+[2025-08-31 18:54:11] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Pictures
+[2025-08-31 18:54:12] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos
+[2025-08-31 18:54:12] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos\Wudan
+[2025-08-31 18:54:12] [INFO] Cache built successfully. Found 0 existing files across all target directories.
+[2025-08-31 18:54:12] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-31 18:54:12] [INFO] Found 60 files to process
+[2025-08-31 18:54:12] [INFO] Pre-filtering files using deduplication cache...
+[2025-08-31 18:54:12] [INFO] Pre-filtering complete. Will process 60 files, skipping 0 duplicates.
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072325.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072325.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 1.7% (1/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_072406.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072406.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 3.3% (2/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080259.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080259.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 5% (3/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241127_080352.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080352.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 6.7% (4/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_070547.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_070547.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 8.3% (5/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241203_092512.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_092512.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 10% (6/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04\20241204_195042_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 11.7% (7/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_070804.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_070804.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 13.3% (8/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_072817.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_072817.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 15% (9/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241206_080503.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_080503.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 16.7% (10/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241207_201035.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_07\20241207_201035.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 18.3% (11/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_094652_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 20% (12/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_094944_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 21.7% (13/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_101819_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_101819_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 23.3% (14/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241208_114720_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_114720_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 25% (15/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071522.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071522.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 26.7% (16/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_071558.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071558.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 28.3% (17/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_090140_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_10\20241210_090140_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 30% (18/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241210_091107.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_091107.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 31.7% (19/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_094651_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_094651_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 33.3% (20/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241211_105207_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_105207_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 35% (21/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_081716_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_081716_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 36.7% (22/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241212_083659_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_083659_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 38.3% (23/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_105459_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_105459_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 40% (24/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_110934_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_110934_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 41.7% (25/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241215_111821_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_111821_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 43.3% (26/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_071235.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_071235.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 45% (27/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_072520.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_072520.jpg
+[2025-08-31 18:54:12] [INFO] Progress: 46.7% (28/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_075459_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_075459_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 48.3% (29/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20241218_081644_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_081644_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 50% (30/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092556_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_092556_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 51.7% (31/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_092818_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_092818_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 53.3% (32/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_101857_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_101857_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 55% (33/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250406_110016_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_110016_1.mp4
+[2025-08-31 18:54:12] [INFO] Progress: 56.7% (34/60)
+[2025-08-31 18:54:12] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250410_192507_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_12\20250410_192507_1.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 58.3% (35/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_101933_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_101933_1.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 60% (36/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_110956_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_110956_1.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 61.7% (37/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250504_113836_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_113836_1.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 63.3% (38/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_112703_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01\20250601_112703_1.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 65% (39/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250601_115907.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01\20250601_115907.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 66.7% (40/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250608_092506.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_08\20250608_092506.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 68.3% (41/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_075513.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_075513.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 70% (42/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250613_080128.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_080128.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 71.7% (43/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_094804.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_094804.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 73.3% (44/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100341.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_100341.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 75% (45/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_100407.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_100407.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 76.7% (46/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_102535 (1).mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_102535 (1).mp4
+[2025-08-31 18:54:13] [INFO] Progress: 78.3% (47/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250615_104338.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_104338.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 80% (48/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_093448.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_093448.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 81.7% (49/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_094545.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_22\20250622_094545.jpg
+[2025-08-31 18:54:13] [INFO] Progress: 83.3% (50/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_100122.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_100122.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 85% (51/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_105414.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 86.7% (52/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_112054.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 88.3% (53/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250625_192654.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_25\20250625_192654.jpg
+[2025-08-31 18:54:13] [INFO] Progress: 90% (54/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_07_20\20250720_105916.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 91.7% (55/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250825_194314.jpg -> Z:\PhotoSync_Test\My Pictures\2025_08_25\20250825_194314.jpg
+[2025-08-31 18:54:13] [INFO] Progress: 93.3% (56/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_08_30\20250830_090725.mp4
+[2025-08-31 18:54:13] [INFO] Progress: 95% (57/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\mmexport1636907148566.jpg -> Z:\PhotoSync_Test\My Pictures\2021_11_14\mmexport1636907148566.jpg
+[2025-08-31 18:54:13] [INFO] Progress: 96.7% (58/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\RebelUnicornTaiChiClub3.jpg -> Z:\PhotoSync_Test\My Pictures\2023_03_04\RebelUnicornTaiChiClub3.jpg
+[2025-08-31 18:54:13] [INFO] Progress: 98.3% (59/60)
+[2025-08-31 18:54:13] [INFO] [DRY RUN] Would copy: Z:\PhotoSync_Test\Source\VideoCapture_20241027-110745.jpg -> Z:\PhotoSync_Test\My Pictures\2024_10_27\VideoCapture_20241027-110745.jpg
+[2025-08-31 18:54:13] [INFO] Progress: 100% (60/60)
+[2025-08-31 18:54:13] [INFO] Directory processing complete.
+[2025-08-31 18:54:13] [INFO]   Total files found: 60
+[2025-08-31 18:54:13] [INFO]   Files skipped (duplicates): 0
+[2025-08-31 18:54:13] [INFO]   Files processed: 60
+[2025-08-31 18:54:13] [INFO]   Errors: 0
+[2025-08-31 18:54:13] [INFO] === PhoneSync Completed ===
+[2025-08-31 18:54:24] [INFO] === PhoneSync Started ===
+[2025-08-31 18:54:24] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-31 18:54:24] [INFO] Building cache of existing files in target directories...
+[2025-08-31 18:54:24] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Pictures
+[2025-08-31 18:54:24] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos
+[2025-08-31 18:54:24] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos\Wudan
+[2025-08-31 18:54:24] [INFO] Cache built successfully. Found 0 existing files across all target directories.
+[2025-08-31 18:54:24] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-31 18:54:24] [INFO] Found 60 files to process
+[2025-08-31 18:54:24] [INFO] Pre-filtering files using deduplication cache...
+[2025-08-31 18:54:24] [INFO] Pre-filtering complete. Will process 60 files, skipping 0 duplicates.
+[2025-08-31 18:54:25] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_072325.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072325.jpg
+[2025-08-31 18:54:25] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_072406.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_072406.jpg
+[2025-08-31 18:54:25] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_080259.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080259.jpg
+[2025-08-31 18:54:26] [INFO] Copied: Z:\PhotoSync_Test\Source\20241127_080352.jpg -> Z:\PhotoSync_Test\My Pictures\2024_11_27\20241127_080352.jpg
+[2025-08-31 18:54:26] [INFO] Copied: Z:\PhotoSync_Test\Source\20241203_070547.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_070547.jpg
+[2025-08-31 18:54:26] [INFO] Copied: Z:\PhotoSync_Test\Source\20241203_092512.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_03\20241203_092512.jpg
+[2025-08-31 18:54:29] [INFO] Copied: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_04\20241204_195042_1.mp4
+[2025-08-31 18:54:29] [INFO] Copied: Z:\PhotoSync_Test\Source\20241206_070804.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_070804.jpg
+[2025-08-31 18:54:30] [INFO] Copied: Z:\PhotoSync_Test\Source\20241206_072817.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_072817.jpg
+[2025-08-31 18:54:30] [INFO] Copied: Z:\PhotoSync_Test\Source\20241206_080503.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_06\20241206_080503.jpg
+[2025-08-31 18:54:30] [INFO] Copied: Z:\PhotoSync_Test\Source\20241207_201035.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_07\20241207_201035.jpg
+[2025-08-31 18:54:32] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_094652_1.mp4
+[2025-08-31 18:54:33] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_094944_1.mp4
+[2025-08-31 18:54:35] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_101819_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_101819_1.mp4
+[2025-08-31 18:54:40] [INFO] Copied: Z:\PhotoSync_Test\Source\20241208_114720_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_08\20241208_114720_1.mp4
+[2025-08-31 18:54:40] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_071522.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071522.jpg
+[2025-08-31 18:54:40] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_071558.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_071558.jpg
+[2025-08-31 18:54:44] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_090140_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_10\20241210_090140_1.mp4
+[2025-08-31 18:54:44] [INFO] Copied: Z:\PhotoSync_Test\Source\20241210_091107.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_10\20241210_091107.jpg
+[2025-08-31 18:54:47] [INFO] Copied: Z:\PhotoSync_Test\Source\20241211_094651_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_094651_1.mp4
+[2025-08-31 18:54:49] [INFO] Copied: Z:\PhotoSync_Test\Source\20241211_105207_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_11\20241211_105207_1.mp4
+[2025-08-31 18:54:54] [INFO] Copied: Z:\PhotoSync_Test\Source\20241212_081716_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_081716_1.mp4
+[2025-08-31 18:54:59] [INFO] Copied: Z:\PhotoSync_Test\Source\20241212_083659_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_12\20241212_083659_1.mp4
+[2025-08-31 18:55:03] [INFO] Copied: Z:\PhotoSync_Test\Source\20241215_105459_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_105459_1.mp4
+[2025-08-31 18:55:04] [INFO] Copied: Z:\PhotoSync_Test\Source\20241215_110934_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_110934_1.mp4
+[2025-08-31 18:55:09] [INFO] Copied: Z:\PhotoSync_Test\Source\20241215_111821_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2024_12_15\20241215_111821_1.mp4
+[2025-08-31 18:55:09] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_071235.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_071235.jpg
+[2025-08-31 18:55:09] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_072520.jpg -> Z:\PhotoSync_Test\My Pictures\2024_12_18\20241218_072520.jpg
+[2025-08-31 18:55:14] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_075459_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_075459_1.mp4
+[2025-08-31 18:55:20] [INFO] Copied: Z:\PhotoSync_Test\Source\20241218_081644_1.mp4 -> Z:\PhotoSync_Test\My Videos\2024_12_18\20241218_081644_1.mp4
+[2025-08-31 18:55:22] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_092556_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_092556_1.mp4
+[2025-08-31 18:55:24] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_092818_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_092818_1.mp4
+[2025-08-31 18:55:34] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_101857_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_101857_1.mp4
+[2025-08-31 18:55:43] [INFO] Copied: Z:\PhotoSync_Test\Source\20250406_110016_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_06\20250406_110016_1.mp4
+[2025-08-31 18:55:44] [INFO] Copied: Z:\PhotoSync_Test\Source\20250410_192507_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_04_12\20250410_192507_1.mp4
+[2025-08-31 18:55:47] [INFO] Copied: Z:\PhotoSync_Test\Source\20250504_101933_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_101933_1.mp4
+[2025-08-31 18:55:48] [INFO] Copied: Z:\PhotoSync_Test\Source\20250504_110956_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_110956_1.mp4
+[2025-08-31 18:55:51] [INFO] Copied: Z:\PhotoSync_Test\Source\20250504_113836_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_05_04\20250504_113836_1.mp4
+[2025-08-31 18:55:57] [INFO] Copied: Z:\PhotoSync_Test\Source\20250601_112703_1.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01\20250601_112703_1.mp4
+[2025-08-31 18:56:06] [INFO] Copied: Z:\PhotoSync_Test\Source\20250601_115907.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_01\20250601_115907.mp4
+[2025-08-31 18:56:07] [INFO] Copied: Z:\PhotoSync_Test\Source\20250608_092506.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_08\20250608_092506.mp4
+[2025-08-31 18:56:11] [INFO] Copied: Z:\PhotoSync_Test\Source\20250613_075513.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_075513.mp4
+[2025-08-31 18:56:16] [INFO] Copied: Z:\PhotoSync_Test\Source\20250613_080128.mp4 -> Z:\PhotoSync_Test\My Videos\2025_06_13\20250613_080128.mp4
+[2025-08-31 18:56:17] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_094804.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_094804.mp4
+[2025-08-31 18:56:18] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_100341.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_100341.mp4
+[2025-08-31 18:56:19] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_100407.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_100407.mp4
+[2025-08-31 18:56:20] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_102535 (1).mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_102535 (1).mp4
+[2025-08-31 18:56:24] [INFO] Copied: Z:\PhotoSync_Test\Source\20250615_104338.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_15\20250615_104338.mp4
+[2025-08-31 18:56:24] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_093448.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_093448.mp4
+[2025-08-31 18:56:25] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_094545.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_22\20250622_094545.jpg
+[2025-08-31 18:56:28] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_100122.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_100122.mp4
+[2025-08-31 18:56:29] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_105414.mp4
+[2025-08-31 18:56:34] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_112054.mp4
+[2025-08-31 18:56:34] [INFO] Copied: Z:\PhotoSync_Test\Source\20250625_192654.jpg -> Z:\PhotoSync_Test\My Pictures\2025_06_25\20250625_192654.jpg
+[2025-08-31 18:56:38] [INFO] Copied: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_07_20\20250720_105916.mp4
+[2025-08-31 18:56:38] [INFO] Copied: Z:\PhotoSync_Test\Source\20250825_194314.jpg -> Z:\PhotoSync_Test\My Pictures\2025_08_25\20250825_194314.jpg
+[2025-08-31 18:56:44] [INFO] Copied: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_08_30\20250830_090725.mp4
+[2025-08-31 18:56:44] [INFO] Copied: Z:\PhotoSync_Test\Source\mmexport1636907148566.jpg -> Z:\PhotoSync_Test\My Pictures\2021_11_14\mmexport1636907148566.jpg
+[2025-08-31 18:56:44] [INFO] Copied: Z:\PhotoSync_Test\Source\RebelUnicornTaiChiClub3.jpg -> Z:\PhotoSync_Test\My Pictures\2023_03_04\RebelUnicornTaiChiClub3.jpg
+[2025-08-31 18:56:44] [INFO] Copied: Z:\PhotoSync_Test\Source\VideoCapture_20241027-110745.jpg -> Z:\PhotoSync_Test\My Pictures\2024_10_27\VideoCapture_20241027-110745.jpg
+[2025-08-31 18:56:44] [INFO] Directory processing complete.
+[2025-08-31 18:56:44] [INFO]   Total files found: 60
+[2025-08-31 18:56:44] [INFO]   Files skipped (duplicates): 0
+[2025-08-31 18:56:44] [INFO]   Files processed: 60
+[2025-08-31 18:56:44] [INFO]   Errors: 0
+[2025-08-31 18:56:44] [INFO] === PhoneSync Completed ===
+[2025-08-31 19:17:53] [INFO] === PhoneSync Started ===
+[2025-08-31 19:17:53] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-31 19:17:53] [INFO] Building cache of existing files in target directories...
+[2025-08-31 19:17:53] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Pictures
+[2025-08-31 19:17:54] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos
+[2025-08-31 19:17:54] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos\Wudan
+[2025-08-31 19:17:54] [INFO] Cache built successfully. Found 90 existing files across all target directories.
+[2025-08-31 19:17:54] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-31 19:17:54] [INFO] Found 60 files to process
+[2025-08-31 19:17:54] [INFO] Pre-filtering files using deduplication cache...
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241127_072325.jpg (Size: 4378026 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241127_072406.jpg (Size: 2529879 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241127_080259.jpg (Size: 2223504 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241127_080352.jpg (Size: 1744103 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241203_070547.jpg (Size: 1698945 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241203_092512.jpg (Size: 340935 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241204_195042_1.mp4 (Size: 46334770 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241206_070804.jpg (Size: 3904856 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241206_072817.jpg (Size: 2636465 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241206_080503.jpg (Size: 1717519 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241207_201035.jpg (Size: 1601696 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241208_094652_1.mp4 (Size: 29686733 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241208_094944_1.mp4 (Size: 14635144 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241208_101819_1.mp4 (Size: 38619734 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241208_114720_1.mp4 (Size: 66083492 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241210_071522.jpg (Size: 2189065 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241210_071558.jpg (Size: 3015400 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241210_090140_1.mp4 (Size: 55028535 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241210_091107.jpg (Size: 934257 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241211_094651_1.mp4 (Size: 49452995 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241211_105207_1.mp4 (Size: 32070249 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241212_081716_1.mp4 (Size: 83855318 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241212_083659_1.mp4 (Size: 75851989 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241215_105459_1.mp4 (Size: 67589070 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241215_110934_1.mp4 (Size: 16071337 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241215_111821_1.mp4 (Size: 73908871 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241218_071235.jpg (Size: 1638475 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241218_072520.jpg (Size: 2268766 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241218_075459_1.mp4 (Size: 72555865 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20241218_081644_1.mp4 (Size: 78008139 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250406_092556_1.mp4 (Size: 33782827 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250406_092818_1.mp4 (Size: 31704863 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250406_101857_1.mp4 (Size: 151619111 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250406_110016_1.mp4 (Size: 128363474 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250410_192507_1.mp4 (Size: 17933314 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250504_101933_1.mp4 (Size: 52180680 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250504_110956_1.mp4 (Size: 14626328 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250504_113836_1.mp4 (Size: 31259308 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250601_112703_1.mp4 (Size: 104185258 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250601_115907.mp4 (Size: 131307641 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250608_092506.mp4 (Size: 11087653 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250613_075513.mp4 (Size: 54065135 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250613_080128.mp4 (Size: 76592937 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250615_094804.mp4 (Size: 17675576 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250615_100341.mp4 (Size: 8194185 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250615_100407.mp4 (Size: 13867245 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250615_102535 (1).mp4 (Size: 23689939 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250615_104338.mp4 (Size: 47868494 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250622_093448.mp4 (Size: 11291015 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250622_094545.jpg (Size: 3645485 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250622_100122.mp4 (Size: 44939773 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250622_105414.mp4 (Size: 20598086 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250622_112054.mp4 (Size: 68076666 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250625_192654.jpg (Size: 3438984 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250720_105916.mp4 (Size: 53102546 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250825_194314.jpg (Size: 1699925 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: 20250830_090725.mp4 (Size: 88153141 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: mmexport1636907148566.jpg (Size: 158066 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: RebelUnicornTaiChiClub3.jpg (Size: 183777 bytes)
+[2025-08-31 19:17:54] [INFO] File already exists in target: VideoCapture_20241027-110745.jpg (Size: 147973 bytes)
+[2025-08-31 19:17:54] [INFO] Pre-filtering complete. Will process 0 files, skipping 60 duplicates.
+[2025-08-31 19:17:54] [INFO] Directory processing complete.
+[2025-08-31 19:17:54] [INFO]   Total files found: 60
+[2025-08-31 19:17:54] [INFO]   Files skipped (duplicates): 60
+[2025-08-31 19:17:54] [INFO]   Files processed: 0
+[2025-08-31 19:17:54] [INFO]   Errors: 0
+[2025-08-31 19:17:54] [INFO]   Deduplication saved processing 100% of files!
+[2025-08-31 19:17:54] [INFO] === PhoneSync Completed ===
+[2025-08-31 19:27:04] [INFO] === PhoneSync Started ===
+[2025-08-31 19:27:04] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-31 19:27:04] [INFO] Building cache of existing files in target directories...
+[2025-08-31 19:27:04] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Pictures
+[2025-08-31 19:27:04] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos
+[2025-08-31 19:27:04] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos\Wudan
+[2025-08-31 19:27:04] [INFO] Cache built successfully. Found 82 existing files across all target directories.
+[2025-08-31 19:27:04] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-31 19:27:04] [INFO] Found 60 files to process
+[2025-08-31 19:27:04] [INFO] Pre-filtering files using deduplication cache...
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241127_072325.jpg (Size: 4378026 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241127_072406.jpg (Size: 2529879 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241127_080259.jpg (Size: 2223504 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241127_080352.jpg (Size: 1744103 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241203_070547.jpg (Size: 1698945 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241203_092512.jpg (Size: 340935 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241204_195042_1.mp4 (Size: 46334770 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241206_070804.jpg (Size: 3904856 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241206_072817.jpg (Size: 2636465 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241206_080503.jpg (Size: 1717519 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241207_201035.jpg (Size: 1601696 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241208_094652_1.mp4 (Size: 29686733 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241208_094944_1.mp4 (Size: 14635144 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241208_101819_1.mp4 (Size: 38619734 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241208_114720_1.mp4 (Size: 66083492 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241210_071522.jpg (Size: 2189065 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241210_071558.jpg (Size: 3015400 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241210_090140_1.mp4 (Size: 55028535 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241210_091107.jpg (Size: 934257 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241211_094651_1.mp4 (Size: 49452995 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241211_105207_1.mp4 (Size: 32070249 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241212_081716_1.mp4 (Size: 83855318 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241212_083659_1.mp4 (Size: 75851989 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241215_105459_1.mp4 (Size: 67589070 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241215_110934_1.mp4 (Size: 16071337 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241215_111821_1.mp4 (Size: 73908871 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241218_071235.jpg (Size: 1638475 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241218_072520.jpg (Size: 2268766 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241218_075459_1.mp4 (Size: 72555865 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20241218_081644_1.mp4 (Size: 78008139 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250406_092556_1.mp4 (Size: 33782827 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250406_092818_1.mp4 (Size: 31704863 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250406_101857_1.mp4 (Size: 151619111 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250406_110016_1.mp4 (Size: 128363474 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250410_192507_1.mp4 (Size: 17933314 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250504_101933_1.mp4 (Size: 52180680 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250504_110956_1.mp4 (Size: 14626328 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250504_113836_1.mp4 (Size: 31259308 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250601_112703_1.mp4 (Size: 104185258 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250601_115907.mp4 (Size: 131307641 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250608_092506.mp4 (Size: 11087653 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250613_075513.mp4 (Size: 54065135 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250613_080128.mp4 (Size: 76592937 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250615_094804.mp4 (Size: 17675576 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250615_100341.mp4 (Size: 8194185 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250615_100407.mp4 (Size: 13867245 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250615_102535 (1).mp4 (Size: 23689939 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250615_104338.mp4 (Size: 47868494 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250622_093448.mp4 (Size: 11291015 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250622_094545.jpg (Size: 3645485 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250622_100122.mp4 (Size: 44939773 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250625_192654.jpg (Size: 3438984 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: 20250825_194314.jpg (Size: 1699925 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: mmexport1636907148566.jpg (Size: 158066 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: RebelUnicornTaiChiClub3.jpg (Size: 183777 bytes)
+[2025-08-31 19:27:04] [INFO] File already exists in target: VideoCapture_20241027-110745.jpg (Size: 147973 bytes)
+[2025-08-31 19:27:04] [INFO] Pre-filtering complete. Will process 4 files, skipping 56 duplicates.
+[2025-08-31 19:27:06] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_105414.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_105414.mp4
+[2025-08-31 19:27:11] [INFO] Copied: Z:\PhotoSync_Test\Source\20250622_112054.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_06_22\20250622_112054.mp4
+[2025-08-31 19:27:15] [INFO] Copied: Z:\PhotoSync_Test\Source\20250720_105916.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_07_20\20250720_105916.mp4
+[2025-08-31 19:27:21] [INFO] Copied: Z:\PhotoSync_Test\Source\20250830_090725.mp4 -> Z:\PhotoSync_Test\My Videos\Wudan\2025_08_30\20250830_090725.mp4
+[2025-08-31 19:27:21] [INFO] Directory processing complete.
+[2025-08-31 19:27:21] [INFO]   Total files found: 60
+[2025-08-31 19:27:21] [INFO]   Files skipped (duplicates): 56
+[2025-08-31 19:27:21] [INFO]   Files processed: 4
+[2025-08-31 19:27:21] [INFO]   Errors: 0
+[2025-08-31 19:27:21] [INFO]   Deduplication saved processing 93.3% of files!
+[2025-08-31 19:27:21] [INFO] === PhoneSync Completed ===
+[2025-08-31 22:03:29] [INFO] === PhoneSync Started ===
+[2025-08-31 22:03:29] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-31 22:03:29] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-31 22:03:29] [INFO] Building cache of existing files in target directories...
+[2025-08-31 22:03:29] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Pictures
+[2025-08-31 22:03:30] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos
+[2025-08-31 22:03:30] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos\Wudan
+[2025-08-31 22:03:30] [INFO] Cache built successfully. Found 90 existing files across all target directories.
+[2025-08-31 22:03:30] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-31 22:03:31] [INFO] Found 60 files to process
+[2025-08-31 22:03:31] [INFO] Pre-filtering files using deduplication cache...
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241127_072325.jpg in 2024_11_27
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241127_072325.jpg (Size: 4378026 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241127_072406.jpg in 2024_11_27
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241127_072406.jpg (Size: 2529879 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241127_080259.jpg in 2024_11_27
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241127_080259.jpg (Size: 2223504 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241127_080352.jpg in 2024_11_27
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241127_080352.jpg (Size: 1744103 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_03 for pattern 2024_12_03
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241203_070547.jpg in 2024_12_03
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241203_070547.jpg (Size: 1698945 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_03 for pattern 2024_12_03
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241203_092512.jpg in 2024_12_03
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241203_092512.jpg (Size: 340935 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_04 for pattern 2024_12_04
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241204_195042_1.mp4 in 2024_12_04
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241204_195042_1.mp4 (Size: 46334770 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_06 for pattern 2024_12_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241206_070804.jpg in 2024_12_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241206_070804.jpg (Size: 3904856 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_06 for pattern 2024_12_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241206_072817.jpg in 2024_12_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241206_072817.jpg (Size: 2636465 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_06 for pattern 2024_12_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241206_080503.jpg in 2024_12_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241206_080503.jpg (Size: 1717519 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_07 for pattern 2024_12_07
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241207_201035.jpg in 2024_12_07
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241207_201035.jpg (Size: 1601696 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241208_094652_1.mp4 in 2024_12_08
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241208_094652_1.mp4 (Size: 29686733 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241208_094944_1.mp4 in 2024_12_08
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241208_094944_1.mp4 (Size: 14635144 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241208_101819_1.mp4 in 2024_12_08
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241208_101819_1.mp4 (Size: 38619734 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241208_114720_1.mp4 in 2024_12_08
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241208_114720_1.mp4 (Size: 66083492 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_10 for pattern 2024_12_10
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241210_071522.jpg in 2024_12_10
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241210_071522.jpg (Size: 2189065 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_10 for pattern 2024_12_10
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241210_071558.jpg in 2024_12_10
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241210_071558.jpg (Size: 3015400 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_10_Test2 for pattern 2024_12_10
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241210_090140_1.mp4 in 2024_12_10_Test2
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241210_090140_1.mp4 (Size: 55028535 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_10 for pattern 2024_12_10
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241210_091107.jpg in 2024_12_10
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241210_091107.jpg (Size: 934257 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_11 for pattern 2024_12_11
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241211_094651_1.mp4 in 2024_12_11
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241211_094651_1.mp4 (Size: 49452995 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_11 for pattern 2024_12_11
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241211_105207_1.mp4 in 2024_12_11
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241211_105207_1.mp4 (Size: 32070249 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_12_Test1 for pattern 2024_12_12
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241212_081716_1.mp4 in 2024_12_12_Test1
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241212_081716_1.mp4 (Size: 83855318 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_12_Test1 for pattern 2024_12_12
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241212_083659_1.mp4 in 2024_12_12_Test1
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241212_083659_1.mp4 (Size: 75851989 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_15 for pattern 2024_12_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241215_105459_1.mp4 in 2024_12_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241215_105459_1.mp4 (Size: 67589070 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_15 for pattern 2024_12_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241215_110934_1.mp4 in 2024_12_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241215_110934_1.mp4 (Size: 16071337 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_15 for pattern 2024_12_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241215_111821_1.mp4 in 2024_12_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241215_111821_1.mp4 (Size: 73908871 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241218_071235.jpg in 2024_12_18
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241218_071235.jpg (Size: 1638475 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241218_072520.jpg in 2024_12_18
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241218_072520.jpg (Size: 2268766 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241218_075459_1.mp4 in 2024_12_18
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241218_075459_1.mp4 (Size: 72555865 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20241218_081644_1.mp4 in 2024_12_18
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20241218_081644_1.mp4 (Size: 78008139 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250406_092556_1.mp4 in 2025_04_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250406_092556_1.mp4 (Size: 33782827 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250406_092818_1.mp4 in 2025_04_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250406_092818_1.mp4 (Size: 31704863 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250406_101857_1.mp4 in 2025_04_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250406_101857_1.mp4 (Size: 151619111 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250406_110016_1.mp4 in 2025_04_06
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250406_110016_1.mp4 (Size: 128363474 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_04_12 for pattern 2025_04_12
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250410_192507_1.mp4 in 2025_04_12
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250410_192507_1.mp4 (Size: 17933314 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_05_04 for pattern 2025_05_04
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250504_101933_1.mp4 in 2025_05_04
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250504_101933_1.mp4 (Size: 52180680 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_05_04 for pattern 2025_05_04
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250504_110956_1.mp4 in 2025_05_04
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250504_110956_1.mp4 (Size: 14626328 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_05_04 for pattern 2025_05_04
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250504_113836_1.mp4 in 2025_05_04
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250504_113836_1.mp4 (Size: 31259308 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_01 for pattern 2025_06_01
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250601_112703_1.mp4 in 2025_06_01
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250601_112703_1.mp4 (Size: 104185258 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_01 for pattern 2025_06_01
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250601_115907.mp4 in 2025_06_01
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250601_115907.mp4 (Size: 131307641 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_08 for pattern 2025_06_08
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250608_092506.mp4 in 2025_06_08
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250608_092506.mp4 (Size: 11087653 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_13 for pattern 2025_06_13
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250613_075513.mp4 in 2025_06_13
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250613_075513.mp4 (Size: 54065135 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_13 for pattern 2025_06_13
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250613_080128.mp4 in 2025_06_13
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250613_080128.mp4 (Size: 76592937 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250615_094804.mp4 in 2025_06_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250615_094804.mp4 (Size: 17675576 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250615_100341.mp4 in 2025_06_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250615_100341.mp4 (Size: 8194185 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250615_100407.mp4 in 2025_06_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250615_100407.mp4 (Size: 13867245 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250615_102535 (1).mp4 in 2025_06_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250615_102535 (1).mp4 (Size: 23689939 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250615_104338.mp4 in 2025_06_15
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250615_104338.mp4 (Size: 47868494 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250622_093448.mp4 in 2025_06_22
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250622_093448.mp4 (Size: 11291015 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250622_094545.jpg in 2025_06_22
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250622_094545.jpg (Size: 3645485 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250622_100122.mp4 in 2025_06_22
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250622_100122.mp4 (Size: 44939773 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250622_105414.mp4 in 2025_06_22
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250622_105414.mp4 (Size: 20598086 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250622_112054.mp4 in 2025_06_22
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250622_112054.mp4 (Size: 68076666 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_06_25 for pattern 2025_06_25
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250625_192654.jpg in 2025_06_25
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250625_192654.jpg (Size: 3438984 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_07_20 for pattern 2025_07_20
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250720_105916.mp4 in 2025_07_20
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250720_105916.mp4 (Size: 53102546 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_08_25 for pattern 2025_08_25
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250825_194314.jpg in 2025_08_25
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250825_194314.jpg (Size: 1699925 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2025_08_30 for pattern 2025_08_30
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: 20250830_090725.mp4 in 2025_08_30
+[2025-08-31 22:03:31] [INFO] File already exists in target: 20250830_090725.mp4 (Size: 88153141 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2021_11_14 for pattern 2021_11_14
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: mmexport1636907148566.jpg in 2021_11_14
+[2025-08-31 22:03:31] [INFO] File already exists in target: mmexport1636907148566.jpg (Size: 158066 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2023_03_04 for pattern 2023_03_04
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: RebelUnicornTaiChiClub3.jpg in 2023_03_04
+[2025-08-31 22:03:31] [INFO] File already exists in target: RebelUnicornTaiChiClub3.jpg (Size: 183777 bytes)
+[2025-08-31 22:03:31] [INFO] Found existing date folder: 2024_10_27 for pattern 2024_10_27
+[2025-08-31 22:03:31] [INFO] Found existing file in date-matched folder: VideoCapture_20241027-110745.jpg in 2024_10_27
+[2025-08-31 22:03:31] [INFO] File already exists in target: VideoCapture_20241027-110745.jpg (Size: 147973 bytes)
+[2025-08-31 22:03:31] [INFO] Pre-filtering complete. Will process 0 files, skipping 60 duplicates.
+[2025-08-31 22:03:31] [INFO] Directory processing complete.
+[2025-08-31 22:03:31] [INFO]   Total files found: 60
+[2025-08-31 22:03:31] [INFO]   Files skipped (duplicates): 60
+[2025-08-31 22:03:31] [INFO]   Files processed: 0
+[2025-08-31 22:03:31] [INFO]   Errors: 0
+[2025-08-31 22:03:31] [INFO]   Deduplication saved processing 100% of files!
+[2025-08-31 22:03:31] [INFO] === PhoneSync Completed ===
+[2025-08-31 22:06:17] [INFO] === PhoneSync Started ===
+[2025-08-31 22:06:17] [INFO] Starting PhoneSync with configuration from config.json
+[2025-08-31 22:06:17] [WARN] DRY RUN MODE - No files will be copied
+[2025-08-31 22:06:17] [INFO] Building cache of existing files in target directories...
+[2025-08-31 22:06:17] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Pictures
+[2025-08-31 22:06:17] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos
+[2025-08-31 22:06:17] [INFO] Scanning existing files in: Z:\PhotoSync_Test\My Videos\Wudan
+[2025-08-31 22:06:17] [INFO] Cache built successfully. Found 90 existing files across all target directories.
+[2025-08-31 22:06:17] [INFO] Processing directory: Z:\PhotoSync_Test\Source
+[2025-08-31 22:06:17] [INFO] Found 60 files to process
+[2025-08-31 22:06:17] [INFO] Pre-filtering files using deduplication cache...
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241127_072325.jpg in 2024_11_27_TestEvent
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241127_072325.jpg (Size: 4378026 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241127_072406.jpg in 2024_11_27_TestEvent
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241127_072406.jpg (Size: 2529879 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241127_080259.jpg in 2024_11_27_TestEvent
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241127_080259.jpg (Size: 2223504 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_11_27 for pattern 2024_11_27
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241127_080352.jpg in 2024_11_27_TestEvent
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241127_080352.jpg (Size: 1744103 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_03 for pattern 2024_12_03
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241203_070547.jpg in 2024_12_03
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241203_070547.jpg (Size: 1698945 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_03 for pattern 2024_12_03
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241203_092512.jpg in 2024_12_03
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241203_092512.jpg (Size: 340935 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_04 for pattern 2024_12_04
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241204_195042_1.mp4 in 2024_12_04_WudanClass
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241204_195042_1.mp4 (Size: 46334770 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_06 for pattern 2024_12_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241206_070804.jpg in 2024_12_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241206_070804.jpg (Size: 3904856 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_06 for pattern 2024_12_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241206_072817.jpg in 2024_12_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241206_072817.jpg (Size: 2636465 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_06 for pattern 2024_12_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241206_080503.jpg in 2024_12_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241206_080503.jpg (Size: 1717519 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_07 for pattern 2024_12_07
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241207_201035.jpg in 2024_12_07
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241207_201035.jpg (Size: 1601696 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241208_094652_1.mp4 in 2024_12_08
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241208_094652_1.mp4 (Size: 29686733 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241208_094944_1.mp4 in 2024_12_08
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241208_094944_1.mp4 (Size: 14635144 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241208_101819_1.mp4 in 2024_12_08
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241208_101819_1.mp4 (Size: 38619734 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_08 for pattern 2024_12_08
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241208_114720_1.mp4 in 2024_12_08
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241208_114720_1.mp4 (Size: 66083492 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_10 for pattern 2024_12_10
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241210_071522.jpg in 2024_12_10
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241210_071522.jpg (Size: 2189065 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_10 for pattern 2024_12_10
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241210_071558.jpg in 2024_12_10
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241210_071558.jpg (Size: 3015400 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_10_Test2 for pattern 2024_12_10
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241210_090140_1.mp4 in 2024_12_10_Test2
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241210_090140_1.mp4 (Size: 55028535 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_10 for pattern 2024_12_10
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241210_091107.jpg in 2024_12_10
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241210_091107.jpg (Size: 934257 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_11 for pattern 2024_12_11
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241211_094651_1.mp4 in 2024_12_11
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241211_094651_1.mp4 (Size: 49452995 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_11 for pattern 2024_12_11
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241211_105207_1.mp4 in 2024_12_11
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241211_105207_1.mp4 (Size: 32070249 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_12_Test1 for pattern 2024_12_12
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241212_081716_1.mp4 in 2024_12_12_Test1
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241212_081716_1.mp4 (Size: 83855318 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_12_Test1 for pattern 2024_12_12
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241212_083659_1.mp4 in 2024_12_12_Test1
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241212_083659_1.mp4 (Size: 75851989 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_15 for pattern 2024_12_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241215_105459_1.mp4 in 2024_12_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241215_105459_1.mp4 (Size: 67589070 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_15 for pattern 2024_12_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241215_110934_1.mp4 in 2024_12_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241215_110934_1.mp4 (Size: 16071337 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_15 for pattern 2024_12_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241215_111821_1.mp4 in 2024_12_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241215_111821_1.mp4 (Size: 73908871 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241218_071235.jpg in 2024_12_18
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241218_071235.jpg (Size: 1638475 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241218_072520.jpg in 2024_12_18
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241218_072520.jpg (Size: 2268766 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241218_075459_1.mp4 in 2024_12_18
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241218_075459_1.mp4 (Size: 72555865 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_12_18 for pattern 2024_12_18
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20241218_081644_1.mp4 in 2024_12_18
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20241218_081644_1.mp4 (Size: 78008139 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250406_092556_1.mp4 in 2025_04_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250406_092556_1.mp4 (Size: 33782827 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250406_092818_1.mp4 in 2025_04_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250406_092818_1.mp4 (Size: 31704863 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250406_101857_1.mp4 in 2025_04_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250406_101857_1.mp4 (Size: 151619111 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_04_06 for pattern 2025_04_06
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250406_110016_1.mp4 in 2025_04_06
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250406_110016_1.mp4 (Size: 128363474 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_04_12 for pattern 2025_04_12
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250410_192507_1.mp4 in 2025_04_12
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250410_192507_1.mp4 (Size: 17933314 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_05_04 for pattern 2025_05_04
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250504_101933_1.mp4 in 2025_05_04
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250504_101933_1.mp4 (Size: 52180680 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_05_04 for pattern 2025_05_04
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250504_110956_1.mp4 in 2025_05_04
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250504_110956_1.mp4 (Size: 14626328 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_05_04 for pattern 2025_05_04
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250504_113836_1.mp4 in 2025_05_04
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250504_113836_1.mp4 (Size: 31259308 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_01 for pattern 2025_06_01
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250601_112703_1.mp4 in 2025_06_01
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250601_112703_1.mp4 (Size: 104185258 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_01 for pattern 2025_06_01
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250601_115907.mp4 in 2025_06_01
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250601_115907.mp4 (Size: 131307641 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_08 for pattern 2025_06_08
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250608_092506.mp4 in 2025_06_08
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250608_092506.mp4 (Size: 11087653 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_13 for pattern 2025_06_13
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250613_075513.mp4 in 2025_06_13
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250613_075513.mp4 (Size: 54065135 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_13 for pattern 2025_06_13
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250613_080128.mp4 in 2025_06_13
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250613_080128.mp4 (Size: 76592937 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250615_094804.mp4 in 2025_06_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250615_094804.mp4 (Size: 17675576 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250615_100341.mp4 in 2025_06_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250615_100341.mp4 (Size: 8194185 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250615_100407.mp4 in 2025_06_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250615_100407.mp4 (Size: 13867245 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250615_102535 (1).mp4 in 2025_06_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250615_102535 (1).mp4 (Size: 23689939 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_15 for pattern 2025_06_15
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250615_104338.mp4 in 2025_06_15
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250615_104338.mp4 (Size: 47868494 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250622_093448.mp4 in 2025_06_22
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250622_093448.mp4 (Size: 11291015 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250622_094545.jpg in 2025_06_22
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250622_094545.jpg (Size: 3645485 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250622_100122.mp4 in 2025_06_22
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250622_100122.mp4 (Size: 44939773 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250622_105414.mp4 in 2025_06_22
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250622_105414.mp4 (Size: 20598086 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_22 for pattern 2025_06_22
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250622_112054.mp4 in 2025_06_22
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250622_112054.mp4 (Size: 68076666 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_06_25 for pattern 2025_06_25
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250625_192654.jpg in 2025_06_25
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250625_192654.jpg (Size: 3438984 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_07_20 for pattern 2025_07_20
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250720_105916.mp4 in 2025_07_20
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250720_105916.mp4 (Size: 53102546 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_08_25 for pattern 2025_08_25
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250825_194314.jpg in 2025_08_25
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250825_194314.jpg (Size: 1699925 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2025_08_30 for pattern 2025_08_30
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: 20250830_090725.mp4 in 2025_08_30
+[2025-08-31 22:06:17] [INFO] File already exists in target: 20250830_090725.mp4 (Size: 88153141 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2021_11_14 for pattern 2021_11_14
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: mmexport1636907148566.jpg in 2021_11_14
+[2025-08-31 22:06:17] [INFO] File already exists in target: mmexport1636907148566.jpg (Size: 158066 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2023_03_04 for pattern 2023_03_04
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: RebelUnicornTaiChiClub3.jpg in 2023_03_04
+[2025-08-31 22:06:17] [INFO] File already exists in target: RebelUnicornTaiChiClub3.jpg (Size: 183777 bytes)
+[2025-08-31 22:06:17] [INFO] Found existing date folder: 2024_10_27 for pattern 2024_10_27
+[2025-08-31 22:06:17] [INFO] Found existing file in date-matched folder: VideoCapture_20241027-110745.jpg in 2024_10_27
+[2025-08-31 22:06:17] [INFO] File already exists in target: VideoCapture_20241027-110745.jpg (Size: 147973 bytes)
+[2025-08-31 22:06:17] [INFO] Pre-filtering complete. Will process 0 files, skipping 60 duplicates.
+[2025-08-31 22:06:17] [INFO] Directory processing complete.
+[2025-08-31 22:06:17] [INFO]   Total files found: 60
+[2025-08-31 22:06:17] [INFO]   Files skipped (duplicates): 60
+[2025-08-31 22:06:17] [INFO]   Files processed: 0
+[2025-08-31 22:06:17] [INFO]   Errors: 0
+[2025-08-31 22:06:17] [INFO]   Deduplication saved processing 100% of files!
+[2025-08-31 22:06:17] [INFO] === PhoneSync Completed ===
