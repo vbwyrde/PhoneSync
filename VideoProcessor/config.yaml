@@ -1,0 +1,95 @@
+# PhoneSync + VideoProcessor - Unified Configuration
+# Combines file organization (PhoneSync) with video analysis (VideoProcessor)
+
+# Source and target paths
+source_folders:
+  - "Z:/PhotoSync_Test/Source"
+
+target_paths:
+  pictures: "Z:/PhotoSync_Test/My Pictures"
+  videos: "Z:/PhotoSync_Test/My Videos"
+  wudan_videos: "Z:/PhotoSync_Test/My Videos/Wudan"
+  notes: "Z:/PhotoSync_Test/Video_Notes"  # New: For AI-generated video notes
+
+# File type configuration
+file_extensions:
+  pictures: [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff"]
+  videos: [".mp4", ".avi", ".mov", ".wmv", ".mkv", ".flv", ".webm"]
+
+# Wudan time-based rules (converted from PowerShell logic)
+wudan_rules:
+  description: "Time ranges when video files should go to Wudan folder"
+  before_2021:
+    days_of_week: [1, 2, 3, 4, 6]  # Mon-Thu, Sat (Monday=1, Sunday=0)
+    time_ranges:
+      - {start: "05:00", end: "08:00"}
+      - {start: "18:00", end: "22:00"}
+  after_2021:
+    days_of_week: [0, 1, 2, 3, 4, 6]  # Sun-Thu, Sat
+    time_ranges:
+      0: [{start: "08:00", end: "13:00"}]  # Sunday
+      1: [{start: "05:00", end: "08:00"}, {start: "18:00", end: "21:00"}]  # Monday
+      2: [{start: "05:00", end: "08:00"}, {start: "18:00", end: "21:00"}]  # Tuesday
+      3: [{start: "18:00", end: "22:00"}]  # Wednesday
+      4: [{start: "05:00", end: "08:00"}, {start: "18:00", end: "21:00"}]  # Thursday
+      6: [{start: "08:00", end: "16:00"}]  # Saturday
+
+# AI and video processing settings
+ai_settings:
+  lm_studio_url: "http://localhost:1234/v1/chat/completions"
+  model: "mimo-vl-7b-rl@q8_k_xl"
+  temperature: 0.4
+  max_tokens: 150
+  timeout_seconds: 30
+  kung_fu_prompt: |
+    Analyze this video thumbnail for kung fu or martial arts content. 
+    Look for:
+    - Martial arts poses, stances, or movements
+    - Traditional weapons (swords, staffs, etc.)
+    - Training equipment or environments
+    - People in martial arts uniforms
+    
+    Provide a brief description (1-2 sentences) focusing on:
+    - Whether martial arts content is present
+    - What specific martial arts activity or style if identifiable
+    - Key visual elements
+    
+    If no martial arts content is visible, describe what you see instead.
+
+# Video processing settings
+video_processing:
+  thumbnail_time: "00:00:10"  # Extract thumbnail at 10-second mark
+  thumbnail_scale: "320:240"  # Thumbnail dimensions
+  ffmpeg_timeout: 30  # Timeout for FFmpeg operations
+  process_existing: false  # Only process videos not already in target folders
+  
+# System options (converted from PowerShell config)
+options:
+  enable_deduplication: true
+  use_hash_comparison: false  # Use name+size comparison instead of hash
+  create_missing_folders: true
+  dry_run: false
+  verbose_logging: false
+  force_recopy_if_newer: true
+  copy_files: true  # Set to false for move operation instead
+
+# Logging configuration
+logging:
+  enabled: true
+  log_path: "logs/phone_sync.log"
+  max_log_size_mb: 10
+  keep_log_days: 14  # Reduced from 30 to 14 days as specified
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  rotation_enabled: true
+
+# Performance settings
+performance:
+  max_concurrent_operations: 4  # Number of parallel file operations
+  cache_existing_files: true  # Build cache of existing files for deduplication
+  progress_reporting_interval: 100  # Report progress every N files
+
+# Development and testing settings
+development:
+  test_mode: false  # Enable additional test logging
+  mock_ai_responses: false  # Use mock responses instead of real AI calls
+  skip_video_analysis: false  # Skip AI analysis for testing file organization only

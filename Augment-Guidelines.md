@@ -118,6 +118,21 @@ PhoneSync/                          # Root project directory
 - **Don't assume Windows CMD**: Environment uses bash shell
 - **Don't use Windows-specific commands** without testing
 - **Always activate virtual environment** before Python operations
+- **Terminal interruptions**: Some commands may get interrupted (Ctrl+C behavior) - use simpler test approaches first
+- **Direct vs Python subprocess**: Direct terminal commands may fail (return code 130) while Python subprocess.run() works perfectly
+- **FFmpeg behavior**: FFmpeg works through Python subprocess but may not work in direct bash commands
+
+### **Critical Terminal Display Issue - SOLUTION**
+- **Return code 130 does NOT mean failure**: Commands may show return code 130 but actually execute successfully
+- **ALWAYS use `read-terminal` tool**: When seeing return code 130, immediately use `read-terminal` to see actual output
+- **Don't ask user for confirmation**: Use the `read-terminal` tool instead of asking user to provide terminal output
+- **Terminal shows real results**: The `read-terminal` tool shows the actual execution results, not the launch-process response
+- **Simple workflow**: launch-process → see code 130 → immediately call read-terminal → see real results
+
+### **FFmpeg Issues**
+- **Check FFmpeg installation**: FFmpeg may not be installed or in PATH
+- **Test availability first**: Always test `ffmpeg -version` before complex operations
+- **Alternative approaches**: Consider using online FFmpeg or bundled solutions if system FFmpeg unavailable
 
 ### **File Operations**
 - **Test file paths** on target system before deployment

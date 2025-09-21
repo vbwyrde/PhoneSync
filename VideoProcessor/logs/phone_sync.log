@@ -1,0 +1,174 @@
+2025-09-21 17:02:57 - phone_sync - INFO - Info message test
+2025-09-21 17:02:57 - phone_sync - WARNING - Warning message test
+2025-09-21 17:02:57 - phone_sync - ERROR - Error message test
+2025-09-21 17:02:57 - phone_sync - INFO - === System Information ===
+2025-09-21 17:02:57 - phone_sync - INFO - Python version: 3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]
+2025-09-21 17:02:57 - phone_sync - INFO - Platform: Windows-10-10.0.22621-SP0
+2025-09-21 17:02:57 - phone_sync - INFO - Start time: 2025-09-21 17:02:57
+2025-09-21 17:02:57 - phone_sync - INFO - === Configuration Summary ===
+2025-09-21 17:02:57 - phone_sync - INFO - Source folders: 1
+2025-09-21 17:02:57 - phone_sync - INFO - Deduplication enabled: True
+2025-09-21 17:02:57 - phone_sync - INFO - Video analysis enabled: True
+2025-09-21 17:02:57 - phone_sync - INFO - Dry run mode: False
+2025-09-21 17:02:57 - phone_sync - INFO - Progress: 20.0% (50/250)
+2025-09-21 17:02:57 - phone_sync - INFO - Progress: 40.0% (100/250)
+2025-09-21 17:02:57 - phone_sync - INFO - Progress: 60.0% (150/250)
+2025-09-21 17:02:57 - phone_sync - INFO - Progress: 80.0% (200/250)
+2025-09-21 17:02:57 - phone_sync - INFO - Progress: 100.0% (250/250)
+2025-09-21 17:02:57 - phone_sync - INFO - Processing complete: 250/250 items
+2025-09-21 17:02:57 - phone_sync - INFO - Configuration and logging test suite completed successfully
+2025-09-21 17:15:42 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmpnrriwoq3
+2025-09-21 17:15:42 - phone_sync - INFO - Found 9 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmpnrriwoq3
+2025-09-21 17:15:42 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-21 17:15:42 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpv4rpkgdg\Pictures
+2025-09-21 17:15:42 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpv4rpkgdg\Videos
+2025-09-21 17:15:42 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpv4rpkgdg\Videos\Wudan
+2025-09-21 17:15:42 - phone_sync - INFO - Cache built successfully. Found 4 existing files across all target directories.
+2025-09-21 17:15:42 - phone_sync - INFO - Found existing file in date-matched folder: IMG_001.jpg in 2023_06_15
+2025-09-21 17:15:42 - phone_sync - INFO - File already exists in target: IMG_001.jpg (Size: 24 bytes)
+2025-09-21 17:15:42 - phone_sync - INFO - Found existing date folder: 2023_06_15_Training for pattern 2023_06_15
+2025-09-21 17:15:42 - phone_sync - INFO - Core modules test suite completed successfully
+2025-09-21 17:25:30 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmp74atinit\source
+2025-09-21 17:25:30 - phone_sync - INFO - Found 6 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmp74atinit\source
+2025-09-21 17:25:30 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-21 17:25:30 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures
+2025-09-21 17:25:30 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos
+2025-09-21 17:25:30 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\Wudan
+2025-09-21 17:25:30 - phone_sync - INFO - Cache built successfully. Found 0 existing files across all target directories.
+2025-09-21 17:25:30 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source
+2025-09-21 17:25:30 - phone_sync - INFO - Found 6 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source
+2025-09-21 17:25:30 - phone_sync - INFO - Starting batch organization of 6 files
+2025-09-21 17:25:30 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\20230616_150000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2023_06_16\20230616_150000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures\2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\20230616_photo.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures\2023_06_16\20230616_photo.jpg
+2025-09-21 17:25:30 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures\2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\IMG_20230615_143022.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures\2023_06_15\IMG_20230615_143022.jpg
+2025-09-21 17:25:30 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2020_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\TRAINING_20200615_070000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2020_06_15\TRAINING_20200615_070000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\VID_20230615_120000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2023_06_15\VID_20230615_120000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2021_03_07
+2025-09-21 17:25:30 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\WUDAN_20210307_100000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2021_03_07\WUDAN_20210307_100000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Batch organization complete: 6 successful, 0 failed, 0 skipped
+2025-09-21 17:25:30 - phone_sync - INFO - Starting batch organization of 6 files
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\20230616_150000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2023_06_16\20230616_150000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\20230616_photo.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures\2023_06_16\20230616_photo.jpg
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\IMG_20230615_143022.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Pictures\2023_06_15\IMG_20230615_143022.jpg
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2020_06_15 for pattern 2020_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\TRAINING_20200615_070000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2020_06_15\TRAINING_20200615_070000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\VID_20230615_120000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2023_06_15\VID_20230615_120000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2021_03_07 for pattern 2021_03_07
+2025-09-21 17:25:30 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\source\WUDAN_20210307_100000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpyf8lfzym\Videos\2021_03_07\WUDAN_20210307_100000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Batch organization complete: 6 successful, 0 failed, 0 skipped
+2025-09-21 17:25:30 - phone_sync - INFO - Starting batch organization of 6 files
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing file in date-matched folder: 20230616_150000.mp4 in 2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - File already exists in target: 20230616_150000.mp4 (Size: 23 bytes)
+2025-09-21 17:25:30 - phone_sync - INFO - Skipping duplicate file: 20230616_150000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing file in date-matched folder: 20230616_photo.jpg in 2023_06_16
+2025-09-21 17:25:30 - phone_sync - INFO - File already exists in target: 20230616_photo.jpg (Size: 22 bytes)
+2025-09-21 17:25:30 - phone_sync - INFO - Skipping duplicate file: 20230616_photo.jpg
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing file in date-matched folder: IMG_20230615_143022.jpg in 2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - File already exists in target: IMG_20230615_143022.jpg (Size: 22 bytes)
+2025-09-21 17:25:30 - phone_sync - INFO - Skipping duplicate file: IMG_20230615_143022.jpg
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2020_06_15 for pattern 2020_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing file in date-matched folder: TRAINING_20200615_070000.mp4 in 2020_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - File already exists in target: TRAINING_20200615_070000.mp4 (Size: 21 bytes)
+2025-09-21 17:25:30 - phone_sync - INFO - Skipping duplicate file: TRAINING_20200615_070000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing file in date-matched folder: VID_20230615_120000.mp4 in 2023_06_15
+2025-09-21 17:25:30 - phone_sync - INFO - File already exists in target: VID_20230615_120000.mp4 (Size: 23 bytes)
+2025-09-21 17:25:30 - phone_sync - INFO - Skipping duplicate file: VID_20230615_120000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing date folder: 2021_03_07 for pattern 2021_03_07
+2025-09-21 17:25:30 - phone_sync - INFO - Found existing file in date-matched folder: WUDAN_20210307_100000.mp4 in 2021_03_07
+2025-09-21 17:25:30 - phone_sync - INFO - File already exists in target: WUDAN_20210307_100000.mp4 (Size: 21 bytes)
+2025-09-21 17:25:30 - phone_sync - INFO - Skipping duplicate file: WUDAN_20210307_100000.mp4
+2025-09-21 17:25:30 - phone_sync - INFO - Batch organization complete: 6 successful, 0 failed, 6 skipped
+2025-09-21 17:25:30 - phone_sync - INFO - File organization test suite completed successfully
+2025-09-21 17:26:52 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmpvu7oem_0\source
+2025-09-21 17:26:52 - phone_sync - INFO - Found 6 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmpvu7oem_0\source
+2025-09-21 17:26:52 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-21 17:26:52 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures
+2025-09-21 17:26:52 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos
+2025-09-21 17:26:52 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\Wudan
+2025-09-21 17:26:52 - phone_sync - INFO - Cache built successfully. Found 0 existing files across all target directories.
+2025-09-21 17:26:52 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source
+2025-09-21 17:26:52 - phone_sync - INFO - Found 6 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source
+2025-09-21 17:26:52 - phone_sync - INFO - Starting batch organization of 6 files
+2025-09-21 17:26:52 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\20230616_150000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2023_06_16\20230616_150000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures\2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\20230616_photo.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures\2023_06_16\20230616_photo.jpg
+2025-09-21 17:26:52 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures\2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\IMG_20230615_143022.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures\2023_06_15\IMG_20230615_143022.jpg
+2025-09-21 17:26:52 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2020_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\TRAINING_20200615_070000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2020_06_15\TRAINING_20200615_070000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\VID_20230615_120000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2023_06_15\VID_20230615_120000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Created directory: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2021_03_07
+2025-09-21 17:26:52 - phone_sync - INFO - [DRY RUN] Would copy: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\WUDAN_20210307_100000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2021_03_07\WUDAN_20210307_100000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Batch organization complete: 6 successful, 0 failed, 0 skipped
+2025-09-21 17:26:52 - phone_sync - INFO - Starting batch organization of 6 files
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\20230616_150000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2023_06_16\20230616_150000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\20230616_photo.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures\2023_06_16\20230616_photo.jpg
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\IMG_20230615_143022.jpg -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Pictures\2023_06_15\IMG_20230615_143022.jpg
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2020_06_15 for pattern 2020_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\TRAINING_20200615_070000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2020_06_15\TRAINING_20200615_070000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\VID_20230615_120000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2023_06_15\VID_20230615_120000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2021_03_07 for pattern 2021_03_07
+2025-09-21 17:26:52 - phone_sync - INFO - Copied: C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\source\WUDAN_20210307_100000.mp4 -> C:\Users\mabramsR\AppData\Local\Temp\tmpbq2p747i\Videos\2021_03_07\WUDAN_20210307_100000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Batch organization complete: 6 successful, 0 failed, 0 skipped
+2025-09-21 17:26:52 - phone_sync - INFO - Starting batch organization of 6 files
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing file in date-matched folder: 20230616_150000.mp4 in 2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - File already exists in target: 20230616_150000.mp4 (Size: 23 bytes)
+2025-09-21 17:26:52 - phone_sync - INFO - Skipping duplicate file: 20230616_150000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_16 for pattern 2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing file in date-matched folder: 20230616_photo.jpg in 2023_06_16
+2025-09-21 17:26:52 - phone_sync - INFO - File already exists in target: 20230616_photo.jpg (Size: 22 bytes)
+2025-09-21 17:26:52 - phone_sync - INFO - Skipping duplicate file: 20230616_photo.jpg
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing file in date-matched folder: IMG_20230615_143022.jpg in 2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - File already exists in target: IMG_20230615_143022.jpg (Size: 22 bytes)
+2025-09-21 17:26:52 - phone_sync - INFO - Skipping duplicate file: IMG_20230615_143022.jpg
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2020_06_15 for pattern 2020_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing file in date-matched folder: TRAINING_20200615_070000.mp4 in 2020_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - File already exists in target: TRAINING_20200615_070000.mp4 (Size: 21 bytes)
+2025-09-21 17:26:52 - phone_sync - INFO - Skipping duplicate file: TRAINING_20200615_070000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2023_06_15 for pattern 2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing file in date-matched folder: VID_20230615_120000.mp4 in 2023_06_15
+2025-09-21 17:26:52 - phone_sync - INFO - File already exists in target: VID_20230615_120000.mp4 (Size: 23 bytes)
+2025-09-21 17:26:52 - phone_sync - INFO - Skipping duplicate file: VID_20230615_120000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing date folder: 2021_03_07 for pattern 2021_03_07
+2025-09-21 17:26:52 - phone_sync - INFO - Found existing file in date-matched folder: WUDAN_20210307_100000.mp4 in 2021_03_07
+2025-09-21 17:26:52 - phone_sync - INFO - File already exists in target: WUDAN_20210307_100000.mp4 (Size: 21 bytes)
+2025-09-21 17:26:52 - phone_sync - INFO - Skipping duplicate file: WUDAN_20210307_100000.mp4
+2025-09-21 17:26:52 - phone_sync - INFO - Batch organization complete: 6 successful, 0 failed, 6 skipped
+2025-09-21 17:26:52 - phone_sync - INFO - File organization test suite completed successfully
+2025-09-21 17:38:32 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-21 17:38:32 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpjygm8ije\Pictures
+2025-09-21 17:38:32 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpjygm8ije\Videos
+2025-09-21 17:38:32 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmpjygm8ije\Videos\Wudan
+2025-09-21 17:38:32 - phone_sync - INFO - Cache built successfully. Found 8 existing files across all target directories.
+2025-09-21 17:38:32 - phone_sync - INFO - Found existing file in date-matched folder: 20250412_110016_1.jpg matches 20250412_110016_1_KungFu_GimStyle.jpg in 2025_04_12
+2025-09-21 17:38:32 - phone_sync - INFO - File already exists in target: 20250412_110016_1.jpg (Size: 1000 bytes)
+2025-09-21 17:38:32 - phone_sync - INFO - Found existing file in date-matched folder: 20250412_292993_1.mp4 matches 20250412_292993_1_KungFu_GimStyle.mp4 in 2025_04_12
+2025-09-21 17:38:32 - phone_sync - INFO - File already exists in target: 20250412_292993_1.mp4 (Size: 5000 bytes)
+2025-09-21 17:38:32 - phone_sync - INFO - Found existing file in date-matched folder: 20250412_080000_1.mp4 matches 20250412_080000_1_MorningPractice.mp4 in 2025_04_12_Training
+2025-09-21 17:38:32 - phone_sync - INFO - File already exists in target: 20250412_080000_1.mp4 (Size: 3000 bytes)
+2025-09-21 17:38:32 - phone_sync - INFO - Found existing file in date-matched folder: 20250413_150000_1.mp4 matches 20250413_150000_1.mp4 in 2025_04_13
+2025-09-21 17:38:32 - phone_sync - INFO - File already exists in target: 20250413_150000_1.mp4 (Size: 2000 bytes)
+2025-09-21 17:38:32 - phone_sync - INFO - Found existing file in date-matched folder: M4H01890.MP4 matches M4H01890_CameraFootage.MP4 in 2025_04_14
+2025-09-21 17:38:32 - phone_sync - INFO - File already exists in target: M4H01890.MP4 (Size: 4000 bytes)
+2025-09-21 17:38:32 - phone_sync - INFO - Flexible deduplication test suite completed successfully
