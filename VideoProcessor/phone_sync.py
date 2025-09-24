@@ -21,6 +21,7 @@ from modules.logger_setup import setup_logging
 from modules.file_scanner import FileScanner
 from modules.wudan_rules import WudanRulesEngine
 from modules.deduplication import DeduplicationManager
+from modules.target_path_resolver import TargetPathResolver
 from modules.file_organizer import FileOrganizer
 from modules.video_analyzer import VideoAnalyzer
 from modules.notes_generator import NotesGenerator
@@ -36,11 +37,12 @@ class PhoneSyncProcessor:
         # Initialize logging
         self.logger = setup_logging(self.config)
         
-        # Initialize components
+        # Initialize components in correct order (dependencies)
         self.file_scanner = FileScanner(self.config, self.logger)
         self.wudan_engine = WudanRulesEngine(self.config, self.logger)
         self.dedup_manager = DeduplicationManager(self.config, self.logger)
-        self.file_organizer = FileOrganizer(self.config, self.logger)
+        self.target_resolver = TargetPathResolver(self.config, self.logger, self.wudan_engine, self.dedup_manager)
+        self.file_organizer = FileOrganizer(self.config, self.logger, self.target_resolver, self.dedup_manager)
         self.video_analyzer = VideoAnalyzer(self.config, self.logger)
         self.notes_generator = NotesGenerator(self.config, self.logger)
         
@@ -127,10 +129,12 @@ class PhoneSyncProcessor:
                                 self.stats['videos_analyzed'] += 1
                                 
                                 # Generate notes file
+                                video_directory = str(Path(video_info['target_path']).parent)
                                 self.notes_generator.add_video_note(
                                     video_info['file_date'],
                                     Path(video_info['target_path']).name,
                                     analysis_result['description'],
+                                    video_directory,
                                     dry_run=dry_run
                                 )
                         

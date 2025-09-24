@@ -1,5 +1,6 @@
 # PhoneSync + VideoProcessor - Unified Configuration
-# Combines file organization (PhoneSync) with video analysis (VideoProcessor)
+# Combines file organization (PhoneSync) with AI video analysis (VideoProcessor)
+# Single configuration file for the entire project
 
 # Source and target paths
 source_folders:
@@ -8,8 +9,7 @@ source_folders:
 target_paths:
   pictures: "Z:/PhotoSync_Test/My Pictures"
   videos: "Z:/PhotoSync_Test/My Videos"
-  wudan_videos: "Z:/PhotoSync_Test/My Videos/Wudan"
-  notes: "Z:/PhotoSync_Test/Video_Notes"  # New: For AI-generated video notes
+  wudan: "Z:/PhotoSync_Test/My Videos/Wudan"  # Standardized key name
 
 # File type configuration
 file_extensions:
@@ -42,28 +42,32 @@ ai_settings:
   max_tokens: 150
   timeout_seconds: 30
   kung_fu_prompt: |
-    Analyze this video thumbnail for kung fu or martial arts content. 
-    Look for:
+    Analyze this video thumbnail for kung fu or martial arts content. Look for:
     - Martial arts poses, stances, or movements
-    - Traditional weapons (swords, staffs, etc.)
-    - Training equipment or environments
-    - People in martial arts uniforms
-    
-    Provide a brief description (1-2 sentences) focusing on:
-    - Whether martial arts content is present
-    - What specific martial arts activity or style if identifiable
-    - Key visual elements
-    
-    If no martial arts content is visible, describe what you see instead.
+    - Fighting techniques or combat training
+    - Traditional Chinese martial arts (kung fu, wushu, tai chi)
+    - Training equipment (wooden dummies, weapons, mats)
+    - Text mentioning martial arts terms (kung fu, wushu, bagua, tai chi, etc.)
+    - People in martial arts uniforms or practicing forms
+
+    IMPORTANT: Look carefully for any TEXT in the image that describes the name of the martial arts form being practiced (e.g., "Bagua - Old 8 Palms", "Dragon Walking Sword", "Chen Style Tai Chi", etc.). If you find such text, use that EXACT text as your description.
+
+    If you see ANY martial arts elements, respond with YES. Only respond with NO if there are clearly no martial arts elements present.
+
+    After your YES/NO answer, provide a brief description (maximum 10 words):
+    - If there is text naming a specific form, use that exact text
+    - Otherwise, briefly describe the martial arts content you see
+    - If no martial arts content is visible, briefly describe what you see instead
 
 # Video processing settings
 video_processing:
-  thumbnail_time: "00:00:10"  # Extract thumbnail at 10-second mark
+  thumbnail_extraction: "dynamic_midpoint"  # "dynamic_midpoint" or "fixed_timestamp"
+  thumbnail_time: "00:00:10"  # Used only if thumbnail_extraction is "fixed_timestamp"
   thumbnail_scale: "320:240"  # Thumbnail dimensions
   ffmpeg_timeout: 30  # Timeout for FFmpeg operations
   process_existing: false  # Only process videos not already in target folders
   
-# System options (converted from PowerShell config)
+# System options (unified from both config files)
 options:
   enable_deduplication: true
   use_hash_comparison: false  # Use name+size comparison instead of hash
@@ -72,13 +76,14 @@ options:
   verbose_logging: false
   force_recopy_if_newer: true
   copy_files: true  # Set to false for move operation instead
+  enable_video_analysis: true  # Enable AI video analysis for kung fu detection
 
-# Logging configuration
+# Logging configuration (unified)
 logging:
   enabled: true
   log_path: "logs/phone_sync.log"
   max_log_size_mb: 10
-  keep_log_days: 14  # Reduced from 30 to 14 days as specified
+  keep_log_days: 30  # Restored to original 30 days
   log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
   rotation_enabled: true
 

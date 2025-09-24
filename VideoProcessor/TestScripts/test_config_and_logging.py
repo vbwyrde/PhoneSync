@@ -19,7 +19,7 @@ def test_config_loading():
     
     try:
         # Test loading the config file
-        config_manager = ConfigManager("config.yaml")
+        config_manager = ConfigManager("../config.yaml")
         config = config_manager.load_config()
         
         print("✅ Configuration loaded successfully")
@@ -31,7 +31,7 @@ def test_config_loading():
         target_paths = {
             'pictures': config_manager.get_target_path('pictures'),
             'videos': config_manager.get_target_path('videos'),
-            'wudan_videos': config_manager.get_target_path('wudan_videos'),
+            'wudan': config_manager.get_target_path('wudan'),
             'notes': config_manager.get_target_path('notes')
         }
         print(f"✅ Target paths configured: {list(target_paths.keys())}")

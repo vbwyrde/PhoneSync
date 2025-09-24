@@ -28,7 +28,7 @@ class DeduplicationManager:
         self.target_paths = [
             config['target_paths']['pictures'],
             config['target_paths']['videos'],
-            config['target_paths']['wudan_videos']
+            config['target_paths']['wudan']
         ]
     
     def build_cache(self) -> int:

@@ -28,7 +28,7 @@ def main():
     
     try:
         # Load configuration
-        config_manager = ConfigManager("config.yaml")
+        config_manager = ConfigManager("../config.yaml")
         config = config_manager.load_config()
         logger = setup_logging(config)
         
@@ -37,7 +37,7 @@ def main():
         target_paths = {
             'pictures': str(temp_dir / "Pictures"),
             'videos': str(temp_dir / "Videos"),
-            'wudan_videos': str(temp_dir / "Videos" / "Wudan"),
+            'wudan': str(temp_dir / "Videos" / "Wudan"),
             'notes': str(temp_dir / "Notes")
         }
         
@@ -81,7 +81,7 @@ def main():
         print(f"\nTarget paths configured:")
         print(f"  Pictures: {target_paths['pictures']}")
         print(f"  Videos: {target_paths['videos']}")
-        print(f"  Wudan Videos: {target_paths['wudan_videos']}")
+        print(f"  Wudan Videos: {target_paths['wudan']}")
         
         for file_info in test_files:
             print(f"\n--- Testing {file_info['name']} ---")

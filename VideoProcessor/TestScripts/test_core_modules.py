@@ -246,7 +246,7 @@ def main():
     
     try:
         # Load configuration
-        config_manager = ConfigManager("config.yaml")
+        config_manager = ConfigManager("../config.yaml")
         config = config_manager.load_config()
         logger = setup_logging(config)
         

@@ -172,3 +172,85 @@
 2025-09-21 17:38:32 - phone_sync - INFO - Found existing file in date-matched folder: M4H01890.MP4 matches M4H01890_CameraFootage.MP4 in 2025_04_14
 2025-09-21 17:38:32 - phone_sync - INFO - File already exists in target: M4H01890.MP4 (Size: 4000 bytes)
 2025-09-21 17:38:32 - phone_sync - INFO - Flexible deduplication test suite completed successfully
+2025-09-21 22:36:05 - phone_sync - INFO - Analyzing video: C:\Users\mabramsR\AppData\Local\Temp\tmp5zlqm3b9\kung_fu_test.mp4
+2025-09-21 22:36:09 - phone_sync - WARNING - Failed to parse AI response as JSON: <think>
+Got it, let's analyze the video thumbnail. The image shows a test pattern with color bars (red, green, yellow, blue, magenta, cyan) and some digital elements like timecode "00:00:65:08" and "1...
+2025-09-21 22:36:34 - phone_sync - INFO - Analyzing video: C:\Users\mabramsR\AppData\Local\Temp\tmp62e8fi1n\kung_fu_test.mp4
+2025-09-21 22:36:39 - phone_sync - WARNING - Failed to parse AI response as JSON: <think>
+Got it, let's analyze the video thumbnail. The image shows a test pattern with color bars (red, green, yellow, blue, magenta, cyan) and some digital elements like timecode (00:00:65:06) and nu...
+2025-09-21 22:58:42 - phone_sync - INFO - Analyzing video: C:\Users\mabramsR\AppData\Local\Temp\tmpqoakoola\kung_fu_test.mp4
+2025-09-21 22:58:46 - phone_sync - INFO - AI analysis complete: kung_fu=False, confidence=25%
+2025-09-21 22:58:46 - phone_sync - INFO - Video analysis test suite completed successfully
+2025-09-21 22:59:10 - phone_sync - INFO - Analyzing video: C:\Users\mabramsR\AppData\Local\Temp\tmptsmc9pk1\kung_fu_test.mp4
+2025-09-21 22:59:15 - phone_sync - INFO - AI analysis complete: kung_fu=False, confidence=25%
+2025-09-21 22:59:15 - phone_sync - INFO - Video analysis test suite completed successfully
+2025-09-21 23:12:38 - phone_sync - INFO - Analyzing video: C:\Users\mabramsR\AppData\Local\Temp\tmp7b1ta0e8\kung_fu_test.mp4
+2025-09-21 23:12:42 - phone_sync - INFO - AI analysis complete: kung_fu=False, confidence=25%
+2025-09-21 23:12:42 - phone_sync - INFO - Video analysis test suite completed successfully
+2025-09-21 23:46:49 - phone_sync - INFO - Analyzing video: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4
+2025-09-21 23:46:54 - phone_sync - INFO - AI analysis complete: kung_fu=True, confidence=60%
+2025-09-21 23:46:55 - phone_sync - INFO - Analyzing video: Z:\PhotoSync_Test\Source\20241204_195042_1.mp4
+2025-09-21 23:47:00 - phone_sync - INFO - AI analysis complete: kung_fu=True, confidence=60%
+2025-09-21 23:47:02 - phone_sync - INFO - Analyzing video: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4
+2025-09-21 23:47:08 - phone_sync - INFO - AI analysis complete: kung_fu=True, confidence=60%
+2025-09-21 23:47:08 - phone_sync - INFO - Analyzing video: Z:\PhotoSync_Test\Source\20241208_094652_1.mp4
+2025-09-21 23:47:13 - phone_sync - INFO - AI analysis complete: kung_fu=True, confidence=60%
+2025-09-21 23:47:15 - phone_sync - INFO - Analyzing video: Z:\PhotoSync_Test\Source\20241208_094944_1.mp4
+2025-09-21 23:47:20 - phone_sync - INFO - AI analysis complete: kung_fu=True, confidence=60%
+2025-09-22 17:16:40 - phone_sync - INFO - Info message test
+2025-09-22 17:16:40 - phone_sync - WARNING - Warning message test
+2025-09-22 17:16:40 - phone_sync - ERROR - Error message test
+2025-09-22 17:16:40 - phone_sync - INFO - === System Information ===
+2025-09-22 17:16:40 - phone_sync - INFO - Python version: 3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]
+2025-09-22 17:16:40 - phone_sync - INFO - Platform: Windows-10-10.0.22621-SP0
+2025-09-22 17:16:40 - phone_sync - INFO - Start time: 2025-09-22 17:16:40
+2025-09-22 17:16:40 - phone_sync - INFO - === Configuration Summary ===
+2025-09-22 17:16:40 - phone_sync - INFO - Source folders: 1
+2025-09-22 17:16:40 - phone_sync - INFO - Deduplication enabled: True
+2025-09-22 17:16:40 - phone_sync - INFO - Video analysis enabled: True
+2025-09-22 17:16:40 - phone_sync - INFO - Dry run mode: False
+2025-09-22 17:16:40 - phone_sync - INFO - Progress: 20.0% (50/250)
+2025-09-22 17:16:40 - phone_sync - INFO - Progress: 40.0% (100/250)
+2025-09-22 17:16:40 - phone_sync - INFO - Progress: 60.0% (150/250)
+2025-09-22 17:16:40 - phone_sync - INFO - Progress: 80.0% (200/250)
+2025-09-22 17:16:40 - phone_sync - INFO - Progress: 100.0% (250/250)
+2025-09-22 17:16:40 - phone_sync - INFO - Processing complete: 250/250 items
+2025-09-22 17:16:40 - phone_sync - INFO - Configuration and logging test suite completed successfully
+2025-09-22 20:56:54 - phone_sync - INFO - Info message test
+2025-09-22 20:56:54 - phone_sync - WARNING - Warning message test
+2025-09-22 20:56:54 - phone_sync - ERROR - Error message test
+2025-09-22 20:56:54 - phone_sync - INFO - === System Information ===
+2025-09-22 20:56:54 - phone_sync - INFO - Python version: 3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]
+2025-09-22 20:56:54 - phone_sync - INFO - Platform: Windows-10-10.0.22621-SP0
+2025-09-22 20:56:54 - phone_sync - INFO - Start time: 2025-09-22 20:56:54
+2025-09-22 20:56:54 - phone_sync - INFO - === Configuration Summary ===
+2025-09-22 20:56:54 - phone_sync - INFO - Source folders: 1
+2025-09-22 20:56:54 - phone_sync - INFO - Deduplication enabled: True
+2025-09-22 20:56:54 - phone_sync - INFO - Video analysis enabled: True
+2025-09-22 20:56:54 - phone_sync - INFO - Dry run mode: False
+2025-09-22 20:56:54 - phone_sync - INFO - Progress: 20.0% (50/250)
+2025-09-22 20:56:54 - phone_sync - INFO - Progress: 40.0% (100/250)
+2025-09-22 20:56:54 - phone_sync - INFO - Progress: 60.0% (150/250)
+2025-09-22 20:56:54 - phone_sync - INFO - Progress: 80.0% (200/250)
+2025-09-22 20:56:54 - phone_sync - INFO - Progress: 100.0% (250/250)
+2025-09-22 20:56:54 - phone_sync - INFO - Processing complete: 250/250 items
+2025-09-22 20:56:54 - phone_sync - INFO - Configuration and logging test suite completed successfully
+2025-09-22 21:07:28 - phone_sync - INFO - Info message test
+2025-09-22 21:07:28 - phone_sync - WARNING - Warning message test
+2025-09-22 21:07:28 - phone_sync - ERROR - Error message test
+2025-09-22 21:07:28 - phone_sync - INFO - === System Information ===
+2025-09-22 21:07:28 - phone_sync - INFO - Python version: 3.11.4 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 13:38:37) [MSC v.1916 64 bit (AMD64)]
+2025-09-22 21:07:28 - phone_sync - INFO - Platform: Windows-10-10.0.22621-SP0
+2025-09-22 21:07:28 - phone_sync - INFO - Start time: 2025-09-22 21:07:28
+2025-09-22 21:07:28 - phone_sync - INFO - === Configuration Summary ===
+2025-09-22 21:07:28 - phone_sync - INFO - Source folders: 1
+2025-09-22 21:07:28 - phone_sync - INFO - Deduplication enabled: True
+2025-09-22 21:07:28 - phone_sync - INFO - Video analysis enabled: True
+2025-09-22 21:07:28 - phone_sync - INFO - Dry run mode: False
+2025-09-22 21:07:28 - phone_sync - INFO - Progress: 20.0% (50/250)
+2025-09-22 21:07:28 - phone_sync - INFO - Progress: 40.0% (100/250)
+2025-09-22 21:07:28 - phone_sync - INFO - Progress: 60.0% (150/250)
+2025-09-22 21:07:28 - phone_sync - INFO - Progress: 80.0% (200/250)
+2025-09-22 21:07:28 - phone_sync - INFO - Progress: 100.0% (250/250)
+2025-09-22 21:07:28 - phone_sync - INFO - Processing complete: 250/250 items
+2025-09-22 21:07:28 - phone_sync - INFO - Configuration and logging test suite completed successfully

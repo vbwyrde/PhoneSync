@@ -95,7 +95,7 @@ class TargetPathResolver:
                 # Check Wudan rules for videos
                 if self.wudan_engine.should_go_to_wudan_folder(file_date):
                     self.logger.debug(f"Video matches Wudan rules: {file_date}")
-                    return self.target_paths['wudan_videos']
+                    return self.target_paths['wudan']
                 else:
                     self.logger.debug(f"Video does not match Wudan rules: {file_date}")
                     return self.target_paths['videos']
@@ -219,8 +219,8 @@ class TargetPathResolver:
                 # Determine target type
                 if self.target_paths['pictures'] in target_folder:
                     target_type = 'pictures'
-                elif self.target_paths['wudan_videos'] in target_folder:
-                    target_type = 'wudan_videos'
+                elif self.target_paths['wudan'] in target_folder:
+                    target_type = 'wudan'
                     analysis['wudan_matches'] += 1
                 elif self.target_paths['videos'] in target_folder:
                     target_type = 'videos'
