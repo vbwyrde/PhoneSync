@@ -25,6 +25,7 @@ from modules.target_path_resolver import TargetPathResolver
 from modules.file_organizer import FileOrganizer
 from modules.video_analyzer import VideoAnalyzer
 from modules.notes_generator import NotesGenerator
+from modules.processing_state_manager import ProcessingStateManager
 
 class PhoneSyncProcessor:
     """Main processor that orchestrates file organization and video analysis"""
@@ -45,6 +46,7 @@ class PhoneSyncProcessor:
         self.file_organizer = FileOrganizer(self.config, self.logger, self.target_resolver, self.dedup_manager)
         self.video_analyzer = VideoAnalyzer(self.config, self.logger)
         self.notes_generator = NotesGenerator(self.config, self.logger)
+        self.state_manager = ProcessingStateManager(self.config, self.logger)
         
         self.stats = {
             'files_found': 0,
@@ -67,10 +69,22 @@ class PhoneSyncProcessor:
         """
         try:
             self.logger.info("=== PhoneSync + VideoProcessor Started ===")
-            
+
             if dry_run:
                 self.logger.warning("DRY RUN MODE - No files will be copied or modified")
-            
+
+            # Phase 0: Initialize processing state and check for incremental processing
+            self.state_manager.start_processing_run()
+            state_info = self.state_manager.get_state_info()
+            filter_info = self.state_manager.get_incremental_filter_info()
+
+            self.logger.info(f"Processing mode: {filter_info['mode']}")
+            self.logger.info(f"Reason: {filter_info['reason']}")
+
+            if not state_info['first_run']:
+                self.logger.info(f"Previous run: {state_info['last_run']}")
+                self.logger.info(f"Previously processed: {state_info['total_files_processed']} files, {state_info['total_videos_analyzed']} videos")
+
             # Phase 1: Build deduplication cache if enabled
             if self.config['options']['enable_deduplication']:
                 self.logger.info("Building deduplication cache...")
@@ -82,14 +96,27 @@ class PhoneSyncProcessor:
             for source_folder in self.config['source_folders']:
                 files = self.file_scanner.scan_folder(source_folder)
                 all_files.extend(files)
-            
+
             self.stats['files_found'] = len(all_files)
             self.logger.info(f"Found {len(all_files)} files to process")
+
+            # Phase 2.5: Filter files based on processing state (incremental processing)
+            files_to_process = []
+            for file_info in all_files:
+                if self.state_manager.should_process_file(file_info):
+                    files_to_process.append(file_info)
+
+            if len(files_to_process) < len(all_files):
+                skipped_count = len(all_files) - len(files_to_process)
+                self.logger.info(f"Incremental processing: {len(files_to_process)} new files, {skipped_count} already processed")
+            else:
+                self.logger.info(f"Processing all {len(files_to_process)} files")
             
             # Phase 3: Process files (organize + analyze)
             videos_for_analysis = []
-            
-            for file_info in all_files:
+            last_processed_file = ""
+
+            for file_info in files_to_process:
                 try:
                     # Organize file (copy to appropriate date folder)
                     success, target_path = self.file_organizer.organize_file(
@@ -98,13 +125,18 @@ class PhoneSyncProcessor:
                     
                     if success:
                         self.stats['files_processed'] += 1
-                        
+                        last_processed_file = file_info['name']
+
+                        # Mark file as processed in state manager
+                        self.state_manager.mark_file_processed(file_info)
+
                         # If it's a video file, add to analysis queue
                         if self._is_video_file(file_info['path']):
                             videos_for_analysis.append({
                                 'source_path': file_info['path'],
                                 'target_path': target_path,
-                                'file_date': file_info['date']
+                                'file_date': file_info['date'],
+                                'file_info': file_info
                             })
                     else:
                         self.stats['files_skipped'] += 1
@@ -148,7 +180,11 @@ class PhoneSyncProcessor:
             
             # Final statistics
             self._log_final_stats()
-            
+
+            # Finalize processing state
+            self.stats['last_processed_file'] = last_processed_file
+            self.state_manager.finish_processing_run(self.stats)
+
             self.logger.info("=== PhoneSync + VideoProcessor Completed ===")
             return self.stats['errors'] == 0
             

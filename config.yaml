@@ -2,14 +2,56 @@
 # Combines file organization (PhoneSync) with AI video analysis (VideoProcessor)
 # Single configuration file for the entire project
 
-# Source and target paths
-source_folders:
-  - "Z:/PhotoSync_Test/Source"
+# =============================================================================
+# PRODUCTION VARIABLES - Update these for production deployment
+# =============================================================================
+PROD_VARS:
+  # Production source folder structure (phone sync root)
+  source_root: "\\\\MA-2022-C\\PHONESYNC"
 
-target_paths:
-  pictures: "Z:/PhotoSync_Test/My Pictures"
-  videos: "Z:/PhotoSync_Test/My Videos"
-  wudan: "Z:/PhotoSync_Test/My Videos/Wudan"  # Standardized key name
+  # Production source subdirectories (will be scanned recursively)
+  source_subdirs:
+    - "Internal_dmc/Camera"
+    - "Internal_dmc/FavoritesMA"
+    - "Internal_dmc/GIF"
+    - "Internal_dmc/Official"
+    - "Internal_dmc/Videocaptures"
+    - "SDCard_DMC/Camera"
+    - "SDCard_DMC/FavoritesMA"
+    - "SDCard_DMC/GIF"
+    - "SDCard_DMC/Official"
+    - "SDCard_DMC/Videocaptures"
+
+  # Production target paths
+  target_root: "\\\\MA-2022-C\\UserData_G"
+  target_paths:
+    pictures: "\\\\MA-2022-C\\UserData_G\\My Pictures"
+    videos: "\\\\MA-2022-C\\UserData_G\\My Videos"
+    wudan: "\\\\MA-2022-C\\UserData_G\\My Videos\\Wudan"
+
+# =============================================================================
+# DEVELOPMENT/TEST VARIABLES - Used for testing and development
+# =============================================================================
+DEV_VARS:
+  # Development source folders (for testing)
+  source_folders:
+    - "Z:/PhotoSync_Test/Source"
+
+  # Development target paths (for testing)
+  target_paths:
+    pictures: "Z:/PhotoSync_Test/My Pictures"
+    videos: "Z:/PhotoSync_Test/My Videos"
+    wudan: "Z:/PhotoSync_Test/My Videos/Wudan"
+
+# =============================================================================
+# ACTIVE CONFIGURATION - Set which environment to use
+# =============================================================================
+# Environment: "PRODUCTION" or "DEVELOPMENT"
+environment: "DEVELOPMENT"
+
+# Resolved paths (automatically set based on environment)
+source_folders: []  # Will be populated based on environment
+target_paths: {}    # Will be populated based on environment
 
 # File type configuration
 file_extensions:
@@ -77,6 +119,7 @@ options:
   force_recopy_if_newer: true
   copy_files: true  # Set to false for move operation instead
   enable_video_analysis: true  # Enable AI video analysis for kung fu detection
+  enable_incremental_processing: true  # Only process files newer than last run
 
 # Logging configuration (unified)
 logging:

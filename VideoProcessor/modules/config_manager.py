@@ -44,11 +44,66 @@ class ConfigManager:
         if not isinstance(self.config, dict):
             raise ValueError(f"Configuration must be a dictionary/object, got {type(self.config).__name__}")
 
+        # Resolve environment-specific configuration
+        self.config = self._resolve_environment_config(self.config)
+
         # Validate required sections
         self._validate_config()
-        
+
         return self.config
-    
+
+    def _resolve_environment_config(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Resolve environment-specific configuration (PRODUCTION vs DEVELOPMENT)
+
+        Args:
+            config: Raw configuration dictionary
+
+        Returns:
+            Configuration with resolved environment paths
+        """
+        environment = config.get('environment', 'DEVELOPMENT').upper()
+
+        if environment == 'PRODUCTION':
+            # Use production variables
+            prod_vars = config.get('PROD_VARS', {})
+
+            # Build source folders from production structure
+            source_root = prod_vars.get('source_root', '')
+            source_subdirs = prod_vars.get('source_subdirs', [])
+
+            # Create full source folder paths
+            source_folders = []
+            for subdir in source_subdirs:
+                # Handle UNC paths properly
+                if source_root.startswith('\\\\'):
+                    full_path = f"{source_root}\\{subdir}"
+                else:
+                    full_path = f"{source_root}/{subdir}"
+                # Convert to forward slashes for internal consistency
+                full_path = full_path.replace('\\', '/')
+                source_folders.append(full_path)
+
+            # Set target paths from production variables
+            target_paths = prod_vars.get('target_paths', {})
+
+            # Convert Windows paths to forward slashes for consistency
+            for key, path in target_paths.items():
+                target_paths[key] = path.replace('\\', '/')
+
+        else:
+            # Use development variables
+            dev_vars = config.get('DEV_VARS', {})
+            source_folders = dev_vars.get('source_folders', [])
+            target_paths = dev_vars.get('target_paths', {})
+
+        # Update config with resolved paths
+        config['source_folders'] = source_folders
+        config['target_paths'] = target_paths
+        config['resolved_environment'] = environment
+
+        return config
+
     def _validate_config(self):
         """Validate that required configuration sections exist"""
         # At this point, we know self.config is not None and is a dict

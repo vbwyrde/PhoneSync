@@ -1300,3 +1300,352 @@
 2025-09-23 20:44:24 - phone_sync - INFO - Errors: 9
 2025-09-23 20:44:24 - phone_sync - INFO - Success rate: 100.0%
 2025-09-23 20:44:24 - phone_sync - INFO - === PhoneSync + VideoProcessor Completed ===
+2025-09-23 22:44:50 - phone_sync - INFO - No previous processing state found - first run
+2025-09-23 22:44:50 - phone_sync - INFO - No processed files database found - first run
+2025-09-23 22:44:50 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-23 22:44:50 - phone_sync - INFO - === Starting new processing run ===
+2025-09-23 22:44:50 - phone_sync - INFO - First processing run - no previous state
+2025-09-23 22:44:50 - phone_sync - INFO - Saved processing state: 3 processed files tracked
+2025-09-23 22:44:50 - phone_sync - INFO - === Processing run completed ===
+2025-09-23 22:44:50 - phone_sync - INFO - Files processed this run: 3
+2025-09-23 22:44:50 - phone_sync - INFO - Videos analyzed this run: 2
+2025-09-23 22:44:50 - phone_sync - INFO - Total tracked files: 3
+2025-09-23 22:44:50 - phone_sync - INFO - Loaded processing state: last run 2025-09-23T22:44:50.987363
+2025-09-23 22:44:50 - phone_sync - INFO - Loaded 3 previously processed files
+2025-09-23 22:44:50 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-23 22:44:50 - phone_sync - INFO - === Starting new processing run ===
+2025-09-23 22:44:50 - phone_sync - INFO - Previous run: 2025-09-23T22:44:50.987363
+2025-09-23 22:44:50 - phone_sync - INFO - Previously processed: 3 files, 2 videos
+2025-09-23 22:44:50 - phone_sync - WARNING - Resetting all processing state
+2025-09-23 22:44:50 - phone_sync - INFO - Processing state reset complete
+2025-09-23 23:45:11 - phone_sync - INFO - No previous processing state found - first run
+2025-09-23 23:45:11 - phone_sync - INFO - No processed files database found - first run
+2025-09-23 23:45:11 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-23 23:46:41 - phone_sync - INFO - No previous processing state found - first run
+2025-09-23 23:46:41 - phone_sync - INFO - No processed files database found - first run
+2025-09-23 23:46:41 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-23 23:46:41 - phone_sync - INFO - === PhoneSync + VideoProcessor Started ===
+2025-09-23 23:46:41 - phone_sync - WARNING - DRY RUN MODE - No files will be copied or modified
+2025-09-23 23:46:41 - phone_sync - INFO - === Starting new processing run ===
+2025-09-23 23:46:41 - phone_sync - INFO - First processing run - no previous state
+2025-09-23 23:46:41 - phone_sync - INFO - Processing mode: full_processing
+2025-09-23 23:46:41 - phone_sync - INFO - Reason: First run - processing all files
+2025-09-23 23:46:41 - phone_sync - INFO - Building deduplication cache...
+2025-09-23 23:46:41 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-23 23:46:42 - phone_sync - INFO - Scanning existing files in: Z:/PhotoSync_Test/My Pictures
+2025-09-23 23:46:42 - phone_sync - INFO - Scanning existing files in: Z:/PhotoSync_Test/My Videos
+2025-09-23 23:46:42 - phone_sync - INFO - Scanning existing files in: Z:/PhotoSync_Test/My Videos/Wudan
+2025-09-23 23:46:42 - phone_sync - INFO - Cache built successfully. Found 107 existing files across all target directories.
+2025-09-23 23:46:42 - phone_sync - INFO - Scanning source folders...
+2025-09-23 23:46:42 - phone_sync - INFO - Scanning folder: Z:\PhotoSync_Test\Source
+2025-09-23 23:46:43 - phone_sync - INFO - Found 60 supported files in Z:\PhotoSync_Test\Source
+2025-09-23 23:46:43 - phone_sync - INFO - Found 60 files to process
+2025-09-23 23:46:43 - phone_sync - INFO - Processing all 60 files
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_11_27 for pattern 2024_11_27
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241127_072325.jpg matches 20241127_072325.jpg in 2024_11_27_TestEvent
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241127_072325.jpg (Size: 4378026 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241127_072325.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_11_27 for pattern 2024_11_27
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241127_072406.jpg matches 20241127_072406.jpg in 2024_11_27_TestEvent
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241127_072406.jpg (Size: 2529879 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241127_072406.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_11_27 for pattern 2024_11_27
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241127_080259.jpg matches 20241127_080259.jpg in 2024_11_27_TestEvent
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241127_080259.jpg (Size: 2223504 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241127_080259.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_11_27 for pattern 2024_11_27
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241127_080352.jpg matches 20241127_080352.jpg in 2024_11_27_TestEvent
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241127_080352.jpg (Size: 1744103 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241127_080352.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_03 for pattern 2024_12_03
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241203_070547.jpg matches 20241203_070547.jpg in 2024_12_03
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241203_070547.jpg (Size: 1698945 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241203_070547.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_03 for pattern 2024_12_03
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241203_092512.jpg matches 20241203_092512.jpg in 2024_12_03
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241203_092512.jpg (Size: 340935 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241203_092512.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_04 for pattern 2024_12_04
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241204_195042_1.mp4 matches 20241204_195042_1.mp4 in 2024_12_04_WudanClass
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241204_195042_1.mp4 (Size: 46334770 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241204_195042_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_06 for pattern 2024_12_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241206_070804.jpg matches 20241206_070804.jpg in 2024_12_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241206_070804.jpg (Size: 3904856 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241206_070804.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_06 for pattern 2024_12_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241206_072817.jpg matches 20241206_072817.jpg in 2024_12_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241206_072817.jpg (Size: 2636465 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241206_072817.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_06 for pattern 2024_12_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241206_080503.jpg matches 20241206_080503.jpg in 2024_12_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241206_080503.jpg (Size: 1717519 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241206_080503.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_07_TestEvent2 for pattern 2024_12_07
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241207_201035.jpg matches 20241207_201035.jpg in 2024_12_07_TestEvent2
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241207_201035.jpg (Size: 1601696 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241207_201035.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_08 for pattern 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241208_094652_1.mp4 matches 20241208_094652_1.mp4 in 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241208_094652_1.mp4 (Size: 29686733 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241208_094652_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_08 for pattern 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241208_094944_1.mp4 matches 20241208_094944_1.mp4 in 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241208_094944_1.mp4 (Size: 14635144 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241208_094944_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_08 for pattern 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241208_101819_1.mp4 matches 20241208_101819_1.mp4 in 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241208_101819_1.mp4 (Size: 38619734 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241208_101819_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_08 for pattern 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241208_114720_1.mp4 matches 20241208_114720_1.mp4 in 2024_12_08
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241208_114720_1.mp4 (Size: 66083492 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241208_114720_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_10 for pattern 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241210_071522.jpg matches 20241210_071522.jpg in 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241210_071522.jpg (Size: 2189065 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241210_071522.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_10 for pattern 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241210_071558.jpg matches 20241210_071558.jpg in 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241210_071558.jpg (Size: 3015400 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241210_071558.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_10_Test2 for pattern 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241210_090140_1.mp4 matches 20241210_090140_1.mp4 in 2024_12_10_Test2
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241210_090140_1.mp4 (Size: 55028535 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241210_090140_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_10 for pattern 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241210_091107.jpg matches 20241210_091107.jpg in 2024_12_10
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241210_091107.jpg (Size: 934257 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241210_091107.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_11 for pattern 2024_12_11
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241211_094651_1.mp4 matches 20241211_094651_1.mp4 in 2024_12_11
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241211_094651_1.mp4 (Size: 49452995 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241211_094651_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_11 for pattern 2024_12_11
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241211_105207_1.mp4 matches 20241211_105207_1.mp4 in 2024_12_11
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241211_105207_1.mp4 (Size: 32070249 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241211_105207_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_12_Test1 for pattern 2024_12_12
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241212_081716_1.mp4 matches 20241212_081716_1.mp4 in 2024_12_12_Test1
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241212_081716_1.mp4 (Size: 83855318 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241212_081716_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_12_Test1 for pattern 2024_12_12
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241212_083659_1.mp4 matches 20241212_083659_1.mp4 in 2024_12_12_Test1
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241212_083659_1.mp4 (Size: 75851989 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241212_083659_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_15 for pattern 2024_12_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241215_105459_1.mp4 matches 20241215_105459_1.mp4 in 2024_12_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241215_105459_1.mp4 (Size: 67589070 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241215_105459_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_15 for pattern 2024_12_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241215_110934_1.mp4 matches 20241215_110934_1.mp4 in 2024_12_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241215_110934_1.mp4 (Size: 16071337 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241215_110934_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_15 for pattern 2024_12_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241215_111821_1.mp4 matches 20241215_111821_1.mp4 in 2024_12_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241215_111821_1.mp4 (Size: 73908871 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241215_111821_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_18 for pattern 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241218_071235.jpg matches 20241218_071235.jpg in 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241218_071235.jpg (Size: 1638475 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241218_071235.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_18 for pattern 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241218_072520.jpg matches 20241218_072520.jpg in 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241218_072520.jpg (Size: 2268766 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241218_072520.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_18 for pattern 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241218_075459_1.mp4 matches 20241218_075459_1.mp4 in 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241218_075459_1.mp4 (Size: 72555865 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241218_075459_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2024_12_18 for pattern 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20241218_081644_1.mp4 matches 20241218_081644_1.mp4 in 2024_12_18
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20241218_081644_1.mp4 (Size: 78008139 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20241218_081644_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_04_06 for pattern 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250406_092556_1.mp4 matches 20250406_092556_1.mp4 in 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250406_092556_1.mp4 (Size: 33782827 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250406_092556_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_04_06 for pattern 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250406_092818_1.mp4 matches 20250406_092818_1.mp4 in 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250406_092818_1.mp4 (Size: 31704863 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250406_092818_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_04_06 for pattern 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250406_101857_1.mp4 matches 20250406_101857_1.mp4 in 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250406_101857_1.mp4 (Size: 151619111 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250406_101857_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_04_06 for pattern 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250406_110016_1.mp4 matches 20250406_110016_1.mp4 in 2025_04_06
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250406_110016_1.mp4 (Size: 128363474 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250406_110016_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_04_10 for pattern 2025_04_10
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250410_192507_1.mp4 matches 20250410_192507_1.mp4 in 2025_04_10
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250410_192507_1.mp4 (Size: 17933314 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250410_192507_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_05_04 for pattern 2025_05_04
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250504_101933_1.mp4 matches 20250504_101933_1.mp4 in 2025_05_04
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250504_101933_1.mp4 (Size: 52180680 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250504_101933_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_05_04 for pattern 2025_05_04
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250504_110956_1.mp4 matches 20250504_110956_1.mp4 in 2025_05_04
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250504_110956_1.mp4 (Size: 14626328 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250504_110956_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_05_04 for pattern 2025_05_04
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250504_113836_1.mp4 matches 20250504_113836_1.mp4 in 2025_05_04
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250504_113836_1.mp4 (Size: 31259308 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250504_113836_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_01 for pattern 2025_06_01
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250601_112703_1.mp4 matches 20250601_112703_1.mp4 in 2025_06_01
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250601_112703_1.mp4 (Size: 104185258 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250601_112703_1.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_01 for pattern 2025_06_01
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250601_115907.mp4 matches 20250601_115907.mp4 in 2025_06_01
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250601_115907.mp4 (Size: 131307641 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250601_115907.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_08 for pattern 2025_06_08
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250608_092506.mp4 matches 20250608_092506.mp4 in 2025_06_08
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250608_092506.mp4 (Size: 11087653 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250608_092506.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_13 for pattern 2025_06_13
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250613_075513.mp4 matches 20250613_075513.mp4 in 2025_06_13
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250613_075513.mp4 (Size: 54065135 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250613_075513.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_13 for pattern 2025_06_13
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250613_080128.mp4 matches 20250613_080128.mp4 in 2025_06_13
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250613_080128.mp4 (Size: 76592937 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250613_080128.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_15 for pattern 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250615_094804.mp4 matches 20250615_094804.mp4 in 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250615_094804.mp4 (Size: 17675576 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250615_094804.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_15 for pattern 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250615_100341.mp4 matches 20250615_100341.mp4 in 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250615_100341.mp4 (Size: 8194185 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250615_100341.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_15 for pattern 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250615_100407.mp4 matches 20250615_100407.mp4 in 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250615_100407.mp4 (Size: 13867245 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250615_100407.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250615_102535 (1).mp4 matches 20250615_102535 (1).mp4 in 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250615_102535 (1).mp4 (Size: 23689939 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250615_102535 (1).mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_15 for pattern 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250615_104338.mp4 matches 20250615_104338.mp4 in 2025_06_15
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250615_104338.mp4 (Size: 47868494 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250615_104338.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_22 for pattern 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250622_093448.mp4 matches 20250622_093448.mp4 in 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250622_093448.mp4 (Size: 11291015 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250622_093448.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_22 for pattern 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250622_094545.jpg matches 20250622_094545.jpg in 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250622_094545.jpg (Size: 3645485 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250622_094545.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_22 for pattern 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250622_100122.mp4 matches 20250622_100122.mp4 in 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250622_100122.mp4 (Size: 44939773 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250622_100122.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_22 for pattern 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250622_105414.mp4 matches 20250622_105414.mp4 in 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250622_105414.mp4 (Size: 20598086 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250622_105414.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_22 for pattern 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250622_112054.mp4 matches 20250622_112054.mp4 in 2025_06_22
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250622_112054.mp4 (Size: 68076666 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250622_112054.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_06_25 for pattern 2025_06_25
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250625_192654.jpg matches 20250625_192654.jpg in 2025_06_25
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250625_192654.jpg (Size: 3438984 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250625_192654.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_07_20 for pattern 2025_07_20
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250720_105916.mp4 matches 20250720_105916.mp4 in 2025_07_20
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250720_105916.mp4 (Size: 53102546 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250720_105916.mp4
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_08_25 for pattern 2025_08_25
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250825_194314.jpg matches 20250825_194314.jpg in 2025_08_25
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250825_194314.jpg (Size: 1699925 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250825_194314.jpg
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing date folder: 2025_08_30 for pattern 2025_08_30
+2025-09-23 23:46:43 - phone_sync - INFO - Found existing file in date-matched folder: 20250830_090725.mp4 matches 20250830_090725.mp4 in 2025_08_30
+2025-09-23 23:46:43 - phone_sync - INFO - File already exists in target: 20250830_090725.mp4 (Size: 88153141 bytes)
+2025-09-23 23:46:43 - phone_sync - INFO - Skipping duplicate file: 20250830_090725.mp4
+2025-09-23 23:46:44 - phone_sync - INFO - Found existing date folder: 2021_11_14 for pattern 2021_11_14
+2025-09-23 23:46:44 - phone_sync - INFO - Found existing file in date-matched folder: mmexport1636907148566.jpg matches mmexport1636907148566.jpg in 2021_11_14
+2025-09-23 23:46:44 - phone_sync - INFO - File already exists in target: mmexport1636907148566.jpg (Size: 158066 bytes)
+2025-09-23 23:46:44 - phone_sync - INFO - Skipping duplicate file: mmexport1636907148566.jpg
+2025-09-23 23:46:44 - phone_sync - INFO - Found existing date folder: 2023_03_04 for pattern 2023_03_04
+2025-09-23 23:46:44 - phone_sync - INFO - Found existing file in date-matched folder: RebelUnicornTaiChiClub3.jpg matches RebelUnicornTaiChiClub3.jpg in 2023_03_04
+2025-09-23 23:46:44 - phone_sync - INFO - File already exists in target: RebelUnicornTaiChiClub3.jpg (Size: 183777 bytes)
+2025-09-23 23:46:44 - phone_sync - INFO - Skipping duplicate file: RebelUnicornTaiChiClub3.jpg
+2025-09-23 23:46:44 - phone_sync - INFO - Found existing date folder: 2024_10_27 for pattern 2024_10_27
+2025-09-23 23:46:44 - phone_sync - INFO - Found existing file in date-matched folder: VideoCapture_20241027-110745.jpg matches VideoCapture_20241027-110745.jpg in 2024_10_27
+2025-09-23 23:46:44 - phone_sync - INFO - File already exists in target: VideoCapture_20241027-110745.jpg (Size: 147973 bytes)
+2025-09-23 23:46:44 - phone_sync - INFO - Skipping duplicate file: VideoCapture_20241027-110745.jpg
+2025-09-23 23:46:44 - phone_sync - INFO - Analyzing 39 videos...
+2025-09-23 23:46:44 - phone_sync - WARNING - Video file does not exist: Z:/PhotoSync_Test/My Videos\2025_06_15
+2025-09-23 23:46:44 - phone_sync - INFO - === Processing Statistics ===
+2025-09-23 23:46:44 - phone_sync - INFO - Files found: 60
+2025-09-23 23:46:44 - phone_sync - INFO - Files processed: 60
+2025-09-23 23:46:44 - phone_sync - INFO - Files skipped: 0
+2025-09-23 23:46:44 - phone_sync - INFO - Videos analyzed: 0
+2025-09-23 23:46:44 - phone_sync - INFO - Errors: 0
+2025-09-23 23:46:44 - phone_sync - INFO - Success rate: 100.0%
+2025-09-23 23:46:44 - phone_sync - INFO - Saved processing state: 60 processed files tracked
+2025-09-23 23:46:44 - phone_sync - INFO - === Processing run completed ===
+2025-09-23 23:46:44 - phone_sync - INFO - Files processed this run: 60
+2025-09-23 23:46:44 - phone_sync - INFO - Videos analyzed this run: 0
+2025-09-23 23:46:44 - phone_sync - INFO - Total tracked files: 60
+2025-09-23 23:46:44 - phone_sync - INFO - === PhoneSync + VideoProcessor Completed ===
+2025-09-23 23:46:53 - phone_sync - INFO - Loaded processing state: last run 2025-09-23T23:46:44.066688
+2025-09-23 23:46:53 - phone_sync - INFO - Loaded 60 previously processed files
+2025-09-23 23:46:53 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-23 23:47:08 - phone_sync - INFO - Loaded processing state: last run 2025-09-23T23:46:44.066688
+2025-09-23 23:47:08 - phone_sync - INFO - Loaded 60 previously processed files
+2025-09-23 23:47:08 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-23 23:47:08 - phone_sync - INFO - === PhoneSync + VideoProcessor Started ===
+2025-09-23 23:47:08 - phone_sync - WARNING - DRY RUN MODE - No files will be copied or modified
+2025-09-23 23:47:08 - phone_sync - INFO - === Starting new processing run ===
+2025-09-23 23:47:08 - phone_sync - INFO - Previous run: 2025-09-23T23:46:44.066688
+2025-09-23 23:47:08 - phone_sync - INFO - Previously processed: 60 files, 0 videos
+2025-09-23 23:47:08 - phone_sync - INFO - Processing mode: incremental_processing
+2025-09-23 23:47:08 - phone_sync - INFO - Reason: Processing files newer than 2025-09-23T23:46:44.066688
+2025-09-23 23:47:08 - phone_sync - INFO - Previous run: 2025-09-23T23:46:44.066688
+2025-09-23 23:47:08 - phone_sync - INFO - Previously processed: 60 files, 0 videos
+2025-09-23 23:47:08 - phone_sync - INFO - Building deduplication cache...
+2025-09-23 23:47:08 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-23 23:47:08 - phone_sync - INFO - Scanning existing files in: Z:/PhotoSync_Test/My Pictures
+2025-09-23 23:47:08 - phone_sync - INFO - Scanning existing files in: Z:/PhotoSync_Test/My Videos
+2025-09-23 23:47:08 - phone_sync - INFO - Scanning existing files in: Z:/PhotoSync_Test/My Videos/Wudan
+2025-09-23 23:47:09 - phone_sync - INFO - Cache built successfully. Found 107 existing files across all target directories.
+2025-09-23 23:47:09 - phone_sync - INFO - Scanning source folders...
+2025-09-23 23:47:09 - phone_sync - INFO - Scanning folder: Z:\PhotoSync_Test\Source
+2025-09-23 23:47:09 - phone_sync - INFO - Found 60 supported files in Z:\PhotoSync_Test\Source
+2025-09-23 23:47:09 - phone_sync - INFO - Found 60 files to process
+2025-09-23 23:47:09 - phone_sync - INFO - Incremental processing: 0 new files, 60 already processed
+2025-09-23 23:47:09 - phone_sync - INFO - === Processing Statistics ===
+2025-09-23 23:47:09 - phone_sync - INFO - Files found: 60
+2025-09-23 23:47:09 - phone_sync - INFO - Files processed: 0
+2025-09-23 23:47:09 - phone_sync - INFO - Files skipped: 0
+2025-09-23 23:47:09 - phone_sync - INFO - Videos analyzed: 0
+2025-09-23 23:47:09 - phone_sync - INFO - Errors: 0
+2025-09-23 23:47:09 - phone_sync - INFO - Success rate: 0.0%
+2025-09-23 23:47:09 - phone_sync - INFO - Saved processing state: 60 processed files tracked
+2025-09-23 23:47:09 - phone_sync - INFO - === Processing run completed ===
+2025-09-23 23:47:09 - phone_sync - INFO - Files processed this run: 0
+2025-09-23 23:47:09 - phone_sync - INFO - Videos analyzed this run: 0
+2025-09-23 23:47:09 - phone_sync - INFO - Total tracked files: 60
+2025-09-23 23:47:09 - phone_sync - INFO - === PhoneSync + VideoProcessor Completed ===
+2025-09-25 22:22:14 - phone_sync - INFO - Loaded processing state: last run 2025-09-23T23:47:09.269709
+2025-09-25 22:22:14 - phone_sync - INFO - Loaded 60 previously processed files
+2025-09-25 22:22:14 - phone_sync - INFO - ProcessingStateManager initialized. State file: VideoProcessor\state\processing_state.json
+2025-09-25 22:22:14 - phone_sync - INFO - === PhoneSync + VideoProcessor Started ===
+2025-09-25 22:22:14 - phone_sync - WARNING - DRY RUN MODE - No files will be copied or modified
+2025-09-25 22:22:14 - phone_sync - INFO - === Starting new processing run ===
+2025-09-25 22:22:14 - phone_sync - INFO - Previous run: 2025-09-23T23:47:09.269709
+2025-09-25 22:22:14 - phone_sync - INFO - Previously processed: 0 files, 0 videos
+2025-09-25 22:22:14 - phone_sync - INFO - Processing mode: incremental_processing
+2025-09-25 22:22:14 - phone_sync - INFO - Reason: Processing files newer than 2025-09-23T23:47:09.269709
+2025-09-25 22:22:14 - phone_sync - INFO - Previous run: 2025-09-23T23:47:09.269709
+2025-09-25 22:22:14 - phone_sync - INFO - Previously processed: 0 files, 0 videos
+2025-09-25 22:22:14 - phone_sync - INFO - Building deduplication cache...
+2025-09-25 22:22:14 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-25 22:22:14 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
