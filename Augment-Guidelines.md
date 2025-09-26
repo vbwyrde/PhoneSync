@@ -105,6 +105,25 @@ PhoneSync/                          # Root project directory
 - **Inline comments** for complex logic
 - **Configuration examples** in documentation
 
+### **Unicode Character Usage**
+- **Avoid Unicode characters** (emojis, special symbols) in documentation and scripts unless logically required
+- **Use ASCII alternatives**: Replace emojis with descriptive text or simple symbols
+- **Reason**: Unicode characters can cause encoding issues, display problems across different systems, and compatibility issues
+- **Exception**: Only use Unicode when functionally necessary (e.g., processing international text data)
+
+**Examples:**
+```markdown
+# Good - ASCII only
+## Key Features
+- Smart File Organization
+- AI Video Analysis
+
+# Avoid - Unicode characters
+## 🔧 Key Features
+- 📁 Smart File Organization
+- 🤖 AI Video Analysis
+```
+
 ### **Change Documentation**
 - **Update guidelines** when new patterns are established
 - **Document workarounds** and their reasons
@@ -152,5 +171,5 @@ When adding new guidelines:
 
 ---
 
-*Last Updated: 2025-09-21*
-*Version: 1.0*
+*Last Updated: 2025-09-26*
+*Version: 1.1*

@@ -13,6 +13,17 @@ Organizes photos and videos from phone sync folders into date-based directories,
 - **Environment Support**: Separate development and production configurations
 - **High Performance**: Handles hundreds/thousands of files efficiently
 
+## How It Works
+
+1. **File Discovery**: Scans source folders for photos and videos and checks to see if they need to be processed by date
+2. **Date Extraction**: Gets creation date from file name, or file metadata when file name does not contain date
+3. **Folder Creation**: Creates `YYYY_MM_DD` folders in target directories if they do not exist
+4. **File Organization**: Moves files to appropriate date folders
+5. **AI Analysis**: Analyzes videos to detect kung fu/martial arts content
+6. **Smart Routing**: Kung fu videos go to special Wudan folder
+7. **Notes Generation**: Creates searchable notes files with form names
+8. **State Tracking**: Remembers processed files for incremental runs
+
 ## Quick Start
 
 ### Prerequisites
@@ -78,17 +89,6 @@ Organizes photos and videos from phone sync folders into date-based directories,
 # Reset state (force full reprocessing)
 ./venv/Scripts/python.exe VideoProcessor/manage_processing_state.py reset
 ```
-
-## How It Works
-
-1. **File Discovery**: Scans source folders for photos and videos
-2. **Date Extraction**: Gets creation date from file metadata
-3. **Folder Creation**: Creates `YYYY_MM_DD` folders in target directories
-4. **File Organization**: Moves files to appropriate date folders
-5. **AI Analysis**: Analyzes videos to detect kung fu/martial arts content
-6. **Smart Routing**: Kung fu videos go to special Wudan folder
-7. **Notes Generation**: Creates searchable notes files with form names
-8. **State Tracking**: Remembers processed files for incremental runs
 
 ## Configuration
 
