@@ -1649,3 +1649,64 @@
 2025-09-25 22:22:14 - phone_sync - INFO - Building deduplication cache...
 2025-09-25 22:22:14 - phone_sync - INFO - Building cache of existing files in target directories...
 2025-09-25 22:22:14 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
+2025-09-26 00:01:55 - phone_sync - INFO - === Production Dry Run Test Started ===
+2025-09-26 00:01:55 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-09-26 00:01:55 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
+2025-09-26 00:04:12 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos
+2025-09-26 00:18:58 - phone_sync - INFO - === Production Dry Run Test Started ===
+2025-09-26 00:18:58 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\Camera
+2025-09-26 00:19:24 - phone_sync - INFO - Found 5458 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\Camera
+2025-09-26 00:19:24 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA
+2025-09-26 00:19:25 - phone_sync - INFO - Found 217 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA
+2025-09-26 00:19:25 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\GIF
+2025-09-26 00:19:25 - phone_sync - INFO - Found 37 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\GIF
+2025-09-26 00:19:25 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\Official
+2025-09-26 00:19:25 - phone_sync - INFO - Found 2 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\Official
+2025-09-26 00:19:25 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\Videocaptures
+2025-09-26 00:19:26 - phone_sync - INFO - Found 80 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\Videocaptures
+2025-09-26 00:19:26 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\Camera
+2025-09-26 00:19:50 - phone_sync - INFO - Found 5458 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\Camera
+2025-09-26 00:19:50 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA
+2025-09-26 00:19:52 - phone_sync - INFO - Found 217 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA
+2025-09-26 00:19:52 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\GIF
+2025-09-26 00:19:52 - phone_sync - INFO - Found 37 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\GIF
+2025-09-26 00:19:52 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\Official
+2025-09-26 00:19:52 - phone_sync - INFO - Found 2 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\Official
+2025-09-26 00:19:52 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\Videocaptures
+2025-09-26 00:19:52 - phone_sync - INFO - Found 80 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\Videocaptures
+2025-09-26 00:23:07 - phone_sync - INFO - === Production Dry Run Test Started ===
+2025-09-26 00:23:07 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\Camera
+2025-09-26 00:23:33 - phone_sync - INFO - Found 5458 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\Camera
+2025-09-26 00:23:33 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA
+2025-09-26 00:23:34 - phone_sync - INFO - Found 217 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA
+2025-09-26 00:23:34 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\GIF
+2025-09-26 00:23:35 - phone_sync - INFO - Found 37 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\GIF
+2025-09-26 00:23:35 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\Official
+2025-09-26 00:23:35 - phone_sync - INFO - Found 2 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\Official
+2025-09-26 00:23:35 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\Internal_dmc\Videocaptures
+2025-09-26 00:23:35 - phone_sync - INFO - Found 80 supported files in \\MA-2022-C\PHONESYNC\Internal_dmc\Videocaptures
+2025-09-26 00:23:35 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\Camera
+2025-09-26 00:24:02 - phone_sync - INFO - Found 5458 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\Camera
+2025-09-26 00:24:02 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA
+2025-09-26 00:24:03 - phone_sync - INFO - Found 217 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA
+2025-09-26 00:24:03 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\GIF
+2025-09-26 00:24:03 - phone_sync - INFO - Found 37 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\GIF
+2025-09-26 00:24:03 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\Official
+2025-09-26 00:24:03 - phone_sync - INFO - Found 2 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\Official
+2025-09-26 00:24:03 - phone_sync - INFO - Scanning folder: \\MA-2022-C\PHONESYNC\SDCard_DMC\Videocaptures
+2025-09-26 00:24:04 - phone_sync - INFO - Found 80 supported files in \\MA-2022-C\PHONESYNC\SDCard_DMC\Videocaptures
+2025-09-26 00:25:00 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250921_095352.mp4: 'wudan'
+2025-09-26 00:25:03 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250921_095352.mp4: 'wudan'
+2025-09-26 00:25:07 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250921_101216.mp4: 'wudan'
+2025-09-26 00:25:11 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250921_101216.mp4: 'wudan'
+2025-09-26 00:25:14 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250921_102929.mp4: 'wudan'
+2025-09-26 00:25:17 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250921_102929.mp4: 'wudan'
+2025-09-26 00:25:20 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250924_193035.mp4: 'wudan'
+2025-09-26 00:25:24 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250924_193035.mp4: 'wudan'
+2025-09-26 00:25:27 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250924_194509.mp4: 'wudan'
+2025-09-26 00:25:30 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250924_194509.mp4: 'wudan'
+2025-09-26 00:25:33 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250924_202136.mp4: 'wudan'
+2025-09-26 00:25:36 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250924_202136.mp4: 'wudan'
+2025-09-26 00:25:39 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\Internal_dmc\FavoritesMA\20250924_202641.mp4: 'wudan'
+2025-09-26 00:25:42 - phone_sync - WARNING - Error analyzing target for \\MA-2022-C\PHONESYNC\SDCard_DMC\FavoritesMA\20250924_202641.mp4: 'wudan'
+2025-09-26 00:25:42 - phone_sync - INFO - === Production Dry Run Test Completed Successfully ===
