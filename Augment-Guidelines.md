@@ -131,6 +131,48 @@ PhoneSync/                          # Root project directory
 
 ---
 
+## 🛡️ **Code Enhancement & Replacement Safety**
+
+### **Before Replacing or "Enhancing" Existing Code**
+
+**Critical Rule**: Existing production code may be more sophisticated than it initially appears. Always fully understand what you're replacing before making changes.
+
+#### **1. Read ALL Existing Code Completely**
+- **Don't make assumptions** based on partial reading or similar-looking code elsewhere
+- **Use `view` with full file ranges** or search patterns to see complete implementations
+- **Pay special attention** to multi-line configurations, prompts, and complex logic
+- **Read to the end** - important details are often at the end of functions/configurations
+
+#### **2. Understand Current Implementation Sophistication**
+- **Newer/current code may be more advanced** than older code you're comparing it to
+- **Check git history or file dates** when possible to understand code evolution
+- **Look for signs of production refinement**: detailed error handling, specific edge cases, comprehensive instructions
+- **Production code often has hidden complexity** developed through real-world usage
+
+#### **3. Perform Thorough Comparison Analysis**
+- **Don't assume "enhancement" code is actually better**
+- **List specific features/capabilities of BOTH versions** side by side
+- **Identify what would be gained vs. lost** in any replacement
+- **Consider that production code may have been refined** through user feedback and edge case handling
+
+#### **4. Validate the Improvement Hypothesis**
+Before proceeding with changes:
+- **Clearly articulate what specific problem** the change solves
+- **Confirm the "enhancement" actually adds value** rather than removing sophisticated features
+- **Get user confirmation** when replacing sophisticated existing implementations
+- **Question whether the change is truly an improvement**
+
+#### **5. When in Doubt, Ask First**
+If you're unsure whether existing code is sophisticated or needs improvement:
+- **Present your analysis to the user** before making changes
+- **Explain what you found** and ask for guidance
+- **Don't assume older-looking code is inferior**
+- **Admit uncertainty** rather than making potentially harmful changes
+
+**Example of Near-Miss**: Almost replacing a sophisticated AI prompt with detailed text extraction instructions, structured response format, and fallback handling with a basic generic prompt, which would have significantly degraded application performance.
+
+---
+
 ## ⚠️ **Common Pitfalls to Avoid**
 
 ### **Environment Issues**

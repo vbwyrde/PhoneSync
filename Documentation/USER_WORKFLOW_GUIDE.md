@@ -39,7 +39,7 @@
 - **DeduplicationManager**: Prepare duplicate detection system
 - **TargetPathResolver**: Initialize path resolution logic
 - **FileOrganizer**: Setup file operation handler
-- **VideoAnalyzer**: Initialize AI analysis system (if enabled)
+- **VideoAnalyzer**: Initialize enhanced AI analysis system with base64 validation and error handling (if enabled)
 
 ### **1.3 System Validation**
 - Verify source folders exist and are accessible
@@ -204,7 +204,7 @@
 
 ---
 
-## 🤖 **Phase 7: AI Video Analysis** (if enabled)
+## 🤖 **Phase 7: Enhanced AI Video Analysis** (if enabled)
 
 ### **7.1 Analysis Eligibility Check**
 - **Skip analysis if**:
@@ -221,26 +221,37 @@
   - `ffmpeg -ss {midpoint} -i {video} -vframes 1 -f image2pipe -`
 - **Convert to base64** for AI analysis
 
-### **7.3 LM Studio AI Analysis**
+### **7.3 Enhanced Base64 Validation & Repair**
+- **Validate PNG signature**: Check for `iVBORw0KGgo` prefix
+- **Remove data URL prefixes**: Strip `data:image/png;base64,` if present
+- **Detect corruption**: Identify leading character issues
+- **Automatic repair**: Fix common base64 corruption patterns
+- **Binary validation**: Verify PNG binary signature (`b'\x89PNG\r\n\x1a\n'`)
+- **Graceful fallback**: Handle edge cases without system crashes
+
+### **7.4 LM Studio AI Analysis**
 - **Prepare API request**:
   - **URL**: `http://localhost:1234/v1/chat/completions`
   - **Model**: `mimo-vl-7b-rl@q8_k_xl`
   - **Prompt**: Kung fu/martial arts detection prompt
-  - **Image**: Base64 encoded thumbnail
+  - **Image**: Validated base64 encoded thumbnail
 - **Send request** with timeout handling
+- **Enhanced error handling**: Structured error responses with categorization
 - **Parse response**:
   - Extract YES/NO kung fu detection
   - Extract confidence level
   - Extract descriptive text
 
-### **7.4 Analysis Result Processing**
-- **Update statistics**:
-  - `videos_analyzed++`
-  - `kung_fu_detected++` (if applicable)
-- **Generate notes** (if kung fu detected):
-  - Create descriptive note file
+### **7.5 Enhanced Analysis Result Processing**
+- **Successful analysis**:
+  - Update statistics: `videos_analyzed++`, `kung_fu_detected++`
+  - Generate notes with analysis details and confidence
   - Save to `target_paths.notes` directory
-  - Include analysis details and confidence
+- **Enhanced error handling**:
+  - **Error categorization**: `base64_validation_failed`, `ai_analysis_failed`, etc.
+  - **Detailed context**: Processing step, timestamp, skip reason
+  - **Structured logging**: Production-ready error monitoring
+  - **Graceful degradation**: Continue processing other files
 
 ---
 

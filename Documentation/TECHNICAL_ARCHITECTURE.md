@@ -4,7 +4,21 @@
 
 ## Overview
 
-The PhoneSync + VideoProcessor system follows a multi-phase approach to organize files and analyze videos with AI. This document provides a detailed technical breakdown of each phase and component interaction.
+The PhoneSync + VideoProcessor system follows a multi-phase approach to organize files and analyze videos with AI, featuring an optimized post-processing cleanup workflow for handling misclassified videos. This document provides a detailed technical breakdown of each phase and component interaction.
+
+## System Components
+
+### Main Processing Pipeline
+- **File Organization**: Automated sorting into date-based folders
+- **AI Video Analysis**: Comprehensive analysis of ALL videos (kung fu and non-kung fu)
+- **Time-Based Routing**: Intelligent routing to Wudan folders based on class schedules
+- **Notes Generation**: Searchable notes files with AI analysis results
+
+### Post-Processing Cleanup Pipeline (NEW!)
+- **"NOT KUNG FU" Detection**: Identifies misclassified videos in Wudan folders
+- **User Validation**: Preview and review system before cleanup execution
+- **Automated Cleanup**: Moves misclassified videos to appropriate folders
+- **Notes Management**: Updates notes files when videos are moved
 
 ## System Architecture
 
@@ -193,14 +207,16 @@ My Videos/
         └── 20240116_Notes.txt
 ```
 
-### Phase 4: Video Analysis (AI Processing)
+### Phase 4: Enhanced Video Analysis (AI Processing)
 
-**Purpose**: Analyze video content for martial arts detection using AI
+**Purpose**: Analyze video content for martial arts detection using AI with robust thumbnail processing
 
 **Components**:
-- `VideoAnalyzer`
+- `VideoAnalyzer` (Enhanced with base64 validation and error handling)
 - LM Studio API integration
 - FFmpeg for thumbnail extraction
+- Advanced base64 validation and repair system
+- Comprehensive error handling and categorization
 
 **Process Flow**:
 1. **Thumbnail Extraction**:
@@ -208,19 +224,38 @@ My Videos/
    ffmpeg -i video.mp4 -ss 00:00:01 -vframes 1 -f image2pipe -vcodec png -
    ```
 
-2. **AI Analysis**:
-   - Send thumbnail to LM Studio vision model
+2. **Enhanced Base64 Validation & Repair**:
+   - **PNG Signature Validation**: Verify proper PNG headers (`iVBORw0KGgo`)
+   - **Data URL Prefix Removal**: Strip `data:image/png;base64,` prefixes
+   - **Corruption Detection**: Identify leading character corruption
+   - **Automatic Repair**: Fix common base64 corruption patterns
+   - **Binary Validation**: Verify PNG binary signature (`b'\x89PNG\r\n\x1a\n'`)
+
+3. **AI Analysis**:
+   - Send validated thumbnail to LM Studio vision model
    - Use specialized prompt for kung fu detection
    - Parse AI response for confidence and description
+   - Enhanced error handling with detailed categorization
 
-3. **Analysis Result Processing**:
+4. **Enhanced Analysis Result Processing**:
    ```python
+   # Successful Analysis
    {
        'analyzed': True,
        'is_kung_fu': True,
        'confidence': 0.85,
        'description': 'Martial arts form detected - appears to be Tai Chi',
        'analysis_timestamp': '2024-01-15T14:30:22'
+   }
+
+   # Enhanced Error Response (when issues occur)
+   {
+       'analyzed': False,
+       'reason': 'Base64 validation failed: Invalid PNG signature',
+       'error_type': 'base64_validation_failed',
+       'error_step': 'thumbnail_validation',
+       'processed_at': '2024-01-15T14:30:22.123456',
+       'skip_reason': 'Thumbnail data validation failed: Corrupted PNG signature'
    }
    ```
 
@@ -238,6 +273,44 @@ Respond with:
 2. Confidence level (0-100%)
 3. Brief description of what you see
 ```
+
+### Enhanced Reliability Features
+
+**Base64 Validation & Repair System**:
+The VideoAnalyzer includes sophisticated validation logic to handle corrupted thumbnail data:
+
+```python
+def _validate_and_repair_base64_image(self, thumbnail_base64: str) -> str:
+    # Remove data URL prefix if present
+    clean_base64 = thumbnail_base64
+    if thumbnail_base64.startswith('data:image'):
+        clean_base64 = thumbnail_base64.split(',')[1]
+
+    # Fix corrupted base64 data - remove leading invalid characters
+    if not clean_base64.startswith('iVBORw0KGgo'):
+        png_start = clean_base64.find('iVBORw0KGgo')
+        if png_start > 0:
+            clean_base64 = clean_base64[png_start:]
+
+    # Validate PNG signature in decoded data
+    decoded_data = base64.b64decode(clean_base64)
+    if decoded_data[:8] == b'\x89PNG\r\n\x1a\n':
+        return clean_base64
+    else:
+        raise ValueError("Invalid PNG signature in decoded data")
+```
+
+**Enhanced Error Handling Categories**:
+- `base64_validation_failed`: Thumbnail data corruption issues
+- `ai_analysis_failed`: LM Studio API or response parsing errors
+- `ffmpeg_extraction_failed`: Video thumbnail extraction failures
+- `file_access_error`: File system or permission issues
+
+**Production Monitoring Support**:
+- Structured error responses with timestamps and context
+- Error categorization for automated monitoring
+- Detailed skip reasons for troubleshooting
+- Processing step identification for debugging
 
 ### Phase 5: Notes Generation
 
@@ -386,6 +459,97 @@ options:
   create_missing_folders: true
   enable_video_analysis: true
   enable_notes_generation: true
+```
+
+## Post-Processing Cleanup Workflow (NEW!)
+
+### Overview
+The post-processing cleanup system handles misclassified videos that were routed to Wudan folders based on time rules but don't actually contain martial arts content.
+
+### Architecture
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│ Wudan Scanner   │───▶│ Notes Parser     │───▶│ Video Validator │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+         │                       │                       │
+         ▼                       ▼                       ▼
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│ Date Folder     │    │ "NOT KUNG FU"    │    │ Preview         │
+│ Detection       │    │ Detection        │    │ Generator       │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+                                │                       │
+                                ▼                       ▼
+                    ┌──────────────────┐    ┌─────────────────┐
+                    │ User Validation  │    │ Cleanup         │
+                    │ (Manual Review)  │    │ Executor        │
+                    └──────────────────┘    └─────────────────┘
+                                │                       │
+                                ▼                       ▼
+                    ┌──────────────────┐    ┌─────────────────┐
+                    │ File Mover       │    │ Notes Updater   │
+                    │                  │    │                 │
+                    └──────────────────┘    └─────────────────┘
+```
+
+### Process Flow
+
+#### Phase 1: Detection & Scanning
+**Component**: `NonKungFuVideoCleanup.scan_for_non_kungfu_videos()`
+
+1. **Scan Wudan Folders**: Iterate through all date folders in Wudan directory
+2. **Date Folder Validation**: Verify folders match `YYYY_MM_DD` pattern
+3. **Notes File Discovery**: Find `YYYYMMDD_Notes.txt` and `*_analysis.txt` files
+4. **Content Parsing**: Parse notes files for "NOT KUNG FU" markers
+5. **Video File Matching**: Match notes entries to actual video files
+
+#### Phase 2: Preview & Validation
+**Component**: `NonKungFuVideoCleanup.preview_cleanup()`
+
+1. **Preview Generation**: Show user exactly what would be moved
+2. **Target Folder Calculation**: Determine destination folders in regular videos
+3. **Conflict Detection**: Check for existing files in target locations
+4. **Summary Report**: Display statistics and affected files
+
+#### Phase 3: User-Controlled Execution
+**Component**: `NonKungFuVideoCleanup.execute_cleanup()`
+
+1. **Dry Run Option**: Simulate operations without making changes
+2. **File Movement**: Move videos from Wudan to regular video folders
+3. **Folder Creation**: Create target date folders if they don't exist
+4. **Notes File Updates**: Remove moved video entries from Wudan notes files
+5. **Completion Report**: Summary of operations performed
+
+### Key Features
+
+#### Safety Mechanisms
+- **Preview Mode**: See exactly what will be moved before execution
+- **Dry Run Support**: Test operations without making actual changes
+- **User Validation**: Manual review required before cleanup execution
+- **Backup Preservation**: Original notes files are updated, not deleted
+
+#### Intelligent Processing
+- **Pattern Recognition**: Identifies "NOT KUNG FU" markers in various note formats
+- **File Matching**: Handles different video filename patterns and extensions
+- **Folder Management**: Creates target folders and maintains directory structure
+- **Notes Synchronization**: Keeps notes files synchronized with video locations
+
+### Usage Patterns
+
+#### Daily Workflow
+```bash
+# Normal processing (creates "NOT KUNG FU" markers)
+./venv/Scripts/python.exe VideoProcessor/phone_sync.py --config config.yaml
+```
+
+#### Periodic Cleanup (Weekly/Monthly)
+```bash
+# Step 1: Preview what needs cleanup
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --preview
+
+# Step 2: Review preview results manually
+
+# Step 3: Execute cleanup after validation
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --execute
 ```
 
 ## Logging & Monitoring

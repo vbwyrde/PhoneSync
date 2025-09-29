@@ -267,30 +267,101 @@ class VideoAnalyzer:
             self.logger.error(f"Error extracting thumbnail from {video_path}: {e}")
             return None
     
+    def _validate_and_repair_base64_image(self, thumbnail_base64: str) -> str:
+        """
+        Validate and repair base64 image data for robust AI analysis
+
+        Extracted and enhanced from legacy N8N processor for improved reliability.
+        Handles common base64 corruption issues and validates PNG signatures.
+
+        Args:
+            thumbnail_base64: Base64 encoded thumbnail data
+
+        Returns:
+            Validated and repaired base64 string
+
+        Raises:
+            ValueError: If base64 data cannot be validated or repaired
+        """
+        try:
+            # Remove data URL prefix if present
+            clean_base64 = thumbnail_base64
+            if thumbnail_base64.startswith('data:image'):
+                clean_base64 = thumbnail_base64.split(',')[1]
+
+            # Debug logging for troubleshooting
+            self.logger.debug(f"Original base64 length: {len(thumbnail_base64)} characters")
+            self.logger.debug(f"Base64 starts with: {thumbnail_base64[:50]}...")
+
+            # Fix corrupted base64 data - remove leading invalid characters
+            # Valid PNG base64 should start with 'iVBORw0KGgo'
+            if not clean_base64.startswith('iVBORw0KGgo'):
+                self.logger.warning(f"Base64 doesn't start with PNG signature, attempting to fix...")
+                # Try to find the actual PNG start
+                png_start = clean_base64.find('iVBORw0KGgo')
+                if png_start > 0:
+                    self.logger.info(f"Found PNG signature at position {png_start}, removing {png_start} leading characters")
+                    clean_base64 = clean_base64[png_start:]
+                elif clean_base64.startswith('/'):
+                    # Common issue: leading slash character
+                    self.logger.info("Removing leading slash character")
+                    clean_base64 = clean_base64[1:]
+
+            self.logger.debug(f"Clean base64 length: {len(clean_base64)} characters")
+            self.logger.debug(f"Clean base64 starts with: {clean_base64[:50]}...")
+
+            # Test decode to validate
+            decoded_data = base64.b64decode(clean_base64)
+            self.logger.debug(f"Decoded data length: {len(decoded_data)} bytes")
+            self.logger.debug(f"Decoded data starts with: {decoded_data[:20].hex()}")
+
+            # Check if it's a valid PNG (should start with PNG signature)
+            if decoded_data[:8] == b'\x89PNG\r\n\x1a\n':
+                self.logger.debug("Valid PNG signature detected")
+            else:
+                self.logger.warning(f"Invalid PNG signature. First 8 bytes: {decoded_data[:8].hex()}")
+                # Try one more fix - sometimes there are extra bytes at the start
+                if len(decoded_data) > 8:
+                    for i in range(1, min(10, len(decoded_data))):
+                        if decoded_data[i:i+8] == b'\x89PNG\r\n\x1a\n':
+                            self.logger.info(f"Found PNG signature at byte offset {i}, adjusting base64")
+                            # Re-encode without the leading bytes
+                            fixed_data = decoded_data[i:]
+                            clean_base64 = base64.b64encode(fixed_data).decode('utf-8')
+                            self.logger.info(f"Fixed base64 length: {len(clean_base64)} characters")
+                            break
+
+            return clean_base64
+
+        except Exception as e:
+            raise ValueError(f"Invalid base64 image data: {str(e)}")
+
     def _analyze_thumbnail_with_ai(self, thumbnail_base64: str, file_info: Dict[str, Any]) -> Dict[str, Any]:
         """
         Analyze thumbnail using LM Studio AI
-        
+
         Args:
             thumbnail_base64: Base64 encoded thumbnail data
             file_info: File information dictionary
-            
+
         Returns:
             Analysis results dictionary
         """
         try:
+            # Validate and repair base64 data before AI analysis
+            validated_base64 = self._validate_and_repair_base64_image(thumbnail_base64)
             # Prepare the prompt with file context
             filename = file_info.get('name', 'unknown')
             file_date = file_info.get('date', datetime.now())
-            
+
             context_prompt = f"""
 File: {filename}
 Date: {file_date.strftime('%Y-%m-%d %H:%M:%S')}
 
 {self.kung_fu_prompt}
 """
-            
-            # Prepare request payload
+
+            # Prepare request payload using validated base64
             payload = {
                 "model": self.model,
                 "messages": [
@@ -304,7 +375,7 @@ Date: {file_date.strftime('%Y-%m-%d %H:%M:%S')}
                             {
                                 "type": "image_url",
                                 "image_url": {
-                                    "url": f"data:image/png;base64,{thumbnail_base64}"
+                                    "url": f"data:image/png;base64,{validated_base64}"
                                 }
                             }
                         ]
@@ -343,10 +414,13 @@ Date: {file_date.strftime('%Y-%m-%d %H:%M:%S')}
                 # Clean the AI response for notes (remove <think> tags and extract clean description)
                 clean_description = self._clean_ai_response(ai_response)
 
-                # Generate note content if kung fu detected
+                # Generate note content for both kung fu and non-kung fu videos
                 note_content = ""
                 if is_kung_fu:
                     note_content = f"Kung Fu/Martial Arts detected in video thumbnail.\n\nAI Analysis:\n{clean_description}\n\nDetected on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+                else:
+                    # Generate "NOT KUNG FU" note for videos routed to Wudan folder but not containing martial arts
+                    note_content = f"NOT KUNG FU - Video does not contain martial arts content.\n\nAI Analysis:\n{clean_description}\n\nAnalyzed on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\nNote: This video was routed to Wudan folder based on time rules but AI analysis indicates it does not contain kung fu/martial arts content."
 
                 analysis_result = {
                     'success': True,
@@ -363,20 +437,45 @@ Date: {file_date.strftime('%Y-%m-%d %H:%M:%S')}
 
                 return analysis_result
             else:
+                # Enhanced error handling with categorization
                 return {
                     'success': False,
-                    'error': f"LM Studio request failed: {response.status_code} - {response.text}"
+                    'error': f"LM Studio request failed: {response.status_code} - {response.text}",
+                    'error_type': 'lm_studio_api_failed',
+                    'error_step': 'vision_analysis',
+                    'status_code': response.status_code,
+                    'details': response.text,
+                    'processed_at': datetime.now().isoformat(),
+                    'skip_reason': f"LM Studio API call failed with status {response.status_code}"
                 }
-                
+
         except requests.Timeout:
             return {
                 'success': False,
-                'error': "LM Studio request timeout"
+                'error': "LM Studio request timeout",
+                'error_type': 'lm_studio_timeout',
+                'error_step': 'vision_analysis',
+                'processed_at': datetime.now().isoformat(),
+                'skip_reason': "LM Studio API request timed out"
+            }
+        except ValueError as e:
+            # Base64 validation errors
+            return {
+                'success': False,
+                'error': f"Base64 validation error: {str(e)}",
+                'error_type': 'base64_validation_failed',
+                'error_step': 'thumbnail_validation',
+                'processed_at': datetime.now().isoformat(),
+                'skip_reason': f"Thumbnail data validation failed: {str(e)}"
             }
         except Exception as e:
             return {
                 'success': False,
-                'error': f"AI analysis error: {str(e)}"
+                'error': f"AI analysis error: {str(e)}",
+                'error_type': 'vision_processing_exception',
+                'error_step': 'vision_analysis',
+                'processed_at': datetime.now().isoformat(),
+                'skip_reason': f"Vision processing failed with exception: {str(e)}"
             }
 
     def _clean_ai_response(self, ai_response: str) -> str:
@@ -442,17 +541,17 @@ Date: {file_date.strftime('%Y-%m-%d %H:%M:%S')}
     def generate_note_file(self, video_path: str, analysis_result: Dict[str, Any],
                           target_directory: str) -> Optional[str]:
         """
-        Generate a note file for kung fu videos
-        
+        Generate a note file for analyzed videos (both kung fu and non-kung fu)
+
         Args:
             video_path: Path to the video file
             analysis_result: Analysis results from analyze_video
             target_directory: Directory where the video will be stored
-            
+
         Returns:
             Path to generated note file or None if not generated
         """
-        if not analysis_result.get('is_kung_fu') or not analysis_result.get('note_content'):
+        if not analysis_result.get('note_content'):
             return None
         
         try:

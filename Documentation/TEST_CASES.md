@@ -83,7 +83,7 @@
 - **Expected**: Correct rule set applied
 - **Validation**: Boundary condition handling
 
-### 4. **AI Video Analysis Tests**
+### 4. **Enhanced AI Video Analysis Tests**
 
 #### 4.1 Skip Analysis for Existing Files
 - **Setup**: Video already exists in target folder
@@ -106,10 +106,35 @@
 #### 4.4 Dynamic Midpoint Extraction
 - **Test Cases**:
   - Short video (10 seconds) → Extract at 5 seconds
-  - Medium video (60 seconds) → Extract at 30 seconds  
+  - Medium video (60 seconds) → Extract at 30 seconds
   - Long video (300 seconds) → Extract at 150 seconds
 - **Expected**: Midpoint calculation adapts to video length
 - **Validation**: Correct timestamp calculation
+
+#### 4.5 Enhanced Base64 Validation Tests
+- **Test Cases**:
+  - **Valid PNG Data**: Standard base64 PNG thumbnail
+  - **Data URL Prefix**: `data:image/png;base64,iVBORw0KGgo...`
+  - **Leading Character Corruption**: `/iVBORw0KGgo...` (extra slash)
+  - **Invalid Base64**: Completely corrupted data
+- **Expected**: Automatic detection and repair of fixable corruption
+- **Validation**: Only truly invalid data causes failures
+
+#### 4.6 Enhanced Error Handling Tests
+- **Test Cases**:
+  - **Base64 Validation Failure**: Corrupted thumbnail data
+  - **AI Analysis Failure**: LM Studio API errors
+  - **FFmpeg Extraction Failure**: Video file corruption
+- **Expected**: Structured error responses with categorization
+- **Validation**: Error type, step, timestamp, and skip reason logged
+
+#### 4.7 Production Reliability Tests
+- **Test Cases**:
+  - **Corrupted Video Files**: Files with damaged headers
+  - **Network Interruption**: LM Studio connection issues
+  - **Memory Pressure**: Large video file processing
+- **Expected**: Graceful degradation without system crashes
+- **Validation**: System continues processing other files
 
 ### 5. **Folder Structure Tests**
 
@@ -197,8 +222,58 @@
 3. Validate memory usage
 4. Confirm system stability
 
+### 9. **Post-Processing Cleanup Tests** ⭐ **NEW**
+
+#### 9.1 "NOT KUNG FU" Detection
+- **Test Case**: Notes file with mixed kung fu and "NOT KUNG FU" entries
+- **Expected**: Cleanup script identifies only "NOT KUNG FU" videos
+- **Validation**: Correct parsing of notes file content
+
+#### 9.2 Preview Mode Functionality
+- **Test Case**: Run cleanup with `--preview` flag
+- **Expected**: Shows what would be moved without making changes
+- **Validation**: No actual file operations performed
+
+#### 9.3 Cleanup Execution
+- **Test Case**: Execute cleanup after preview validation
+- **Expected**: Videos moved from Wudan to regular folders
+- **Validation**: Files moved to correct date folders, notes updated
+
+#### 9.4 Dry Run Mode
+- **Test Case**: Run cleanup with `--execute --dry-run`
+- **Expected**: Simulates operations without making changes
+- **Validation**: Detailed logging without file modifications
+
+#### 9.5 Notes File Updates
+- **Test Case**: Cleanup videos with entries in date-based notes files
+- **Expected**: "NOT KUNG FU" entries removed, kung fu entries preserved
+- **Validation**: Notes files properly updated after cleanup
+
+#### 9.6 Mixed Date Folders
+- **Test Case**: Multiple date folders with varying numbers of "NOT KUNG FU" videos
+- **Expected**: All misclassified videos identified and processed
+- **Validation**: Comprehensive scanning across all Wudan date folders
+
+### 10. **Test Environment Setup Tests** ⭐ **NEW**
+
+#### 10.1 Mock Data Generation
+- **Test Case**: `setup_test_environment.py --scenario mock_not_kungfu`
+- **Expected**: Creates realistic test data with "NOT KUNG FU" notes
+- **Validation**: Test files and notes created in correct format
+
+#### 10.2 Test Scenario Variations
+- **Test Case**: Different scenarios (clean, partial, mixed, mock_not_kungfu)
+- **Expected**: Each scenario creates appropriate test conditions
+- **Validation**: Correct files removed/created for each scenario
+
+#### 10.3 Test Environment Isolation
+- **Test Case**: Test scripts use development environment paths
+- **Expected**: No impact on production data during testing
+- **Validation**: All test operations confined to test directories
+
 ## 📊 Success Criteria
 
+### Core System
 - ✅ All file naming conventions handled correctly
 - ✅ Deduplication prevents unnecessary processing
 - ✅ Wudan rules route videos accurately
@@ -207,3 +282,17 @@
 - ✅ Performance meets expectations
 - ✅ Configuration validation works
 - ✅ Edge cases don't crash system
+
+### Post-Processing Cleanup ⭐ **NEW**
+- ✅ "NOT KUNG FU" videos correctly identified in notes files
+- ✅ Preview mode shows accurate cleanup plan
+- ✅ Cleanup execution moves videos to correct folders
+- ✅ Notes files properly updated after video movement
+- ✅ Dry run mode simulates without making changes
+- ✅ User validation workflow prevents accidental operations
+
+### Test Environment ⭐ **NEW**
+- ✅ Test setup scripts create realistic test conditions
+- ✅ Mock data generation produces valid test scenarios
+- ✅ Test environment isolation prevents production impact
+- ✅ Multiple test scenarios support comprehensive validation

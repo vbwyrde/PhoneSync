@@ -12,7 +12,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 
 # Add the parent directory to the path so we can import modules
-sys.path.append(str(Path(__file__).parent))
+sys.path.append(str(Path(__file__).parent.parent))
 
 from modules.config_manager import ConfigManager
 from modules.logger_setup import setup_logging

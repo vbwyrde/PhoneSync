@@ -18,7 +18,7 @@ from pathlib import Path
 from datetime import datetime
 
 # Add modules directory to path
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from modules.config_manager import ConfigManager
 from modules.logger_setup import setup_logging

@@ -38,7 +38,7 @@ class ProductionDryRunTester:
     def __init__(self, max_days: int = 20):
         """
         Initialize the tester
-        
+
         Args:
             max_days: Maximum number of days worth of files to process
         """
@@ -135,6 +135,93 @@ class ProductionDryRunTester:
             stats['total_size_mb'] += item.get('size_mb', 0)
 
         return stats
+
+    def display_detailed_transfer_report(self, organization_plan: list):
+        """Display detailed file transfer report showing exactly where each file would go"""
+        print(f"\n📋 Detailed File Transfer Report")
+        print("=" * 80)
+        print("Format: filename --> target_path (folder_status) [routing_reason]")
+        print("-" * 80)
+
+        # Deduplicate files by filename (since they appear in both Internal_dmc and SDCard_DMC)
+        unique_files = {}
+        for item in organization_plan:
+            filename = Path(item['source']).name
+            if filename not in unique_files:
+                unique_files[filename] = item
+
+        # Sort files by target folder for better organization
+        sorted_items = sorted(unique_files.values(), key=lambda x: (
+            x.get('target_folder', ''),
+            x.get('final_filename', '')
+        ))
+
+        for item in sorted_items:
+            if item.get('error'):
+                print(f"❌ {Path(item['source']).name} --> ERROR: {item['error']}")
+                continue
+
+            source_filename = Path(item['source']).name
+            target_folder = item.get('target_folder', '')
+            final_filename = item.get('final_filename', source_filename)
+            would_skip = item.get('would_skip', False)
+            file_type = item.get('file_type', 'unknown')
+
+            if would_skip:
+                print(f"⏭️  {source_filename} --> SKIP (duplicate)")
+                continue
+
+            # Determine folder status
+            folder_exists = os.path.exists(target_folder) if target_folder else False
+            folder_status = "Existing Folder" if folder_exists else "New Folder Created"
+
+            # Get relative target path for display
+            if target_folder:
+                # Extract the meaningful part of the path
+                target_parts = Path(target_folder).parts
+
+                # Find the base target directory (My Pictures, My Videos, etc.)
+                base_found = False
+                display_path = ""
+
+                for i, part in enumerate(target_parts):
+                    if part in ['My Pictures', 'My Videos']:
+                        # Include this part and everything after
+                        display_path = str(Path(*target_parts[i:]))
+                        base_found = True
+                        break
+
+                if not base_found:
+                    # Fallback to just the folder name
+                    display_path = Path(target_folder).name
+
+                # Determine routing reason
+                routing_reason = self._get_routing_reason(source_filename, target_folder, file_type)
+
+                # Handle filename changes
+                if final_filename != source_filename:
+                    filename_note = f" (renamed from {source_filename})"
+                else:
+                    filename_note = ""
+
+                print(f"📁 {source_filename} --> {display_path}/{final_filename}{filename_note} ({folder_status}) [{routing_reason}]")
+            else:
+                print(f"❌ {source_filename} --> ERROR: Could not determine target")
+
+        print("-" * 80)
+        print(f"📊 Total unique files to transfer: {len([item for item in sorted_items if not item.get('would_skip', False) and not item.get('error')])}")
+
+    def _get_routing_reason(self, filename: str, target_folder: str, file_type: str) -> str:
+        """Determine why a file was routed to a specific folder"""
+        if file_type == 'picture':
+            return "Picture file"
+        elif file_type == 'video':
+            if 'Wudan' in target_folder:
+                return "Video - Wudan time rules matched"
+            else:
+                return "Video - Regular time"
+        else:
+            return f"{file_type} file"
 
     def run_dry_run_test(self) -> dict:
         """
@@ -245,28 +332,31 @@ class ProductionDryRunTester:
         print(f"🔍 Files filtered: {results['files_filtered']}")
         print(f"📅 Days processed: {results['days_processed']}")
         print(f"📋 Organization plan items: {len(results['organization_plan'])}")
-        
+
         # File type breakdown
         file_types = {}
         for item in results['organization_plan']:
             file_type = item.get('file_type', 'unknown')
             file_types[file_type] = file_types.get(file_type, 0) + 1
-        
+
         print(f"\n📊 File Type Breakdown:")
         for file_type, count in file_types.items():
             print(f"   - {file_type}: {count} files")
-        
+
         # Target folder breakdown
         target_folders = {}
         for item in results['organization_plan']:
             if item.get('target_folder'):
                 folder_name = Path(item['target_folder']).name
                 target_folders[folder_name] = target_folders.get(folder_name, 0) + 1
-        
+
         print(f"\n📂 Target Folder Breakdown:")
         for folder, count in sorted(target_folders.items()):
             print(f"   - {folder}: {count} files")
-        
+
+        # Detailed file transfer report
+        self.display_detailed_transfer_report(results['organization_plan'])
+
         # Potential issues
         if preview.get('potential_issues'):
             print(f"\n⚠️  Potential Issues ({len(preview['potential_issues'])}):")
@@ -274,7 +364,7 @@ class ProductionDryRunTester:
                 print(f"   - {issue}")
             if len(preview['potential_issues']) > 10:
                 print(f"   ... and {len(preview['potential_issues']) - 10} more")
-        
+
         # Statistics
         stats = preview.get('statistics', {})
         print(f"\n📈 Processing Statistics:")
@@ -298,16 +388,16 @@ def main():
         action='store_true',
         help='Enable verbose output'
     )
-    
+
     args = parser.parse_args()
-    
+
     print("🧪 Production Dry Run Test")
     print("=" * 50)
     print(f"📅 Processing up to {args.days} days worth of files")
     print(f"🚫 AI analysis disabled for speed")
     print(f"🔍 Dry run mode - no files will be moved")
     print()
-    
+
     try:
         tester = ProductionDryRunTester(max_days=args.days)
         results = tester.run_dry_run_test()

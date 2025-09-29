@@ -31,6 +31,62 @@ This folder contains supplementary scripts that are not part of the core system 
 ./venv/Scripts/python.exe VideoProcessor/Scripts/production_dry_run_test.py --verbose
 ```
 
+#### `setup_test_environment.py` ⭐ **NEW**
+**Purpose**: Create controlled test conditions for validating system revisions
+
+**Features**:
+- Multiple test scenarios (clean, partial, wudan_only, mixed, mock_not_kungfu)
+- Removes notes files to force reprocessing of specific videos
+- Creates mock "NOT KUNG FU" notes files for testing cleanup functionality
+- Resets processing state for full system testing
+- Generates detailed test setup reports
+- Uses development environment paths for safe testing
+
+**Usage**:
+```bash
+# Create mixed test conditions (default)
+./venv/Scripts/python.exe VideoProcessor/Scripts/setup_test_environment.py
+
+# Remove all notes files for complete reprocessing
+./venv/Scripts/python.exe VideoProcessor/Scripts/setup_test_environment.py --scenario clean --reset-state
+
+# Create mock "NOT KUNG FU" videos for testing cleanup
+./venv/Scripts/python.exe VideoProcessor/Scripts/setup_test_environment.py --scenario mock_not_kungfu
+
+# Focus on Wudan folder testing
+./venv/Scripts/python.exe VideoProcessor/Scripts/setup_test_environment.py --scenario wudan_only
+```
+
+#### `cleanup_non_kungfu_videos.py` ⭐ **NEW**
+**Purpose**: Post-processing cleanup utility for moving misclassified videos from Wudan folders
+
+**Features**:
+- **Smart Detection**: Scans Wudan folders for videos with "NOT KUNG FU" designations in notes files
+- **Preview Mode**: Shows exactly what would be moved before making changes
+- **User Validation**: Manual review process before cleanup execution
+- **File Movement**: Moves videos to appropriate date folders in regular My Videos directory
+- **Notes Management**: Updates notes files by removing moved video entries
+- **Safety Features**: Dry-run mode, comprehensive error handling, and detailed reporting
+- **Flexible Parsing**: Handles both date-based notes files and individual analysis files
+
+**Usage**:
+```bash
+# Preview what would be moved (recommended first step)
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --preview
+
+# Execute cleanup after reviewing preview
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --execute
+
+# Test operations without making actual changes
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --execute --dry-run
+
+# Verbose output for debugging
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --preview --verbose
+```
+
+**Workflow Integration**:
+This script is designed for periodic use (weekly/monthly) after normal processing has created "NOT KUNG FU" markers in notes files.
+
 #### `test_incremental_processing.py`
 **Purpose**: Test the incremental processing functionality
 
@@ -172,6 +228,43 @@ All scripts require:
 - `production_dry_run_test.py` is specifically designed for safe production testing
 - It never modifies actual files (dry-run only)
 - Automatically switches back to original environment
+
+## 🚀 Optimized Workflow Examples
+
+### **Daily Processing Workflow**
+```bash
+# Step 1: Normal processing (creates "NOT KUNG FU" markers automatically)
+./venv/Scripts/python.exe VideoProcessor/phone_sync.py --config config.yaml --verbose
+```
+
+### **Periodic Cleanup Workflow (Weekly/Monthly)**
+```bash
+# Step 1: Preview what needs cleanup
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --preview
+
+# Step 2: Review the preview output manually
+
+# Step 3: Execute cleanup after validation
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --execute
+```
+
+### **Testing & Validation Workflow**
+```bash
+# Step 1: Create test conditions
+./venv/Scripts/python.exe VideoProcessor/Scripts/setup_test_environment.py --scenario mock_not_kungfu
+
+# Step 2: Test cleanup functionality
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --preview
+
+# Step 3: Execute test cleanup
+./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --execute --dry-run
+```
+
+### **Benefits of This Approach**
+- **Efficiency**: No disruption to daily processing workflow
+- **User Control**: Manual validation before moving files
+- **Safety**: Preview and dry-run modes prevent mistakes
+- **Flexibility**: Run cleanup on your schedule, not during every sync
 
 ## 🔗 Related Documentation
 

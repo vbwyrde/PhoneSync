@@ -12,9 +12,9 @@ from datetime import datetime
 # Add the parent directory to the path so we can import modules
 sys.path.append(str(Path(__file__).parent.parent))
 
-from VideoProcessor.modules.config_manager import ConfigManager
-from VideoProcessor.modules.video_analyzer import VideoAnalyzer
-from VideoProcessor.modules.notes_generator import NotesGenerator
+from modules.config_manager import ConfigManager
+from modules.video_analyzer import VideoAnalyzer
+from modules.notes_generator import NotesGenerator
 import logging
 
 def setup_logging():
