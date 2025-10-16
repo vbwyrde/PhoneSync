@@ -10,17 +10,18 @@ PROD_VARS:
   source_root: "\\\\MA-2022-C\\PHONESYNC"
 
   # Production source subdirectories (will be scanned recursively)
+  # Updated structure after Android 12 migration to SD Card only
   source_subdirs:
-    - "Internal_dmc/Camera"
-    - "Internal_dmc/FavoritesMA"
-    - "Internal_dmc/GIF"
-    - "Internal_dmc/Official"
-    - "Internal_dmc/Videocaptures"
-    - "SDCard_DMC/Camera"
-    - "SDCard_DMC/FavoritesMA"
-    - "SDCard_DMC/GIF"
-    - "SDCard_DMC/Official"
-    - "SDCard_DMC/Videocaptures"
+    - "SDCard_DCIM/Camera"
+    - "SDCard_DCIM/FavoritesMA"
+    - "SDCard_DCIM/Abr_GIFs"
+    - "SDCard_DCIM/Official"
+    - "SDCard_DCIM/Videocaptures"
+    - "SDCard_DCIM/Mom"
+    - "SDCard_DCIM/Video Editor"
+    - "SDCard_Pictures/Instagram"
+    - "SDCard_Pictures/Lumii"
+    - "SDCard_Pictures/WeChat"
 
   # Production target paths
   target_root: "\\\\MA-2022-C\\UserData_G"
@@ -129,6 +130,12 @@ logging:
   keep_log_days: 30  # Restored to original 30 days
   log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
   rotation_enabled: true
+
+# State management configuration
+state_management:
+  state_dir: "VideoProcessor/state"  # Directory for processing state files
+  processing_state_file: "processing_state.json"
+  processed_files_db: "processed_files.json"
 
 # Performance settings
 performance:

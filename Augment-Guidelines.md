@@ -173,6 +173,41 @@ If you're unsure whether existing code is sophisticated or needs improvement:
 
 ---
 
+## 🧪 **Testing and Dry-Run Guidelines**
+
+### **CRITICAL: No Fake Results in Tests**
+
+**Never create dummy/fake results in dry-run or test modes that make tests pass without actually validating functionality.**
+
+#### **Prohibited Practices**
+- ❌ **Hardcoded Success Results**: Returning `success: True` with fake data in dry-run mode
+- ❌ **Dummy Data**: Providing fake confidence scores, descriptions, or analysis results
+- ❌ **Simulated Success**: Making tests pass without exercising the actual code paths
+- ❌ **Fake Validations**: Returning positive results without performing real validation
+
+#### **Correct Approaches**
+- ✅ **Skip with Clear Reason**: Return `analyzed: False, reason: 'Dry run mode - analysis skipped'`
+- ✅ **Caller Control**: Let the calling code decide whether to invoke the function or not
+- ✅ **Real Testing**: Use actual test data and real function calls when testing functionality
+- ✅ **Honest Results**: Always return truthful results about what was actually performed
+
+#### **Why This Matters**
+Fake results in tests create a false sense of security and hide real bugs that only surface in production. Tests should validate actual functionality, not just code paths.
+
+**Example of Bad Practice**:
+```python
+if dry_run:
+    return {'analyzed': True, 'is_kung_fu': False, 'confidence': 0.5}  # FAKE!
+```
+
+**Example of Good Practice**:
+```python
+if dry_run:
+    return {'analyzed': False, 'reason': 'Dry run mode - analysis skipped'}
+```
+
+---
+
 ## ⚠️ **Common Pitfalls to Avoid**
 
 ### **Environment Issues**

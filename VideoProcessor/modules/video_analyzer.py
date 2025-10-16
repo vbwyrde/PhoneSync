@@ -101,12 +101,10 @@ class VideoAnalyzer:
             }
 
         if dry_run:
-            self.logger.info(f"[DRY RUN] Would analyze video: {video_path}")
+            self.logger.info(f"[DRY RUN] Skipping video analysis: {video_path}")
             return {
-                'analyzed': True,
-                'is_kung_fu': False,
-                'confidence': 0.5,
-                'description': '[DRY RUN] Simulated analysis - no actual AI processing performed',
+                'analyzed': False,
+                'reason': 'Dry run mode - analysis skipped to avoid dummy results',
                 'dry_run': True
             }
 

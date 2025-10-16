@@ -52,16 +52,23 @@ class TargetPathResolver:
         file_type = file_info['type']
         extension = file_info['extension']
         
-        # Create date pattern for folder name
-        date_pattern = file_date.strftime('%Y_%m_%d')
-        
         # Determine base target path based on file type and Wudan rules
         base_path = self._determine_base_path(file_type, extension, file_date)
-        
+
         if not base_path:
             self.logger.warning(f"Unsupported file extension: {extension} for file {file_path}")
             return None
-        
+
+        # Create date pattern for folder name - add day of week for Wudan files
+        if base_path == self.target_paths['wudan']:
+            # For Wudan files: 2024_06_11_Wed
+            day_of_week = file_date.strftime('%a')  # Mon, Tue, Wed, etc.
+            date_pattern = file_date.strftime(f'%Y_%m_%d_{day_of_week}')
+            self.logger.debug(f"Wudan folder date pattern with day of week: {date_pattern}")
+        else:
+            # For regular files: 2024_06_11
+            date_pattern = file_date.strftime('%Y_%m_%d')
+
         # Look for existing folder with the date pattern (allows suffixes like _PaulArt)
         existing_folder = self.dedup_manager.find_existing_date_folder(base_path, date_pattern)
         

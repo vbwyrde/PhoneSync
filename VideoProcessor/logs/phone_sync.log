@@ -254,3 +254,69 @@ Got it, let's analyze the video thumbnail. The image shows a test pattern with c
 2025-09-22 21:07:28 - phone_sync - INFO - Progress: 100.0% (250/250)
 2025-09-22 21:07:28 - phone_sync - INFO - Processing complete: 250/250 items
 2025-09-22 21:07:28 - phone_sync - INFO - Configuration and logging test suite completed successfully
+2025-10-14 21:35:53 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-14 21:42:14 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-14 22:15:06 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-14 23:00:27 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-14 23:00:27 - phone_sync - INFO - No previous processing state found - first run
+2025-10-14 23:00:27 - phone_sync - INFO - Loaded 60 previously processed files
+2025-10-14 23:00:27 - phone_sync - INFO - ProcessingStateManager initialized. State file: state\processing_state.json
+2025-10-14 23:00:27 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-10-14 23:00:27 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
+2025-10-14 23:02:53 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos
+2025-10-14 23:03:44 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos/Wudan
+2025-10-14 23:04:06 - phone_sync - INFO - Cache built successfully. Found 46860 existing files across all target directories.
+2025-10-14 23:04:08 - phone_sync - INFO - Found existing file in date-matched folder: 20211011_071909_1_1.mp4 matches 20211011_071909_1_1.mp4 in 2021_10_11_Mon
+2025-10-14 23:04:08 - phone_sync - INFO - File already exists in target: 20211011_071909_1_1.mp4 (Size: 48247575 bytes)
+2025-10-14 23:04:11 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-14 23:04:11 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065014_1.mp4 matches 20211019_065014_1.mp4 in 2021_10_19_Tue
+2025-10-14 23:04:11 - phone_sync - INFO - File already exists in target: 20211019_065014_1.mp4 (Size: 6997922 bytes)
+2025-10-14 23:04:11 - phone_sync - INFO - Test processing completed: {'files_processed': 2, 'files_skipped': 2, 'videos_analyzed': 2, 'errors': 0, 'wudan_files': 0, 'regular_files': 2}
+2025-10-15 23:26:48 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-15 23:26:48 - phone_sync - INFO - No previous processing state found - first run
+2025-10-15 23:26:48 - phone_sync - INFO - Loaded 60 previously processed files
+2025-10-15 23:26:48 - phone_sync - INFO - ProcessingStateManager initialized. State file: state\processing_state.json
+2025-10-15 23:26:50 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-10-15 23:26:51 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
+2025-10-15 23:28:05 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-15 23:28:05 - phone_sync - INFO - No previous processing state found - first run
+2025-10-15 23:28:05 - phone_sync - INFO - Loaded 60 previously processed files
+2025-10-15 23:28:05 - phone_sync - INFO - ProcessingStateManager initialized. State file: state\processing_state.json
+2025-10-15 23:28:08 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-10-15 23:28:08 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
+2025-10-15 23:30:37 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos
+2025-10-15 23:31:38 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos/Wudan
+2025-10-15 23:32:09 - phone_sync - INFO - Cache built successfully. Found 46860 existing files across all target directories.
+2025-10-15 23:32:11 - phone_sync - INFO - Found existing file in date-matched folder: 20211011_071909_1_1.mp4 matches 20211011_071909_1_1.mp4 in 2021_10_11_Mon
+2025-10-15 23:32:11 - phone_sync - INFO - File already exists in target: 20211011_071909_1_1.mp4 (Size: 48247575 bytes)
+2025-10-15 23:32:13 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-15 23:32:13 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065014_1.mp4 matches 20211019_065014_1.mp4 in 2021_10_19_Tue
+2025-10-15 23:32:13 - phone_sync - INFO - File already exists in target: 20211019_065014_1.mp4 (Size: 6997922 bytes)
+2025-10-15 23:32:16 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-15 23:32:16 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065056_1.mp4 matches 20211019_065056_1.mp4 in 2021_10_19_Tue
+2025-10-15 23:32:16 - phone_sync - INFO - File already exists in target: 20211019_065056_1.mp4 (Size: 11349613 bytes)
+2025-10-15 23:32:19 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-15 23:32:19 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065212_1.mp4 matches 20211019_065212_1.mp4 in 2021_10_19_Tue
+2025-10-15 23:32:19 - phone_sync - INFO - File already exists in target: 20211019_065212_1.mp4 (Size: 9128705 bytes)
+2025-10-15 23:32:19 - phone_sync - INFO - Test processing completed: {'files_processed': 0, 'files_skipped': 4, 'videos_analyzed': 0, 'errors': 0, 'wudan_files': 0, 'regular_files': 0}
+2025-10-15 23:39:29 - phone_sync - INFO - Starting test processing of 4 MP4 files
+2025-10-15 23:39:29 - phone_sync - INFO - No previous processing state found - first run
+2025-10-15 23:39:29 - phone_sync - INFO - Loaded 60 previously processed files
+2025-10-15 23:39:29 - phone_sync - INFO - ProcessingStateManager initialized. State file: state\processing_state.json
+2025-10-15 23:39:32 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-10-15 23:39:32 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Pictures
+2025-10-15 23:42:13 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos
+2025-10-15 23:43:14 - phone_sync - INFO - Scanning existing files in: //MA-2022-C/UserData_G/My Videos/Wudan
+2025-10-15 23:43:51 - phone_sync - INFO - Cache built successfully. Found 46860 existing files across all target directories.
+2025-10-15 23:43:53 - phone_sync - INFO - Found existing file in date-matched folder: 20211011_071909_1_1.mp4 matches 20211011_071909_1_1.mp4 in 2021_10_11_Mon
+2025-10-15 23:43:53 - phone_sync - INFO - File already exists in target: 20211011_071909_1_1.mp4 (Size: 48247575 bytes)
+2025-10-15 23:43:56 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-15 23:43:56 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065014_1.mp4 matches 20211019_065014_1.mp4 in 2021_10_19_Tue
+2025-10-15 23:43:56 - phone_sync - INFO - File already exists in target: 20211019_065014_1.mp4 (Size: 6997922 bytes)
+2025-10-15 23:43:58 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-15 23:43:58 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065056_1.mp4 matches 20211019_065056_1.mp4 in 2021_10_19_Tue
+2025-10-15 23:43:58 - phone_sync - INFO - File already exists in target: 20211019_065056_1.mp4 (Size: 11349613 bytes)
+2025-10-15 23:44:01 - phone_sync - INFO - Found existing date folder: 2021_10_19_Tue for pattern 2021_10_19_Tue
+2025-10-15 23:44:01 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065212_1.mp4 matches 20211019_065212_1.mp4 in 2021_10_19_Tue
+2025-10-15 23:44:01 - phone_sync - INFO - File already exists in target: 20211019_065212_1.mp4 (Size: 9128705 bytes)
+2025-10-15 23:44:01 - phone_sync - INFO - Test processing completed: {'files_processed': 0, 'files_skipped': 4, 'videos_analyzed': 0, 'errors': 0, 'wudan_files': 0, 'regular_files': 0}

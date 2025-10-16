@@ -40,12 +40,26 @@ class ProcessingStateManager:
         self.config = config
         self.logger = logger
         
-        # State file location
-        self.state_dir = Path("VideoProcessor/state")
+        # State file location from config
+        state_config = config.get('state_management', {})
+        state_dir_path = state_config.get('state_dir', 'VideoProcessor/state')
+
+        # Handle relative paths - if running from VideoProcessor dir, adjust path
+        if not os.path.exists(state_dir_path) and state_dir_path.startswith('VideoProcessor/'):
+            # Try without VideoProcessor prefix (running from VideoProcessor directory)
+            alt_path = state_dir_path.replace('VideoProcessor/', '', 1)
+            if os.path.exists(alt_path) or os.path.exists(os.path.dirname(alt_path)):
+                state_dir_path = alt_path
+
+        self.state_dir = Path(state_dir_path)
         self.state_dir.mkdir(exist_ok=True)
-        
-        self.state_file = self.state_dir / "processing_state.json"
-        self.processed_files_db = self.state_dir / "processed_files.json"
+
+        # State file names from config
+        state_file_name = state_config.get('processing_state_file', 'processing_state.json')
+        processed_files_name = state_config.get('processed_files_db', 'processed_files.json')
+
+        self.state_file = self.state_dir / state_file_name
+        self.processed_files_db = self.state_dir / processed_files_name
         
         # Current state
         self.current_state: Optional[ProcessingState] = None

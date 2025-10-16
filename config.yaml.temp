@@ -1,0 +1,169 @@
+DEV_VARS:
+  source_folders:
+  - test_data/source
+  target_paths:
+    pictures: test_data/My Pictures
+    videos: test_data/My Videos
+    wudan: test_data/My Videos/Wudan
+PROD_VARS:
+  source_root: \\MA-2022-C\PHONESYNC
+  source_subdirs:
+  - SDCard_DCIM/Camera
+  - SDCard_DCIM/FavoritesMA
+  - SDCard_DCIM/Abr_GIFs
+  - SDCard_DCIM/Official
+  - SDCard_DCIM/Videocaptures
+  - SDCard_DCIM/Mom
+  - SDCard_DCIM/Video Editor
+  - SDCard_Pictures/Instagram
+  - SDCard_Pictures/Lumii
+  - SDCard_Pictures/WeChat
+  target_paths:
+    pictures: \\MA-2022-C\UserData_G\My Pictures
+    videos: \\MA-2022-C\UserData_G\My Videos
+    wudan: \\MA-2022-C\UserData_G\My Videos\Wudan
+  target_root: \\MA-2022-C\UserData_G
+ai_settings:
+  kung_fu_prompt: 'Analyze this video thumbnail for kung fu or martial arts content.
+    Look for:
+
+    - Martial arts poses, stances, or movements
+
+    - Fighting techniques or combat training
+
+    - Traditional Chinese martial arts (kung fu, wushu, tai chi)
+
+    - Training equipment (wooden dummies, weapons, mats)
+
+    - Text mentioning martial arts terms (kung fu, wushu, bagua, tai chi, etc.)
+
+    - People in martial arts uniforms or practicing forms, especially black shirts
+    with frog buttons
+
+
+    IMPORTANT: Look carefully for any TEXT in the image that describes the name of
+    the martial arts form being practiced (e.g., "Bagua - Old 8 Palms", "Dragon Walking
+    Sword", "Tai Chi", "Tiger Scratching" etc.). If you find such text, use that EXACT
+    text as your description.
+
+
+    If you see ANY martial arts elements, respond with YES. Only respond with NO if
+    there are clearly no martial arts elements present.
+
+
+    After your YES/NO answer, provide a brief description (maximum 10 words):
+
+    - If there is text naming a specific form, use that exact text
+
+    - Otherwise, briefly describe the martial arts content you see
+
+    - If no martial arts content is visible, briefly describe what you see instead,
+    such as "girl standing in front of a lake."
+
+    '
+  lm_studio_url: http://localhost:1234/v1/chat/completions
+  max_tokens: 150
+  model: mimo-vl-7b-rl@q8_k_xl
+  temperature: 0.4
+  timeout_seconds: 30
+development:
+  mock_ai_responses: false
+  skip_video_analysis: false
+  test_mode: false
+environment: PRODUCTION
+file_extensions:
+  pictures:
+  - .jpg
+  - .jpeg
+  - .png
+  - .gif
+  - .bmp
+  - .tiff
+  videos:
+  - .mp4
+  - .avi
+  - .mov
+  - .wmv
+  - .mkv
+  - .flv
+  - .webm
+logging:
+  enabled: true
+  keep_log_days: 30
+  log_level: INFO
+  log_path: logs/phone_sync.log
+  max_log_size_mb: 100
+  rotation_enabled: true
+options:
+  copy_files: true
+  create_missing_folders: true
+  dry_run: false
+  enable_deduplication: true
+  enable_incremental_processing: true
+  enable_video_analysis: true
+  force_recopy_if_newer: true
+  use_hash_comparison: false
+  verbose_logging: false
+performance:
+  cache_existing_files: true
+  max_concurrent_operations: 4
+  progress_reporting_interval: 100
+source_folders: []
+state_management:
+  processed_files_db: processed_files.json
+  processing_state_file: processing_state.json
+  state_dir: VideoProcessor/state
+target_paths: {}
+video_processing:
+  ffmpeg_timeout: 30
+  process_existing: false
+  thumbnail_extraction: dynamic_midpoint
+  thumbnail_scale: 320:240
+  thumbnail_time: 00:00:10
+wudan_rules:
+  after_2021:
+    days_of_week:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 6
+    time_ranges:
+      0:
+      - end: '13:00'
+        start: 08:00
+      1:
+      - end: 08:00
+        start: 05:00
+      - end: '21:00'
+        start: '18:00'
+      2:
+      - end: 08:00
+        start: 05:00
+      - end: '21:00'
+        start: '18:00'
+      3:
+      - end: '22:00'
+        start: '18:00'
+      4:
+      - end: 08:00
+        start: 05:00
+      - end: '21:00'
+        start: '18:00'
+      6:
+      - end: '16:00'
+        start: 08:00
+  before_2021:
+    days_of_week:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 6
+    time_ranges:
+    - end: 08:00
+      start: 05:00
+    - end: '22:00'
+      start: '18:00'
+  description: Time ranges when video files should go to Wudan folder

@@ -96,6 +96,22 @@ Comprehensive error reporting provides detailed debugging information:
 
 3. **Start LM Studio**: Launch LM Studio with a vision model for AI analysis
 
+## Testing
+
+### **Quick System Validation**
+```bash
+# Test AI analysis functionality
+./venv/Scripts/python.exe VideoProcessor/TestScripts/test_ai_analysis_only.py
+
+# Test file organization with production data
+./venv/Scripts/python.exe VideoProcessor/TestScripts/test_4_files_processing.py
+
+# Test complete workflow (dry-run)
+./venv/Scripts/python.exe VideoProcessor/phone_sync.py --config config.yaml --dry-run --verbose
+```
+
+**📋 For comprehensive testing procedures, see [Documentation/TESTING_SYSTEM.md](Documentation/TESTING_SYSTEM.md)**
+
 ## Usage
 
 ### Basic Operation
@@ -211,10 +227,15 @@ My Videos/
 - **Notes File Management**: Automatically updates notes files when videos are moved
 
 ### Testing & Development Tools (NEW!)
+- **Comprehensive Test Suite**: Complete testing system for all components and workflows
+- **AI Analysis Testing**: Dedicated tests for LM Studio integration and video analysis
+- **Production Data Testing**: Validate system with real phone sync data
 - **Test Environment Setup**: Create controlled test conditions for validation
 - **Mock Data Generation**: Generate realistic test scenarios with "NOT KUNG FU" videos
 - **Multiple Test Scenarios**: Clean, partial, mixed, and mock test conditions
 - **Reusable Test Setup**: Easily recreate test conditions for consistent validation
+
+**📋 For complete testing procedures, see [Documentation/TESTING_SYSTEM.md](Documentation/TESTING_SYSTEM.md)**
 
 ## Optimized Workflow for Daily Use
 
