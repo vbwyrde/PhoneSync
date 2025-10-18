@@ -88,13 +88,14 @@ This folder contains supplementary scripts that are not part of the core system 
 This script is designed for periodic use (weekly/monthly) after normal processing has created "NOT KUNG FU" markers in notes files.
 
 #### `test_incremental_processing.py`
-**Purpose**: Test the incremental processing functionality
+**Purpose**: Test the enhanced incremental processing functionality
 
 **Features**:
 - Tests first run vs subsequent runs
-- Validates file filtering logic
-- Tests state management
+- Validates enhanced file filtering logic with state validation
+- Tests state management with folder-based fallback
 - Verifies reset functionality
+- Tests date validation and recovery mechanisms
 
 **Usage**:
 ```bash
@@ -182,7 +183,7 @@ This script is designed for periodic use (weekly/monthly) after normal processin
 
 ### **For Development Testing**
 ```bash
-# Test incremental processing
+# Test enhanced incremental processing with validation
 ./venv/Scripts/python.exe VideoProcessor/Scripts/test_incremental_processing.py
 
 # Test configuration system

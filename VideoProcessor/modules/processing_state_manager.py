@@ -122,36 +122,184 @@ class ProcessingStateManager:
     def should_process_file(self, file_info: Dict[str, Any]) -> bool:
         """
         Determine if a file should be processed based on state tracking
-        
+
         Args:
             file_info: File information dictionary
-            
+
         Returns:
             True if file should be processed, False if already processed
         """
         file_path = file_info['path']
         file_name = file_info['name']
         file_date = file_info['date']
-        
+
         # Create unique identifier for file (path + size + date)
         file_id = f"{file_path}|{file_info['size']}|{file_date.isoformat()}"
-        
+
         # Check if file was already processed
         if file_id in self.processed_files:
             self.logger.debug(f"File already processed, skipping: {file_name}")
             return False
-            
-        # If this is not the first run, check if file is newer than last run
-        if self.current_state:
-            last_run_time = datetime.fromisoformat(self.current_state.last_run_timestamp)
-            
-            # Only process files that are newer than last run
-            if file_date <= last_run_time:
-                self.logger.debug(f"File older than last run, skipping: {file_name}")
-                return False
+
+        # Enhanced incremental processing with validation
+        if self.current_state and self.config['options'].get('enable_incremental_processing', True):
+            # Validate that our state corresponds to actual target folder structure
+            if self._validate_last_run_against_folders():
+                # State is valid, use timestamp-based filtering
+                last_run_time = datetime.fromisoformat(self.current_state.last_run_timestamp)
+                if file_date <= last_run_time:
+                    self.logger.debug(f"File older than last run ({last_run_time}), skipping: {file_name}")
+                    return False
+            else:
+                # State validation failed, fall back to folder-based detection
+                self.logger.warning("State validation failed, falling back to folder-based last date detection")
+                last_folder_date = self._determine_last_process_date_from_folders()
+                if last_folder_date and file_date.date() <= last_folder_date:
+                    self.logger.debug(f"File older than last folder date ({last_folder_date}), skipping: {file_name}")
+                    return False
         
         return True
-    
+
+    def _validate_last_run_against_folders(self) -> bool:
+        """
+        Validate that the last_run_timestamp corresponds to actual target folder structure
+
+        This provides a sanity check to ensure our state files are consistent with
+        the actual folder structure. If validation fails, we fall back to examining
+        the target folders directly.
+
+        Returns:
+            True if validation passes, False if we need folder-based fallback
+        """
+        if not self.current_state:
+            self.logger.debug("No current state available for validation")
+            return False
+
+        try:
+            # Extract date from last_run_timestamp
+            last_run_datetime = datetime.fromisoformat(self.current_state.last_run_timestamp)
+            last_run_date = last_run_datetime.date()
+            expected_folder = last_run_date.strftime('%Y_%m_%d')
+
+            self.logger.debug(f"Validating last run date {expected_folder} against target folders")
+
+            # Check target directories for expected date folder
+            target_paths = self.config.get('target_paths', {})
+            validation_passed = False
+
+            for path_type, base_path in target_paths.items():
+                if not base_path or not os.path.exists(base_path):
+                    continue
+
+                try:
+                    # Look for date folders in this target directory
+                    for item in os.listdir(base_path):
+                        item_path = os.path.join(base_path, item)
+                        if not os.path.isdir(item_path):
+                            continue
+
+                        # Check if this folder matches our expected date or is newer
+                        if path_type == 'wudan':
+                            # For Wudan folders, check YYYY_MM_DD_DDD pattern
+                            if item.startswith(expected_folder + '_'):
+                                validation_passed = True
+                                break
+                        else:
+                            # For regular folders, check YYYY_MM_DD pattern
+                            if item == expected_folder:
+                                validation_passed = True
+                                break
+
+                    if validation_passed:
+                        break
+
+                except (OSError, PermissionError) as e:
+                    self.logger.warning(f"Could not access target directory {base_path}: {e}")
+                    continue
+
+            if validation_passed:
+                self.logger.debug(f"State validation passed: found expected date folder {expected_folder}")
+                return True
+            else:
+                self.logger.info(f"State validation failed: no folder found for date {expected_folder}")
+                return False
+
+        except Exception as e:
+            self.logger.warning(f"Error during state validation: {e}")
+            return False
+
+    def _determine_last_process_date_from_folders(self) -> Optional[datetime.date]:
+        """
+        Examine target folder structure to find the most recent YYYY_MM_DD folder
+
+        This provides a fallback when state files are missing, corrupted, or inconsistent
+        with the actual folder structure.
+
+        Returns:
+            Most recent date found in target folders, or None if no valid dates found
+        """
+        self.logger.info("Scanning target folders to determine last process date")
+
+        latest_date = None
+        target_paths = self.config.get('target_paths', {})
+
+        for path_type, base_path in target_paths.items():
+            if not base_path or not os.path.exists(base_path):
+                continue
+
+            try:
+                for item in os.listdir(base_path):
+                    item_path = os.path.join(base_path, item)
+                    if not os.path.isdir(item_path):
+                        continue
+
+                    # Parse date from folder name
+                    folder_date = self._parse_date_from_folder_name(item, path_type)
+                    if folder_date and (latest_date is None or folder_date > latest_date):
+                        latest_date = folder_date
+
+            except (OSError, PermissionError) as e:
+                self.logger.warning(f"Could not access target directory {base_path}: {e}")
+                continue
+
+        if latest_date:
+            self.logger.info(f"Found last process date from folders: {latest_date}")
+        else:
+            self.logger.info("No valid date folders found in target directories")
+
+        return latest_date
+
+    def _parse_date_from_folder_name(self, folder_name: str, path_type: str) -> Optional[datetime.date]:
+        """
+        Parse date from folder name based on expected patterns
+
+        Args:
+            folder_name: Name of the folder
+            path_type: Type of target path (wudan, videos, pictures)
+
+        Returns:
+            Parsed date or None if folder name doesn't match expected pattern
+        """
+        try:
+            if path_type == 'wudan':
+                # Wudan folders: YYYY_MM_DD_DDD (with day of week)
+                parts = folder_name.split('_')
+                if len(parts) >= 3:
+                    year, month, day = int(parts[0]), int(parts[1]), int(parts[2])
+                    return datetime(year, month, day).date()
+            else:
+                # Regular folders: YYYY_MM_DD
+                parts = folder_name.split('_')
+                if len(parts) == 3:
+                    year, month, day = int(parts[0]), int(parts[1]), int(parts[2])
+                    return datetime(year, month, day).date()
+
+        except (ValueError, IndexError):
+            # Not a valid date folder
+            pass
+
+        return None
+
     def mark_file_processed(self, file_info: Dict[str, Any], analysis_result: Optional[Dict[str, Any]] = None):
         """
         Mark a file as processed

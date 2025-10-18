@@ -68,15 +68,27 @@ The PhoneSync + VideoProcessor system follows a multi-phase approach to organize
 - `processing_state.json` - Main state tracking
 - `processed_files.json` - Database of processed files
 
-**Decision Logic**:
+**Enhanced Decision Logic**:
 ```python
 if first_run:
     mode = "full_processing"
     reason = "First run - processing all files"
 else:
-    mode = "incremental_processing" 
-    reason = f"Processing files newer than {last_run_timestamp}"
+    # Validate state against folder structure
+    if validate_last_run_against_folders():
+        mode = "incremental_processing_validated"
+        reason = f"Processing files newer than {last_run_timestamp} (state validated)"
+    else:
+        mode = "incremental_processing_fallback"
+        last_folder_date = determine_last_process_date_from_folders()
+        reason = f"Processing files newer than {last_folder_date} (folder-based fallback)"
 ```
+
+**State Validation Process**:
+1. **Extract date** from `last_run_timestamp` in state file
+2. **Check target directories** for corresponding YYYY_MM_DD folders
+3. **Validate existence** of expected date folders in target structure
+4. **Fall back to folder scanning** if validation fails
 
 ### Phase 1: Deduplication Cache Building
 
@@ -136,27 +148,63 @@ else:
 }
 ```
 
-### Phase 2.5: Incremental Processing Filter
+### Phase 2.5: Enhanced Incremental Processing Filter
 
-**Purpose**: Filter files based on processing state for efficiency
+**Purpose**: Filter files based on processing state with validation and fallback logic
 
-**Components**: 
-- `ProcessingStateManager`
+**Components**:
+- `ProcessingStateManager` (Enhanced with date validation)
 
-**Filter Logic**:
+**Enhanced Filter Logic**:
 ```python
 def should_process_file(file_info):
     file_id = f"{path}|{size}|{date.isoformat()}"
-    
+
     # Skip if already processed
     if file_id in processed_files:
         return False
-    
-    # Skip if older than last run (incremental mode)
-    if not first_run and file_date <= last_run_time:
-        return False
-        
+
+    # Enhanced incremental processing with validation
+    if current_state and incremental_processing_enabled:
+        # Validate state against actual folder structure
+        if _validate_last_run_against_folders():
+            # State is valid, use timestamp-based filtering
+            if file_date <= last_run_time:
+                return False
+        else:
+            # State validation failed, fall back to folder-based detection
+            last_folder_date = _determine_last_process_date_from_folders()
+            if last_folder_date and file_date.date() <= last_folder_date:
+                return False
+
     return True
+```
+
+**Date Validation Features**:
+- **State Validation**: Verifies `last_run_timestamp` corresponds to actual date folders
+- **Folder-Based Fallback**: Scans target directories when state validation fails
+- **Self-Healing**: Automatically recovers from corrupted or inconsistent state files
+- **Robust Pattern Matching**: Handles both YYYY_MM_DD and YYYY_MM_DD_DDD folder patterns
+
+**Validation Methods**:
+```python
+def _validate_last_run_against_folders() -> bool:
+    """Validate state against actual folder structure"""
+    # Extract date from last_run_timestamp
+    # Check target directories for expected date folders
+    # Return True if validation passes, False for fallback
+
+def _determine_last_process_date_from_folders() -> Optional[date]:
+    """Scan folders to find most recent processing date"""
+    # Scan all target directories (pictures, videos, wudan)
+    # Parse dates from YYYY_MM_DD and YYYY_MM_DD_DDD patterns
+    # Return most recent date found
+
+def _parse_date_from_folder_name(folder_name: str, path_type: str) -> Optional[date]:
+    """Parse date from folder name based on expected patterns"""
+    # Handle regular folders: YYYY_MM_DD
+    # Handle Wudan folders: YYYY_MM_DD_DDD (with day of week)
+    # Return parsed date or None if invalid pattern
 ```
 
 ### Phase 3: File Organization

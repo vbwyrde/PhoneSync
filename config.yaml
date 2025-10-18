@@ -19,9 +19,12 @@ PROD_VARS:
     - "SDCard_DCIM/Videocaptures"
     - "SDCard_DCIM/Mom"
     - "SDCard_DCIM/Video Editor"
+    - "SDCard_Messages"
     - "SDCard_Pictures/Instagram"
     - "SDCard_Pictures/Lumii"
     - "SDCard_Pictures/WeChat"
+    - "SDCard_Pictures/.thumbnails"
+    - "SDCard_Screenshots"
 
   # Production target paths
   target_root: "\\\\MA-2022-C\\UserData_G"

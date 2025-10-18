@@ -70,7 +70,7 @@ tail -f VideoProcessor/logs/phonesync_YYYYMMDD.log
 ### 5. Daily Automation Setup
 ```bash
 # Set up scheduled task/cron job for daily runs
-# Subsequent runs will only process new files (incremental processing)
+# Subsequent runs will only process new files (enhanced incremental processing with validation)
 ./venv/Scripts/python.exe VideoProcessor/phone_sync.py --config config.yaml --verbose
 ```
 

@@ -13,7 +13,7 @@ Organizes photos and videos from phone sync folders into date-based directories,
 - **Intelligent Video Routing**: Time-based routing with post-processing cleanup for misclassified videos
 - **"NOT KUNG FU" Detection**: AI identifies non-martial arts videos for cleanup from Wudan folders
 - **Post-Processing Cleanup**: User-controlled cleanup of misclassified videos with preview and validation
-- **Incremental Processing**: Only processes new files on subsequent runs (perfect for daily sync)
+- **Enhanced Incremental Processing**: Only processes new files with state validation and folder-based fallback (perfect for daily sync)
 - **Automated Notes**: Generates searchable notes files with video descriptions for all analyzed videos
 - **Environment Support**: Separate development and production configurations
 - **Test Environment Tools**: Comprehensive testing utilities for validation and development
@@ -83,15 +83,18 @@ Comprehensive error reporting provides detailed debugging information:
    ```yaml
    # Set environment: "DEVELOPMENT" or "PRODUCTION"
    environment: "DEVELOPMENT"
-   
+
    # Development paths (for testing)
    DEV_VARS:
      source_folders:
-       - "Z:/PhotoSync_Test/Source"
+       - "test_data/source"
      target_paths:
-       pictures: "Z:/PhotoSync_Test/My Pictures"
-       videos: "Z:/PhotoSync_Test/My Videos"
-       wudan: "Z:/PhotoSync_Test/My Videos/Wudan"
+       pictures: "test_data/My Pictures"
+       videos: "test_data/My Videos"
+       wudan: "test_data/My Videos/Wudan"
+
+   # Production uses UNC paths (\\server\share format)
+   # Both UNC paths and mapped drives (Z:) are supported
    ```
 
 3. **Start LM Studio**: Launch LM Studio with a vision model for AI analysis
@@ -135,9 +138,9 @@ Comprehensive error reporting provides detailed debugging information:
 ./venv/Scripts/python.exe VideoProcessor/switch_environment.py show
 ```
 
-### Processing State Management
+### Enhanced Processing State Management
 ```bash
-# View processing state (shows incremental vs. full processing mode)
+# View processing state (shows incremental vs. full processing mode with validation status)
 ./venv/Scripts/python.exe VideoProcessor/manage_processing_state.py show
 
 # View recently processed files
@@ -211,12 +214,20 @@ My Videos/
 ## Advanced Features
 
 ### Core Processing
-- **Incremental Processing**: Only processes new files on subsequent runs
+- **Enhanced Incremental Processing**: Only processes new files with state validation and automatic fallback recovery
 - **Smart Deduplication**: Avoids processing duplicate files
 - **Environment Switching**: Easy development/production configuration switching
 - **Wudan Time Rules**: Automatically routes martial arts videos based on time/day
 - **Custom Notes Preservation**: Respects existing user notes files
 - **Edge Case Handling**: Robust handling of missing folders and partial files
+
+### Enhanced Incremental Processing (NEW!)
+- **State Validation**: Verifies processing state against actual target folder structure
+- **Automatic Fallback**: Falls back to folder-based date detection when state validation fails
+- **Self-Healing**: Automatically recovers from corrupted or inconsistent state files
+- **Robust Pattern Matching**: Handles both regular (YYYY_MM_DD) and Wudan (YYYY_MM_DD_DDD) folder patterns
+- **Minimal Overhead**: Validation only runs once per processing session
+- **Backward Compatible**: Existing logic unchanged when validation passes
 
 ### AI Analysis & Cleanup (NEW!)
 - **Comprehensive AI Analysis**: Generates notes for ALL videos, not just kung fu videos

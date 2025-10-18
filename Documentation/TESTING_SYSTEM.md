@@ -185,6 +185,30 @@ python VideoProcessor/Scripts/setup_test_environment.py --scenario clean
 python VideoProcessor/manage_processing_state.py --clear-state
 ```
 
+### **Test 6: Date Validation Enhancement**
+**Purpose**: Validate the enhanced incremental processing with state validation and fallback
+
+```bash
+# Test date validation functionality
+python VideoProcessor/TestScripts/verify_date_validation.py
+
+# Run comprehensive date validation tests
+python VideoProcessor/TestScripts/test_date_validation.py
+```
+
+**What it tests:**
+- ✅ State validation against target folder structure
+- ✅ Folder-based fallback when state validation fails
+- ✅ Date parsing from both YYYY_MM_DD and YYYY_MM_DD_DDD patterns
+- ✅ Self-healing recovery from corrupted state files
+- ✅ Enhanced incremental processing logic
+
+**Expected results:**
+- State validation methods exist and function correctly
+- Fallback logic activates when state is inconsistent
+- Date parsing handles both regular and Wudan folder patterns
+- System recovers gracefully from state file corruption
+
 ---
 
 ## 📊 **Test Results Validation**
@@ -284,6 +308,8 @@ python VideoProcessor/phone_sync.py --config config.yaml --dry-run --verbose
 |-------------|---------|----------|
 | `test_ai_analysis_only.py` | AI analysis validation | `VideoProcessor/TestScripts/` |
 | `test_4_files_processing.py` | File organization testing | `VideoProcessor/TestScripts/` |
+| `test_date_validation.py` | Date validation enhancement testing | `VideoProcessor/TestScripts/` |
+| `verify_date_validation.py` | Date validation verification | `VideoProcessor/TestScripts/` |
 | `count_production_files.py` | Production file counting | `VideoProcessor/TestScripts/` |
 | `cleanup_non_kungfu_videos.py` | Post-processing cleanup | `VideoProcessor/Scripts/` |
 | `setup_test_environment.py` | Test environment setup | `VideoProcessor/Scripts/` |
