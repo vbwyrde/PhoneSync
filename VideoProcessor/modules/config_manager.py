@@ -4,6 +4,7 @@ Handles loading and validation of YAML configuration
 """
 
 import yaml
+import os
 from pathlib import Path
 from typing import Dict, Any
 import logging
@@ -75,21 +76,18 @@ class ConfigManager:
             # Create full source folder paths
             source_folders = []
             for subdir in source_subdirs:
-                # Handle UNC paths properly
+                # Handle UNC paths properly - keep Windows UNC syntax
                 if source_root.startswith('\\\\'):
-                    full_path = f"{source_root}\\{subdir}"
+                    full_path = f"{source_root}\\{subdir.replace('/', os.sep)}"
                 else:
                     full_path = f"{source_root}/{subdir}"
-                # Convert to forward slashes for internal consistency
-                full_path = full_path.replace('\\', '/')
                 source_folders.append(full_path)
 
             # Set target paths from production variables
             target_paths = prod_vars.get('target_paths', {})
 
-            # Convert Windows paths to forward slashes for consistency
-            for key, path in target_paths.items():
-                target_paths[key] = path.replace('\\', '/')
+            # Keep UNC paths in proper Windows format - don't convert to forward slashes
+            # UNC paths must use backslashes on Windows to work correctly
 
         else:
             # Use development variables

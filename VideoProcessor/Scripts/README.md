@@ -116,6 +116,31 @@ This script is designed for periodic use (weekly/monthly) after normal processin
 ./venv/Scripts/python.exe VideoProcessor/Scripts/test_production_config.py
 ```
 
+#### `validate_files_existence.py`
+**Purpose**: Comprehensive validation of which source files already exist in target folders
+
+**Features**:
+- Scans all source folders for JPG and MP4 files
+- Builds complete inventory of target folder contents
+- Matches source files against target files (by name + size)
+- Provides detailed analysis and processing time estimates
+- Generates JSON report for detailed review
+- Shows completion percentage and missing file analysis
+
+**Usage**:
+```bash
+./venv/Scripts/python.exe VideoProcessor/Scripts/validate_files_existence.py
+
+# Or use the batch file
+VideoProcessor/Scripts/run_validation.bat
+```
+
+**Output**:
+- Console report with statistics and analysis
+- `file_existence_report.json` with detailed findings
+- Processing time estimates for remaining videos
+- Incremental processing recommendations
+
 ### **🔧 Utility Scripts**
 
 #### `main.py`

@@ -36,7 +36,7 @@ class TargetPathResolver:
         self.target_paths = config['target_paths']
         self.file_extensions = config['file_extensions']
     
-    def get_target_folder_path(self, file_info: Dict[str, Any]) -> Optional[str]:
+    def get_target_folder_path(self, file_info: Dict[str, Any], quiet: bool = False) -> Optional[str]:
         """
         Get target folder path for a file based on type, date, and Wudan rules
         Converted from PowerShell Get-TargetFolderPath function
@@ -70,16 +70,18 @@ class TargetPathResolver:
             date_pattern = file_date.strftime('%Y_%m_%d')
 
         # Look for existing folder with the date pattern (allows suffixes like _PaulArt)
-        existing_folder = self.dedup_manager.find_existing_date_folder(base_path, date_pattern)
-        
+        existing_folder = self.dedup_manager.find_existing_date_folder(base_path, date_pattern, quiet=quiet)
+
         if existing_folder:
-            self.logger.debug(f"Using existing date folder: {existing_folder}")
-            return existing_folder
+            if not quiet:
+                self.logger.debug(f"Using existing date folder: {existing_folder}")
+            return os.path.normpath(existing_folder)
         else:
             # Return the standard date folder path if no existing folder found
             target_folder = os.path.join(base_path, date_pattern)
-            self.logger.debug(f"Will create new date folder: {target_folder}")
-            return target_folder
+            if not quiet:
+                self.logger.debug(f"Will create new date folder: {target_folder}")
+            return os.path.normpath(target_folder)
     
     def _determine_base_path(self, file_type: str, extension: str, file_date: datetime) -> Optional[str]:
         """
@@ -138,23 +140,25 @@ class TargetPathResolver:
     def get_target_file_path(self, file_info: Dict[str, Any], target_folder: str) -> Tuple[str, str]:
         """
         Get full target file path, handling name collisions
-        
+
         Args:
             file_info: Dictionary containing file information
             target_folder: Target folder path
-            
+
         Returns:
             Tuple of (target_file_path, final_filename)
         """
         original_filename = file_info['name']
-        target_file_path = os.path.join(target_folder, original_filename)
+        # Normalize the target folder path to use consistent separators
+        normalized_target_folder = os.path.normpath(target_folder)
+        target_file_path = os.path.join(normalized_target_folder, original_filename)
         
         # If file doesn't exist, use original name
         if not os.path.exists(target_file_path):
             return target_file_path, original_filename
         
         # Handle name collision by creating unique filename
-        return self._create_unique_filename(target_folder, original_filename, file_info)
+        return self._create_unique_filename(normalized_target_folder, original_filename, file_info)
     
     def _create_unique_filename(self, target_folder: str, original_filename: str, 
                               file_info: Dict[str, Any]) -> Tuple[str, str]:
@@ -175,8 +179,8 @@ class TargetPathResolver:
         
         while True:
             unique_filename = f"{base_name}_{counter}{extension}"
-            unique_file_path = os.path.join(target_folder, unique_filename)
-            
+            unique_file_path = os.path.normpath(os.path.join(target_folder, unique_filename))
+
             if not os.path.exists(unique_file_path):
                 self.logger.info(f"Created unique filename to avoid collision: {unique_filename}")
                 return unique_file_path, unique_filename

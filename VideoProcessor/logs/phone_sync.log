@@ -320,3 +320,16 @@ Got it, let's analyze the video thumbnail. The image shows a test pattern with c
 2025-10-15 23:44:01 - phone_sync - INFO - Found existing file in date-matched folder: 20211019_065212_1.mp4 matches 20211019_065212_1.mp4 in 2021_10_19_Tue
 2025-10-15 23:44:01 - phone_sync - INFO - File already exists in target: 20211019_065212_1.mp4 (Size: 9128705 bytes)
 2025-10-15 23:44:01 - phone_sync - INFO - Test processing completed: {'files_processed': 0, 'files_skipped': 4, 'videos_analyzed': 0, 'errors': 0, 'wudan_files': 0, 'regular_files': 0}
+2025-10-18 15:49:17 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmpsqb30yjj
+2025-10-18 15:49:17 - phone_sync - INFO - Found 9 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmpsqb30yjj
+2025-10-18 15:49:57 - phone_sync - INFO - Scanning folder: C:\Users\mabramsR\AppData\Local\Temp\tmpll0vhebu
+2025-10-18 15:49:57 - phone_sync - INFO - Found 9 supported files in C:\Users\mabramsR\AppData\Local\Temp\tmpll0vhebu
+2025-10-18 15:49:57 - phone_sync - INFO - Building cache of existing files in target directories...
+2025-10-18 15:49:57 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmp_fwhvl2x\Pictures
+2025-10-18 15:49:57 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmp_fwhvl2x\Videos
+2025-10-18 15:49:57 - phone_sync - INFO - Scanning existing files in: C:\Users\mabramsR\AppData\Local\Temp\tmp_fwhvl2x\Videos\Wudan
+2025-10-18 15:49:57 - phone_sync - INFO - Cache built successfully. Found 4 existing files across all target directories.
+2025-10-18 15:49:57 - phone_sync - INFO - Found existing file in date-matched folder: IMG_001.jpg matches IMG_001.jpg in 2023_06_15
+2025-10-18 15:49:57 - phone_sync - INFO - File already exists in target: IMG_001.jpg (Size: 24 bytes)
+2025-10-18 15:49:57 - phone_sync - INFO - Found existing date folder: 2023_06_15_Training for pattern 2023_06_15
+2025-10-18 15:49:57 - phone_sync - INFO - Core modules test suite completed successfully

@@ -41,8 +41,8 @@ Examples:
     
     parser.add_argument(
         '--config', '-c',
-        default='../config.yaml',
-        help='Configuration file path (default: ../config.yaml)'
+        default='config.yaml',
+        help='Configuration file path (default: config.yaml in project root)'
     )
     
     parser.add_argument(
@@ -167,14 +167,25 @@ def main():
     print_banner()
     
     try:
-        # Load configuration
-        print(f"Loading configuration: {args.config}")
+        # Load configuration - always look in project root
+        script_dir = Path(__file__).parent  # VideoProcessor/Scripts/
+        project_root = script_dir.parent.parent  # PhoneSync/
 
-        if not os.path.exists(args.config):
-            print(f"Configuration file not found: {args.config}")
+        # If config path is just a filename, look in project root
+        if not os.path.isabs(args.config) and '/' not in args.config and '\\' not in args.config:
+            config_path = project_root / args.config
+        else:
+            config_path = Path(args.config)
+
+        print(f"Loading configuration: {config_path}")
+        print(f"Project root: {project_root}")
+        print(f"Config exists: {config_path.exists()}")
+
+        if not config_path.exists():
+            print(f"Configuration file not found: {config_path}")
             return 1
-        
-        config_manager = ConfigManager(args.config)
+
+        config_manager = ConfigManager(str(config_path))
         config = config_manager.load_config()
         
         # Override config options based on arguments

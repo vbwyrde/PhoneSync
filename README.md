@@ -138,6 +138,15 @@ Comprehensive error reporting provides detailed debugging information:
 ./venv/Scripts/python.exe VideoProcessor/switch_environment.py show
 ```
 
+### File Existence Validation (RECOMMENDED FIRST STEP)
+```bash
+# Validate which files are already processed before running full processing
+./venv/Scripts/python.exe VideoProcessor/Scripts/validate_files_existence.py
+
+# Or use the convenient batch file
+VideoProcessor/Scripts/run_validation.bat
+```
+
 ### Enhanced Processing State Management
 ```bash
 # View processing state (shows incremental vs. full processing mode with validation status)

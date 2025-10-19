@@ -109,7 +109,7 @@ class DeduplicationManager:
         return None
     
     def file_exists_in_target(self, filename: str, file_size: int,
-                            file_date: datetime, target_directory: str) -> bool:
+                            file_date: datetime, target_directory: str, quiet: bool = False) -> bool:
         """
         Check if file already exists in target using deduplication cache
         Handles flexible filename matching for files with appended text
@@ -152,9 +152,10 @@ class DeduplicationManager:
             if expected_date_pattern and existing_file['date_pattern']:
                 if existing_file['date_pattern'] == expected_date_pattern:
                     match_found = True
-                    existing_filename = os.path.basename(existing_file['path'])
-                    self.logger.info(f"Found existing file in date-matched folder: {filename} "
-                                   f"matches {existing_filename} in {existing_file['full_directory_name']}")
+                    if not quiet:
+                        existing_filename = os.path.basename(existing_file['path'])
+                        self.logger.info(f"Found existing file in date-matched folder: {filename} "
+                                       f"matches {existing_filename} in {existing_file['full_directory_name']}")
             elif existing_file['directory'] == target_directory:
                 # Exact directory match (fallback)
                 match_found = True
@@ -163,10 +164,12 @@ class DeduplicationManager:
                 # Check if forceRecopyIfNewer is enabled
                 if self.config['options']['force_recopy_if_newer']:
                     if file_date > existing_file['last_write_time']:
-                        self.logger.info(f"File exists but source is newer: {filename}")
+                        if not quiet:
+                            self.logger.info(f"File exists but source is newer: {filename}")
                         return False  # File exists but source is newer, so copy it
 
-                self.logger.info(f"File already exists in target: {filename} (Size: {file_size} bytes)")
+                if not quiet:
+                    self.logger.info(f"File already exists in target: {filename} (Size: {file_size} bytes)")
                 return True
 
         return False
@@ -268,7 +271,7 @@ class DeduplicationManager:
 
         return False
 
-    def find_existing_date_folder(self, base_path: str, date_pattern: str) -> Optional[str]:
+    def find_existing_date_folder(self, base_path: str, date_pattern: str, quiet: bool = False) -> Optional[str]:
         """
         Find existing folder with date pattern (allows suffixes like _PaulArt)
         Converted from PowerShell Find-ExistingDateFolder function
@@ -291,7 +294,8 @@ class DeduplicationManager:
                     # Check if folder name starts with date pattern (allows suffixes)
                     escaped_pattern = re.escape(date_pattern)
                     if re.match(f"^{escaped_pattern}(_.*)?$", item):
-                        self.logger.info(f"Found existing date folder: {item} for pattern {date_pattern}")
+                        if not quiet:
+                            self.logger.info(f"Found existing date folder: {item} for pattern {date_pattern}")
                         return item_path
                         
         except Exception as e:

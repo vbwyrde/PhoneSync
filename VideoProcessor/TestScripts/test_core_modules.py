@@ -182,7 +182,7 @@ def test_deduplication(config, logger):
         test_config['target_paths'] = {
             'pictures': str(pictures_dir),
             'videos': str(videos_dir),
-            'wudan_videos': str(wudan_dir),
+            'wudan': str(wudan_dir),
             'notes': str(temp_path / "Notes")
         }
         

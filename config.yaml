@@ -51,7 +51,7 @@ DEV_VARS:
 # ACTIVE CONFIGURATION - Set which environment to use
 # =============================================================================
 # Environment: "PRODUCTION" or "DEVELOPMENT"
-environment: "DEVELOPMENT"
+environment: "PRODUCTION"
 
 # Resolved paths (automatically set based on environment)
 source_folders: []  # Will be populated based on environment

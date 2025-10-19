@@ -263,3 +263,17 @@ class FileScanner:
             grouped_files[date_key].append(file_info)
         
         return grouped_files
+
+    def get_scan_statistics(self) -> Dict[str, Any]:
+        """
+        Get file scanning statistics
+
+        Returns:
+            Dictionary with scanning statistics
+        """
+        return {
+            'total_files_scanned': 0,  # This would be updated during scanning
+            'supported_extensions': self.all_extensions,
+            'picture_extensions': self.picture_extensions,
+            'video_extensions': self.video_extensions
+        }

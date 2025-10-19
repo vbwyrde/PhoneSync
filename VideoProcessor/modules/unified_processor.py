@@ -15,6 +15,8 @@ from .deduplication import DeduplicationManager
 from .target_path_resolver import TargetPathResolver
 from .file_organizer import FileOrganizer
 from .video_analyzer import VideoAnalyzer
+from .processing_state_manager import ProcessingStateManager
+from .fast_batch_processor import FastBatchProcessor
 
 class UnifiedProcessor:
     """
@@ -37,9 +39,11 @@ class UnifiedProcessor:
         self.file_scanner = FileScanner(config, logger)
         self.wudan_rules = WudanRulesEngine(config, logger)
         self.deduplication = DeduplicationManager(config, logger)
-        self.target_resolver = TargetPathResolver(config, logger)
-        self.file_organizer = FileOrganizer(config, logger)
+        self.target_resolver = TargetPathResolver(config, logger, self.wudan_rules, self.deduplication)
+        self.file_organizer = FileOrganizer(config, logger, self.target_resolver, self.deduplication)
         self.video_analyzer = VideoAnalyzer(config, logger)
+        self.state_manager = ProcessingStateManager(config, logger)
+        self.fast_batch_processor = FastBatchProcessor(config, logger)
         
         # Processing statistics
         self.stats = {
@@ -67,8 +71,11 @@ class UnifiedProcessor:
         """
         self.logger.info("=== Starting Unified PhoneSync + VideoProcessor ===")
         self.stats['start_time'] = datetime.now()
-        
+
         try:
+            # Start processing run in state manager
+            self.state_manager.start_processing_run()
+
             # Build deduplication cache first
             self.logger.info("Building deduplication cache...")
             cached_files = self.deduplication.build_cache()
@@ -78,25 +85,41 @@ class UnifiedProcessor:
             all_results = []
             total_files_processed = 0
             
-            for source_folder in self.config['source_folders']:
-                if not os.path.exists(source_folder):
-                    self.logger.warning(f"Source folder not found: {source_folder}")
-                    continue
-                
-                self.logger.info(f"Processing source folder: {source_folder}")
-                
-                # Scan for files
-                files = self.file_scanner.scan_folder(source_folder)
-                self.stats['files_scanned'] += len(files)
-                
-                if not files:
-                    self.logger.info(f"No supported files found in {source_folder}")
-                    continue
-                
-                self.logger.info(f"Found {len(files)} files to process")
-                
-                # Process files in batches
-                batch_results = self._process_file_batch(files, source_folder)
+            # FAST BATCH PROCESSING: Use set operations instead of individual file loops
+            self.logger.info("=== Starting Fast Batch Processing ===")
+
+            # Step 1: Build source file inventory using fast scanning
+            source_folders = self.config['source_folders']
+            source_files_set = self.fast_batch_processor.build_source_inventory(source_folders)
+            self.stats['files_scanned'] = len(source_files_set)
+
+            if not source_files_set:
+                self.logger.info("No supported files found in any source folder")
+                return all_results
+
+            # Step 2: Build target file inventory using fast scanning
+            target_paths = self.config.get('target_paths', {})
+            target_files_set = self.fast_batch_processor.build_target_inventory(target_paths)
+
+            # Step 3: Use set operations to find files needing processing (lightning fast!)
+            files_needing_processing_set = self.fast_batch_processor.find_files_needing_processing(
+                source_files_set, target_files_set
+            )
+
+            if not files_needing_processing_set:
+                self.logger.info("All files are already processed!")
+                return all_results
+
+            # Step 4: Convert file keys back to file info objects (only for files that need processing)
+            files_to_process = self.fast_batch_processor.convert_keys_to_file_info(
+                files_needing_processing_set, source_folders
+            )
+
+            self.logger.info(f"Fast batch processing identified {len(files_to_process)} files needing processing")
+
+            # Step 5: Process only the files that actually need processing
+            if files_to_process:
+                batch_results = self._process_file_batch(files_to_process, "all_sources")
                 all_results.extend(batch_results)
                 total_files_processed += len(batch_results)
             
@@ -106,7 +129,10 @@ class UnifiedProcessor:
             
             # Combine statistics from all modules
             self._update_final_statistics()
-            
+
+            # Finish processing run in state manager
+            self.state_manager.finish_processing_run(self.stats)
+
             self.logger.info("=== Unified Processing Complete ===")
             self._log_final_summary()
             
@@ -182,8 +208,8 @@ class UnifiedProcessor:
         
         self.logger.debug(f"Processing file: {filename}")
         
-        # Step 1: Determine target folder
-        target_folder = self.target_resolver.get_target_folder_path(file_info)
+        # Step 1: Determine target folder (quiet mode since we already did batch filtering)
+        target_folder = self.target_resolver.get_target_folder_path(file_info, quiet=True)
         if not target_folder:
             return {
                 'file': filename,
@@ -192,69 +218,52 @@ class UnifiedProcessor:
                 'action': 'error'
             }
         
-        # Step 2: Check for duplicates
-        file_exists = self.deduplication.file_exists_in_target(
-            filename,
-            file_info['size'],
-            file_info['date'],
-            target_folder
-        )
-        
-        if file_exists:
-            self.logger.info(f"File already exists, skipping: {filename}")
-            return {
-                'file': filename,
-                'success': True,
-                'action': 'skipped',
-                'reason': 'File already exists in target',
-                'target_folder': target_folder
-            }
-        
-        # Step 3: Analyze video if enabled and applicable
+        # Step 2: Analyze video if enabled and applicable
         analysis_result = None
         if file_info['type'] == 'video' and self.video_analyzer.video_analysis_enabled:
             self.logger.info(f"Analyzing video: {filename}")
             analysis_result = self.video_analyzer.analyze_video(source_path, file_info)
-            
+
             if analysis_result.get('analyzed'):
                 self.stats['videos_analyzed'] += 1
                 if analysis_result.get('is_kung_fu'):
                     self.stats['kung_fu_detected'] += 1
-        
-        # Step 4: Copy/move file
-        copy_result = self.file_organizer.organize_single_file(
-            source_path,
-            target_folder,
-            file_info
+
+        # Step 3: Copy/move file (skip dedup check since we already batch-filtered, use quiet mode)
+        copy_success, target_path = self.file_organizer.organize_file(
+            file_info,
+            dry_run=self.config.get('options', {}).get('dry_run', False),
+            skip_dedup_check=True,  # We already did batch filtering
+            quiet=True  # Suppress redundant logging since we already batch-filtered
         )
-        
-        if not copy_result['success']:
+
+        if not copy_success:
             return {
                 'file': filename,
                 'success': False,
-                'error': copy_result.get('error', 'File operation failed'),
+                'error': 'File organization failed',
                 'action': 'error'
             }
         
-        # Step 5: Generate note file if kung fu detected
+        # Step 4: Generate note file if kung fu detected
         note_path = None
         if analysis_result and analysis_result.get('is_kung_fu') and analysis_result.get('note_content'):
             note_path = self.video_analyzer.generate_note_file(
                 source_path,
                 analysis_result,
-                target_folder
+                target_path
             )
             if note_path:
                 self.stats['notes_generated'] += 1
-        
+
         # Success result
         result = {
             'file': filename,
             'success': True,
             'action': 'copied',
             'source_path': source_path,
-            'target_folder': target_folder,
-            'target_path': copy_result.get('target_path'),
+            'target_folder': target_path,
+            'target_path': target_path,
             'file_type': file_info['type'],
             'file_size': file_info['size'],
             'file_date': file_info['date'].isoformat()
@@ -272,7 +281,10 @@ class UnifiedProcessor:
             
             if note_path:
                 result['note_path'] = note_path
-        
+
+        # Mark file as processed in state manager
+        self.state_manager.mark_file_processed(file_info, analysis_result)
+
         return result
     
     def _update_final_statistics(self):
@@ -369,3 +381,14 @@ class UnifiedProcessor:
         ])
         
         return test_results
+
+    # Old slow batch filtering method removed - replaced with FastBatchProcessor
+
+    def get_processing_statistics(self) -> Dict[str, Any]:
+        """
+        Get current processing statistics
+
+        Returns:
+            Dictionary with processing statistics
+        """
+        return self.stats.copy()

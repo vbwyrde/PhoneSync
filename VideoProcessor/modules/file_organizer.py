@@ -44,15 +44,16 @@ class FileOrganizer:
             'duplicates_found': 0
         }
     
-    def organize_file(self, file_info: Dict[str, Any], dry_run: bool = False) -> Tuple[bool, Optional[str]]:
+    def organize_file(self, file_info: Dict[str, Any], dry_run: bool = False, skip_dedup_check: bool = False, quiet: bool = False) -> Tuple[bool, Optional[str]]:
         """
         Organize a single file by copying it to the appropriate target location
         Converted from PowerShell Copy-FileToTarget function
-        
+
         Args:
             file_info: Dictionary containing file information
             dry_run: If True, don't actually copy files
-            
+            skip_dedup_check: If True, skip deduplication check (already done in batch filtering)
+
         Returns:
             Tuple of (success, target_path)
         """
@@ -60,18 +61,18 @@ class FileOrganizer:
         filename = file_info['name']
         file_size = file_info['size']
         file_date = file_info['date']
-        
+
         try:
             # Get target folder path
-            target_folder = self.target_resolver.get_target_folder_path(file_info)
-            
+            target_folder = self.target_resolver.get_target_folder_path(file_info, quiet=quiet)
+
             if not target_folder:
                 self.logger.warning(f"Could not determine target folder for {source_path}")
                 self.stats['files_failed'] += 1
                 return False, None
-            
-            # Check if file already exists using deduplication
-            if self.dedup_manager.file_exists_in_target(filename, file_size, file_date, target_folder):
+
+            # Check if file already exists using deduplication (only if not already batch-filtered)
+            if not skip_dedup_check and self.dedup_manager.file_exists_in_target(filename, file_size, file_date, target_folder):
                 self.logger.info(f"Skipping duplicate file: {filename}")
                 self.stats['files_skipped'] += 1
                 self.stats['duplicates_found'] += 1
