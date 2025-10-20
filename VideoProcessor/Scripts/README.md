@@ -4,6 +4,14 @@
 
 This folder contains supplementary scripts that are not part of the core system but provide useful functionality for testing, analysis, and system management.
 
+## Main Script:
+- `main.py`: Alternative entry point for the unified system (combines file organization and video analysis)
+
+**Usage**:
+```bash
+# Prmary entry point for the unified system
+./venv/Scripts/python.exe VideoProcessor/Scripts/main.py
+```
 ## 📁 Script Descriptions
 
 ### **🧪 Testing Scripts**

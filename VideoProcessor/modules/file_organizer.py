@@ -340,5 +340,14 @@ class FileOrganizer:
         # Convert bytes to human readable
         stats['bytes_copied_mb'] = round(stats['bytes_copied'] / (1024 * 1024), 2)
         stats['bytes_copied_gb'] = round(stats['bytes_copied'] / (1024 * 1024 * 1024), 3)
-        
+
         return stats
+
+    def get_organization_statistics(self) -> Dict[str, Any]:
+        """Get file organization statistics"""
+        return {
+            'files_organized': self.stats.get('files_copied', 0),
+            'folders_created': self.stats.get('directories_created', 0),
+            'collisions_resolved': self.stats.get('duplicates_found', 0),
+            'errors': self.stats.get('files_failed', 0)
+        }

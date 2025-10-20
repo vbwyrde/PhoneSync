@@ -17,6 +17,8 @@ from .file_organizer import FileOrganizer
 from .video_analyzer import VideoAnalyzer
 from .processing_state_manager import ProcessingStateManager
 from .fast_batch_processor import FastBatchProcessor
+from .batch_file_copier import BatchFileCopier
+from .batch_target_resolver import BatchTargetResolver
 
 class UnifiedProcessor:
     """
@@ -44,6 +46,8 @@ class UnifiedProcessor:
         self.video_analyzer = VideoAnalyzer(config, logger)
         self.state_manager = ProcessingStateManager(config, logger)
         self.fast_batch_processor = FastBatchProcessor(config, logger)
+        self.batch_file_copier = BatchFileCopier(config, logger)
+        self.batch_target_resolver = BatchTargetResolver(config, logger)
         
         # Processing statistics
         self.stats = {
@@ -117,11 +121,35 @@ class UnifiedProcessor:
 
             self.logger.info(f"Fast batch processing identified {len(files_to_process)} files needing processing")
 
-            # Step 5: Process only the files that actually need processing
+            # Step 5: Pre-resolve all target paths using batch operations
             if files_to_process:
-                batch_results = self._process_file_batch(files_to_process, "all_sources")
-                all_results.extend(batch_results)
-                total_files_processed += len(batch_results)
+                self.logger.info("=== Starting Batch Target Path Resolution ===")
+                target_resolution = self.batch_target_resolver.resolve_all_target_paths(files_to_process)
+
+                self.logger.info(f"Batch target resolution complete: {target_resolution['performance']['files_per_second']:.1f} files/sec")
+
+                # Step 6: Use optimized batch file copier with pre-resolved paths
+                self.logger.info("=== Starting Optimized Batch File Copy ===")
+                copy_stats = self.batch_file_copier.copy_files_batch_with_paths(
+                    files_to_process,
+                    target_resolution['target_paths'],
+                    self.file_organizer,
+                    self.state_manager
+                )
+
+                # Update statistics from batch copier
+                self.stats['files_copied'] = copy_stats['copied_files']
+                self.stats['errors'] = copy_stats['failed_files']
+                total_files_processed = copy_stats['copied_files']
+
+                # Create results summary
+                all_results = [{
+                    'batch_operation': True,
+                    'files_copied': copy_stats['copied_files'],
+                    'files_failed': copy_stats['failed_files'],
+                    'elapsed_time': copy_stats['elapsed_time'],
+                    'files_per_second': copy_stats['files_per_second']
+                }]
             
             # Final statistics
             self.stats['end_time'] = datetime.now()
@@ -153,139 +181,14 @@ class UnifiedProcessor:
                 'statistics': self.stats
             }
     
-    def _process_file_batch(self, files: List[Dict[str, Any]], source_folder: str) -> List[Dict[str, Any]]:
-        """
-        Process a batch of files from a source folder
-        
-        Args:
-            files: List of file information dictionaries
-            source_folder: Source folder path
-            
-        Returns:
-            List of processing results
-        """
-        results = []
-        
-        for file_info in files:
-            try:
-                result = self._process_single_file(file_info, source_folder)
-                results.append(result)
-                
-                # Update statistics
-                if result['success']:
-                    if result['action'] == 'copied':
-                        self.stats['files_copied'] += 1
-                    elif result['action'] == 'skipped':
-                        self.stats['files_skipped'] += 1
-                else:
-                    self.stats['errors'] += 1
-                
-            except Exception as e:
-                self.logger.error(f"Error processing file {file_info.get('name', 'unknown')}: {e}")
-                self.stats['errors'] += 1
-                results.append({
-                    'file': file_info.get('name', 'unknown'),
-                    'success': False,
-                    'error': str(e),
-                    'action': 'error'
-                })
-        
-        return results
+    # OLD SLOW METHOD - REPLACED BY BATCH FILE COPIER
+    # def _process_file_batch(self, files: List[Dict[str, Any]], source_folder: str) -> List[Dict[str, Any]]:
     
-    def _process_single_file(self, file_info: Dict[str, Any], source_folder: str) -> Dict[str, Any]:
-        """
-        Process a single file through the complete workflow
-        
-        Args:
-            file_info: File information dictionary
-            source_folder: Source folder path
-            
-        Returns:
-            Processing result dictionary
-        """
-        filename = file_info['name']
-        source_path = os.path.join(source_folder, filename)
-        
-        self.logger.debug(f"Processing file: {filename}")
-        
-        # Step 1: Determine target folder (quiet mode since we already did batch filtering)
-        target_folder = self.target_resolver.get_target_folder_path(file_info, quiet=True)
-        if not target_folder:
-            return {
-                'file': filename,
-                'success': False,
-                'error': 'Could not determine target folder',
-                'action': 'error'
-            }
-        
-        # Step 2: Analyze video if enabled and applicable
-        analysis_result = None
-        if file_info['type'] == 'video' and self.video_analyzer.video_analysis_enabled:
-            self.logger.info(f"Analyzing video: {filename}")
-            analysis_result = self.video_analyzer.analyze_video(source_path, file_info)
-
-            if analysis_result.get('analyzed'):
-                self.stats['videos_analyzed'] += 1
-                if analysis_result.get('is_kung_fu'):
-                    self.stats['kung_fu_detected'] += 1
-
-        # Step 3: Copy/move file (skip dedup check since we already batch-filtered, use quiet mode)
-        copy_success, target_path = self.file_organizer.organize_file(
-            file_info,
-            dry_run=self.config.get('options', {}).get('dry_run', False),
-            skip_dedup_check=True,  # We already did batch filtering
-            quiet=True  # Suppress redundant logging since we already batch-filtered
-        )
-
-        if not copy_success:
-            return {
-                'file': filename,
-                'success': False,
-                'error': 'File organization failed',
-                'action': 'error'
-            }
-        
-        # Step 4: Generate note file if kung fu detected
-        note_path = None
-        if analysis_result and analysis_result.get('is_kung_fu') and analysis_result.get('note_content'):
-            note_path = self.video_analyzer.generate_note_file(
-                source_path,
-                analysis_result,
-                target_path
-            )
-            if note_path:
-                self.stats['notes_generated'] += 1
-
-        # Success result
-        result = {
-            'file': filename,
-            'success': True,
-            'action': 'copied',
-            'source_path': source_path,
-            'target_folder': target_path,
-            'target_path': target_path,
-            'file_type': file_info['type'],
-            'file_size': file_info['size'],
-            'file_date': file_info['date'].isoformat()
-        }
-        
-        # Add analysis results if available
-        if analysis_result:
-            result['analysis'] = {
-                'analyzed': analysis_result.get('analyzed', False),
-                'is_kung_fu': analysis_result.get('is_kung_fu', False),
-                'confidence': analysis_result.get('confidence', 0),
-                'description': analysis_result.get('description', ''),
-                'note_generated': bool(note_path)
-            }
-            
-            if note_path:
-                result['note_path'] = note_path
-
-        # Mark file as processed in state manager
-        self.state_manager.mark_file_processed(file_info, analysis_result)
-
-        return result
+    # OLD SLOW METHOD - REPLACED BY BATCH FILE COPIER
+    # def _process_single_file(self, file_info: Dict[str, Any], source_folder: str) -> Dict[str, Any]:
+        # OLD SLOW METHOD - REPLACED BY BATCH FILE COPIER
+        # (This method processed files one by one, taking 5-6 seconds each)
+        # Now using BatchFileCopier for much faster bulk operations
     
     def _update_final_statistics(self):
         """Update final statistics from all modules"""
