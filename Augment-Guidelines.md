@@ -71,6 +71,23 @@ PhoneSync/                          # Root project directory
 - **Comprehensive logging**: Log both process flow and errors
 - **Error handling**: Graceful failure recovery with detailed logging
 
+### **Python Bytecode Cache Management**
+- **Cache Issues**: Python creates `.pyc` files and `__pycache__` directories that can cause outdated code to run
+- **Symptoms**: Code changes not taking effect, old methods being called, import errors after updates
+- **Solution**: Clear cache when code changes don't take effect:
+  ```bash
+  # Clear all Python cache files
+  find VideoProcessor -name "*.pyc" -delete
+  find VideoProcessor -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
+
+  # Alternative single command
+  rm -rf VideoProcessor/modules/__pycache__ && find VideoProcessor -name "*.pyc" -delete
+  ```
+- **When to Clear Cache**:
+  - After major code changes or refactoring
+  - When seeing "method not found" errors for recently added methods
+  - When system appears to use old code despite file updates
+  - Before running critical production processes after code changes
 ---
 
 ## 🔧 **Development Workflow**

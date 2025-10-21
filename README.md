@@ -126,6 +126,20 @@ Comprehensive error reporting provides detailed debugging information:
 ./venv/Scripts/python.exe VideoProcessor/phone_sync.py --config config.yaml --dry-run --verbose
 ```
 
+### AI Notes Generator - Usage
+
+```bash
+# Analyze all videos in target folders
+python VideoProcessor/Scripts/generate_ai_notes.py
+
+# Preview what would be analyzed (dry run)
+python VideoProcessor/Scripts/generate_ai_notes.py --dry-run
+
+# Force regeneration of existing notes files
+python VideoProcessor/Scripts/generate_ai_notes.py --force
+```
+
+
 ### Environment Management
 ```bash
 # Switch to production environment
@@ -266,7 +280,26 @@ My Videos/
 ```
 This processes new files, creates notes for all videos, and routes based on time rules.
 
-### Phase 2: Periodic Cleanup (Weekly/Monthly)
+### Phase 2: AI Video Analysis
+
+**Integrated with Main Process**: AI video analysis is automatically included when running the main processing workflow. The main process calls the standalone AI notes generator script to maintain a single implementation.
+
+**Standalone Analysis (As Needed)**: For retroactive analysis or selective updates:
+```bash
+# Generate AI notes for existing videos (retroactive analysis)
+./venv/Scripts/python.exe VideoProcessor/Scripts/generate_ai_notes.py --dry-run
+
+# Generate notes for specific date or folder
+./venv/Scripts/python.exe VideoProcessor/Scripts/generate_ai_notes.py --date 2024-04-12
+./venv/Scripts/python.exe VideoProcessor/Scripts/generate_ai_notes.py --folder "2024_04_12_Sat"
+
+# Force regenerate existing notes (after AI improvements)
+./venv/Scripts/python.exe VideoProcessor/Scripts/generate_ai_notes.py --force
+```
+
+**Architecture**: The main process calls the standalone script to avoid maintaining duplicate implementations. This ensures consistency while preserving the ability to run AI analysis independently when needed.
+
+### Phase 3: Periodic Cleanup (Weekly/Monthly)
 ```bash
 # Preview what needs cleanup
 ./venv/Scripts/python.exe VideoProcessor/Scripts/cleanup_non_kungfu_videos.py --preview

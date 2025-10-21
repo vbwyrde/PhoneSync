@@ -142,13 +142,26 @@ class UnifiedProcessor:
                 self.stats['errors'] = copy_stats['failed_files']
                 total_files_processed = copy_stats['copied_files']
 
+                # Step 7: AI Video Analysis and Notes Generation (using standalone script)
+                if copy_stats['copied_files'] > 0:
+                    self.logger.info("=== Starting AI Video Analysis ===")
+                    analysis_stats = self._run_standalone_ai_analysis()
+
+                    # Update video analysis statistics
+                    self.stats['videos_analyzed'] = analysis_stats['videos_analyzed']
+                    self.stats['kung_fu_detected'] = analysis_stats['kung_fu_detected']
+                    self.stats['notes_generated'] = analysis_stats['notes_generated']
+
                 # Create results summary
                 all_results = [{
                     'batch_operation': True,
                     'files_copied': copy_stats['copied_files'],
                     'files_failed': copy_stats['failed_files'],
                     'elapsed_time': copy_stats['elapsed_time'],
-                    'files_per_second': copy_stats['files_per_second']
+                    'files_per_second': copy_stats['files_per_second'],
+                    'videos_analyzed': self.stats['videos_analyzed'],
+                    'kung_fu_detected': self.stats['kung_fu_detected'],
+                    'notes_generated': self.stats['notes_generated']
                 }]
             
             # Final statistics
@@ -181,15 +194,63 @@ class UnifiedProcessor:
                 'statistics': self.stats
             }
     
-    # OLD SLOW METHOD - REPLACED BY BATCH FILE COPIER
-    # def _process_file_batch(self, files: List[Dict[str, Any]], source_folder: str) -> List[Dict[str, Any]]:
-    
-    # OLD SLOW METHOD - REPLACED BY BATCH FILE COPIER
-    # def _process_single_file(self, file_info: Dict[str, Any], source_folder: str) -> Dict[str, Any]:
-        # OLD SLOW METHOD - REPLACED BY BATCH FILE COPIER
-        # (This method processed files one by one, taking 5-6 seconds each)
-        # Now using BatchFileCopier for much faster bulk operations
-    
+    def _run_standalone_ai_analysis(self) -> Dict[str, Any]:
+        """
+        Run the standalone AI notes generator script to analyze videos
+
+        Returns:
+            Dictionary with analysis statistics
+        """
+        analysis_stats = {
+            'videos_analyzed': 0,
+            'kung_fu_detected': 0,
+            'notes_generated': 0
+        }
+
+        try:
+            import subprocess
+            import sys
+            import os
+
+            # Path to the standalone AI notes generator script
+            script_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'Scripts', 'generate_ai_notes.py')
+
+            # Run the standalone script (no date filter - analyze all Wudan folders)
+            cmd = [sys.executable, script_path]
+
+            self.logger.info(f"Running standalone AI analysis: {' '.join(cmd)}")
+
+            result = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                cwd=os.path.dirname(os.path.dirname(__file__))
+            )
+
+            if result.returncode == 0:
+                # Parse the output to extract statistics
+                output_lines = result.stdout.strip().split('\n')
+
+                for line in output_lines:
+                    if 'Videos analyzed:' in line:
+                        analysis_stats['videos_analyzed'] = int(line.split(':')[1].strip())
+                    elif 'Kung fu detected:' in line:
+                        analysis_stats['kung_fu_detected'] = int(line.split(':')[1].strip())
+                    elif 'Notes files created:' in line:
+                        analysis_stats['notes_generated'] = int(line.split(':')[1].strip())
+
+                self.logger.info(f"AI analysis completed successfully: {analysis_stats}")
+            else:
+                self.logger.error(f"AI analysis script failed with return code {result.returncode}")
+                self.logger.error(f"Error output: {result.stderr}")
+
+        except Exception as e:
+            self.logger.error(f"Error running standalone AI analysis: {str(e)}")
+
+        return analysis_stats
+
+
+
     def _update_final_statistics(self):
         """Update final statistics from all modules"""
         # Get statistics from video analyzer
