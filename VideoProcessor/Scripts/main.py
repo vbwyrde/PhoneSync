@@ -31,18 +31,20 @@ def parse_arguments():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python main.py                     # Run full processing
-  python main.py --test              # Test all systems
-  python main.py --dry-run           # Preview without copying files
+  python main.py                       # Run full processing
+  python main.py --test                # Test all systems
+  python main.py --dry-run             # Preview without copying files
   python main.py --config custom.yaml  # Use custom configuration
-  python main.py --verbose          # Enable verbose logging
+  python main.py --verbose             # Enable verbose logging
         """
     )
     
+    print("Current working directory:", os.getcwd())
+
     parser.add_argument(
         '--config', '-c',
         default='config.yaml',
-        help='Configuration file path (default: config.yaml in project root)'
+        help='Configuration file path (default: config.yaml)'
     )
     
     parser.add_argument(
@@ -167,25 +169,14 @@ def main():
     print_banner()
     
     try:
-        # Load configuration - always look in project root
-        script_dir = Path(__file__).parent  # VideoProcessor/Scripts/
-        project_root = script_dir.parent.parent  # PhoneSync/
+        # Load configuration
+        print(f"Loading configuration: {args.config}")
 
-        # If config path is just a filename, look in project root
-        if not os.path.isabs(args.config) and '/' not in args.config and '\\' not in args.config:
-            config_path = project_root / args.config
-        else:
-            config_path = Path(args.config)
-
-        print(f"Loading configuration: {config_path}")
-        print(f"Project root: {project_root}")
-        print(f"Config exists: {config_path.exists()}")
-
-        if not config_path.exists():
-            print(f"Configuration file not found: {config_path}")
+        if not os.path.exists(args.config):
+            print(f"Configuration file not found: {args.config}")
             return 1
-
-        config_manager = ConfigManager(str(config_path))
+        
+        config_manager = ConfigManager(args.config)
         config = config_manager.load_config()
         
         # Override config options based on arguments
@@ -217,7 +208,7 @@ def main():
             return 0 if test_results['overall_success'] else 1
         
         else:
-            print("⚡ Starting file processing...")
+            print("Starting file processing...")
             results = processor.process_all_sources()
             print_processing_results(results)
             

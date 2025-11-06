@@ -326,7 +326,7 @@ def main():
 
         # Accumulate totals
         for key, value in results.items():
-            if isinstance(value, (int, float)) and key != 'scan_time_seconds':
+            if isinstance(value, (int, int)) and key != 'scan_time_seconds':
                 total_results[key] += value
     
     total_scan_time = time.time() - scan_start_time

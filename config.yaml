@@ -88,6 +88,7 @@ ai_settings:
   max_tokens: 150
   timeout_seconds: 30
   kung_fu_prompt: |
+    You are an expert at Wudan Kung Fu
     Analyze this video thumbnail for kung fu or martial arts content. Look for:
     - Martial arts poses, stances, or movements
     - Fighting techniques or combat training
@@ -95,15 +96,17 @@ ai_settings:
     - Training equipment (wooden dummies, weapons, mats)
     - Text mentioning martial arts terms (kung fu, wushu, bagua, tai chi, etc.)
     - People in martial arts uniforms or practicing forms, especially black shirts with frog buttons
+    - Kung Fu weapons, such as straight double edged sword (Gim), broadsword (Dao), Spear, Chai Dao, Tiger Hook Swords, Deer Horn Knives, Shepherd Knives, Wooden straight Sword (Miao Dao)
 
     IMPORTANT: Look carefully for any TEXT in the image that describes the name of the martial arts form being practiced (e.g., "Bagua - Old 8 Palms", "Dragon Walking Sword", "Tai Chi", "Tiger Scratching" etc.). If you find such text, use that EXACT text as your description.
-
+    IMPORTANT: When you find a weapon, do your best to name it appropriately.  If there is no weapon then say it is Empty Hands.
+    
     If you see ANY martial arts elements, respond with YES. Only respond with NO if there are clearly no martial arts elements present.
 
     After your YES/NO answer, provide a brief description (maximum 10 words):
     - If there is text naming a specific form, use that exact text
-    - Otherwise, briefly describe the martial arts content you see
-    - If no martial arts content is visible, briefly describe what you see instead, such as "girl standing in front of a lake."
+    - Otherwise, briefly describe the martial arts content you see, such as "Single Practitioner with Gim", or "Two Practitioners with Gim and Dao", etc.
+    - If no martial arts content is visible, briefly describe what you see instead, such as "girl standing in front of a lake.", or "turtle next to a rock on the shore of a beach"
 
 # Video processing settings
 video_processing:

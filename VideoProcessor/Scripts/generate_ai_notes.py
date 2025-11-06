@@ -11,10 +11,10 @@ It can be run independently to:
 - Process specific date ranges or folders
 
 Usage:
-    python Scripts/generate_ai_notes.py                    # Analyze all Wudan videos
-    python Scripts/generate_ai_notes.py --dry-run          # Preview what would be analyzed
-    python Scripts/generate_ai_notes.py --force            # Regenerate existing notes
-    python Scripts/generate_ai_notes.py --date 2024-04-12  # Analyze specific date
+    python Scripts/generate_ai_notes.py                            # Analyze all Wudan videos
+    python Scripts/generate_ai_notes.py --dry-run                  # Preview what would be analyzed
+    python Scripts/generate_ai_notes.py --force                    # Regenerate existing notes
+    python Scripts/generate_ai_notes.py --date 2024-04-12          # Analyze specific date
     python Scripts/generate_ai_notes.py --folder "2024_04_12_Sat"  # Analyze specific folder
 """
 
@@ -325,6 +325,10 @@ def main():
     parser = argparse.ArgumentParser(
         description="Generate AI analysis notes for existing video files"
     )
+
+    print("AI Notes Generator - Standalone Script")
+    print("Current working directory:", os.getcwd())
+    
     parser.add_argument(
         '--config', '-c',
         default='config.yaml',
@@ -352,7 +356,7 @@ def main():
     args = parser.parse_args()
     
     try:
-        print("🤖 AI Notes Generator - Standalone Script")
+        print("AI Notes Generator - Standalone Script")
         print("=" * 50)
         
         # Initialize generator
@@ -362,11 +366,11 @@ def main():
         print("Testing AI connection...")
         ai_test = generator.video_analyzer.test_ai_connection()
         if not ai_test.get('success', False):
-            print(f"⚠️  AI connection failed: {ai_test.get('reason', 'Unknown error')}")
+            print(f"AI connection failed: {ai_test.get('reason', 'Unknown error')}")
             print("Make sure LM Studio is running and accessible")
             return 1
         else:
-            print("✅ AI connection successful")
+            print("AI connection successful")
         
         # Scan for folders to analyze
         print(f"\nScanning target folders...")
@@ -383,7 +387,7 @@ def main():
         
         # Generate notes
         if args.dry_run:
-            print("\n🧪 DRY RUN MODE - No files will be created")
+            print("\n DRY RUN MODE - No files will be created")
         
         results = generator.generate_notes_for_folders(
             folders, 
@@ -395,7 +399,7 @@ def main():
         generator.print_summary()
         
         if results['errors']:
-            print(f"\n⚠️  {len(results['errors'])} errors occurred:")
+            print(f"\n  {len(results['errors'])} errors occurred:")
             for error in results['errors']:
                 print(f"   - {error}")
         

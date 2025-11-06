@@ -208,10 +208,12 @@ class BatchFileCopier:
 
             if success:
                 # Mark as processed in state manager
-                processing_state_manager.mark_file_processed(
-                    filename, file_info.get('size', file_info.get('file_size', 0)),
-                    file_info.get('type', file_info.get('file_type', 'unknown'))
-                )
+                ## processing_state_manager.mark_file_processed(
+                ##     filename, file_info.get('size', file_info.get('file_size', 0)),
+                ##     file_info.get('type', file_info.get('file_type', 'unknown'))
+                ## )
+
+                processing_state_manager.mark_file_processed(file_info)
                 self.copied_files += 1
                 self.logger.debug(f"Successfully copied: {filename}")
             else:
@@ -235,7 +237,9 @@ class BatchFileCopier:
         if self.total_files == 0:
             return
             
-        elapsed_time = time.time() - self.start_time
+        start_time = self.start_time if self.start_time is not None else time.time()
+
+        elapsed_time = time.time() - start_time
         percent_complete = (self.processed_files / self.total_files) * 100
         
         # Calculate ETA
